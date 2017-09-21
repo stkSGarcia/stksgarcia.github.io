@@ -1,6 +1,6 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: STK Blog
+SEOTitle: STK Blog
 header-img: img/home-bg.jpg
 email: huxpro@gmail.com
 description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
@@ -14,9 +14,9 @@ baseurl: ""                             # for example, '/blog' if your blog host
 RSS: false
 weibo_username:     huxpro
 zhihu_username:     huxpro
-github_username:    huxpro
+github_username:    samuelgarciastk
 twitter_username:   huxpro
-#facebook_username:  huxpro
+facebook_username:  samuelgarciastk
 # linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -56,7 +56,7 @@ netease_comment: false
 
 
 # Analytics settings
-# Baidu Analytics 
+# Baidu Analytics
 # ba_track_id: [your track id]
 
 # Google Analytics
