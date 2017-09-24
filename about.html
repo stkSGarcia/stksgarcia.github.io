@@ -7,8 +7,8 @@ header-img: "img/about-bg.jpg"
 
 <!-- Language Selector -->
 <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0"> English </option>
-    <option value="1" selected> 中文 </option>
+    <option value="0" selected> English </option>
+    <option value="1"> 中文 </option>
 </select>
 <!-- English Version -->
 <div class="en post-container">
@@ -46,6 +46,7 @@ header-img: "img/about-bg.jpg"
     }
     // handle select change
     function onLanChange(index){
+        alart("index: "+index)
         if(index == 0){
             window.location.hash = "#en"
         }else{
