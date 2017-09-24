@@ -9,12 +9,12 @@ url: "https://samuelgarciastk.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
-RSS: false
+RSS: true
+facebook_username: samuelgarciastk
+twitter_username: samuelgarciastk
 weibo_username: stk_paralysis
 # zhihu_username: stk-76
 github_username: samuelgarciastk
-twitter_username: samuelgarciastk
-facebook_username: samuelgarciastk
 # linkedin_username: firstname-lastname-idxxxx
 
 # Build settings
@@ -22,7 +22,7 @@ facebook_username: samuelgarciastk
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 
 # Gems
@@ -36,6 +36,11 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
 input: GFM # use Github Flavored Markdown !important
+
+# Disqus settings
+disqus_username: hux
+# Netease setttings
+netease_comment: true
 
 # Analytics settings
 # Baidu Analytics
@@ -60,14 +65,14 @@ service-worker: true
 
 # Friends
 friends: [
-    # {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-    #     title: "前端外刊评论",
-    #     href: "http://qianduan.guru/"
-    # },{
-    #     title: "前端神盾局",
-    #     href: "http://wepiaofei.github.io/blog/"
-    # }
+    {
+        title: "Hux Blog",
+        href: "https://huangxuan.me/"
+    },{
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
+    },{
+        title: "前端神盾局",
+        href: "http://wepiaofei.github.io/blog/"
+    }
 ]
