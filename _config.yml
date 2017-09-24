@@ -1,15 +1,13 @@
 # Site settings
 title: STK Blog
-SEOTitle: STK Blog
+SEOTitle: STK (゜-゜)つロ 乾杯~ | STK Blog
 header-img: img/home-bg.jpg
-# email: 1332121007@qq.com
 description: "STK (゜-゜)つロ 乾杯~"
 keyword: "STK, Samuel Garcia, Blog, Software Engieering"
 url: "https://samuelgarciastk.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
-RSS: true
 facebook_username: samuelgarciastk
 twitter_username: samuelgarciastk
 weibo_username: stk_paralysis
@@ -38,7 +36,7 @@ kramdown:
 input: GFM # use Github Flavored Markdown !important
 
 # Disqus settings
-disqus_username: hux
+# disqus_username: stk
 # Netease setttings
 netease_comment: true
 
