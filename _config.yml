@@ -38,7 +38,7 @@ input: GFM # use Github Flavored Markdown !important
 # Disqus settings
 # disqus_username: stk
 # Netease setttings
-netease_comment: true
+# netease_comment: true
 
 # Analytics settings
 # Baidu Analytics
