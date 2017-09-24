@@ -51,7 +51,7 @@ input: GFM # use Github Flavored Markdown !important
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "I never fit in. I am a true alternative."
+sidebar-about-description: "I never fit in. <br>I am a true alternative."
 sidebar-avatar: /img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
