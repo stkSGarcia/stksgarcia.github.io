@@ -1,22 +1,21 @@
 ---
-layout:     post
-title:      "饿了么的 PWA 升级实践"
-subtitle:   "Upgrading Ele.me to Progressive Web App"
-date:       2017-07-12 12:00:00
-author:     "Hux"
-header-img: "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
+layout: post
+title: "[转] 饿了么的 PWA 升级实践"
+subtitle: "Upgrading Ele.me to Progressive Web App"
+date: 2017-07-12 12:00:00
+author: "STK"
+header-img: "img/post/20170712/eleme-at-io.jpg"
 header-mask: 0.3
-catalog:    true
+catalog: true
 tags:
     - 前端开发
     - JavaScript
     - PWA
 ---
 
-
-> 很荣幸在今年 2 月到 5 月的时间里，以顾问的身份加入饿了么，参与 PWA 的相关工作。这篇文章其实最初是在以英文写作发表在 medium 上的：[Upgrading Ele.me to Progressive Web Apps](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)，获得了一定的关注。所以也决定改写为中文版本再次分享出来，希望能对你有所帮助 ;) <br><br>
+> 很荣幸在今年 2 月到 5 月的时间里，以顾问的身份加入饿了么，参与 PWA 的相关工作。这篇文章其实最初是在以英文写作发表在 medium 上的：[Upgrading Ele.me to Progressive Web Apps](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)，获得了一定的关注。所以也决定改写为中文版本再次分享出来，希望能对你有所帮助 ;)
+>
 > 本文首发于 [CSDN](http://geek.csdn.net/news/detail/210535) 与《程序员》2017 年 7 月刊，同步发布于 [饿了么前端 - 知乎专栏](https://zhuanlan.zhihu.com/ElemeFE)、[Hux Blog](https://huangxuan.me)，转载请保留链接。
-
 
 自 Vue.js 官方推特第一次[公开][1]到现在，我们就一直在进行着将[饿了么移动端网站](https://h5.ele.me/msite/#pwa=true)升级为 [Progressive Web App][2] 的工作。直到近日在 Google I/O 2017 上[登台亮相](https://m.weibo.cn/status/4109332495285652)，才终于算告一段落。我们非常荣幸能够发布全世界第一个专门面向国内用户的 PWA，但更荣幸的是能与 Google、UC 以及腾讯合作，一起推动国内 web 与浏览器生态的发展。
 
@@ -26,16 +25,13 @@ tags:
 
 然而饿了么，与很多国内的电商网站一样，青睐多页面应用模型（MPA，Multi-page App）所能带来的一些好处，也因此在一年多将移动站从基于 Angular.js 的单页应用重构为目前的多页应用模型。团队最看重的优点莫过于页面与页面之间的隔离与解耦，这使得我们可以将每个页面当做一个独立的“微服务”来看待，这些服务可以被独立迭代，独立提供给各种第三方的入口嵌入，甚至被不同的团队独立维护。而整个网站则只是各种服务的集合而非一个巨大的整体。
 
- 
 与此同时，我们仍然依赖 [Vue.js](http://vuejs.org/) 作为 JavaScript 框架。Vue 除了是 React/Angular 这种“重型武器”的竞争对手外，其轻量与高性能的优点使得它同样可以作为传统多页应用开发中流行的 “jQuery/Zepto/Kissy + 模板引擎” 技术栈的完美替代。Vue 提供的组件系统、声明式与响应式编程更是提升了代码组织、共享、数据流控制、渲染等各个环节的开发效率。[Vue 还是一个渐进式框架]((https://www.youtube.com/watch?v=pBBSp_iIiVM))，如果网站的复杂度继续提升，我们可以按需、增量地引入 Vuex 或 Vue-Router 这些模块。万一哪天又要改回单页呢？（谁知道呢……）
 
 2017 年，PWA 已经成为 web 应用新的风潮。我们决定试试，以我们现有的“Vue + 多页”的架构，能在升级 PWA 的道路上走多远，达到怎样的效果。
 
-
 ## 实现 “PRPL” 模式
 
 [“PRPL”][7]（读作 “purple”）是 Google 的工程师提出的一种 web 应用架构模式，它旨在利用现代 web 平台的新技术以大幅优化移动 web 的性能与体验，对如何组织与设计高性能的 PWA 系统提供了一种高层次的抽象。我们并不准备从头重构我们的 web 应用，不过我们可以把实现 “PRPL” 模式作为我们的迁移目标。“PRPL”实际上是 Push/Preload、Render、Precache、Lazy-Load 的缩写，我们会在下文中展开它们的具体含义。
-
 
 ### 1. PUSH/PRELOAD，推送/预加载初始 URL 路由所需的关键资源。
 
@@ -43,23 +39,19 @@ tags:
 
 在多页应用中，每一个路由本来就只会请求这个路由所需要的资源，并且通常依赖也都比较扁平。饿了么移动站的大部分脚本依赖都是普通的 `<script>` 元素，因此他们可以在文档解析早期就被浏览器的 preloader 扫描出来并且开始请求，其效果其实与显式的 `<link rel="preload">` 是一致的。
 
-![](/img/in-post/post-eleme-pwa/PUSH-link-rel-preload.jpg)
+![](/img/post/20170712/PUSH-link-rel-preload.jpg)
 
 我们还将所有关键的静态资源都伺服在同一域名下（不再做域名散列），以更好的利用 HTTP2 带来的多路复用（Multiplexing）。同时，我们也在进行着对 API 进行 Server Push 的[实验](https://zhuanlan.zhihu.com/p/26757514)。
-
-
 
 ### 2. RENDER，渲染初始路由，尽快让应用可被交互
 
 既然所有初始路由的依赖都已经就绪，我们就可以尽快开始初始路由的渲染，这有助于提升应用诸如首次渲染时间、可交互时间等指标。多页应用并不使用基于 JavaScript 的路由，而是传统的 HTML 跳转机制，所以对于这一部分，多页应用其实不用额外做什么。
 
-
 ### 3. PRE-CACHE，用 Service Worker 预缓存剩下的路由
 
 这一部分就需要 [Service Worker][9] 的参与了，Service Worker 是一个位于浏览器与网络之间的客户端代理，它以可拦截、处理、响应流经的 HTTP 请求，使得开发者得以从缓存中向 web 应用提供资源而闻名。不过，Service Worker 其实也可以主动发起 HTTP 请求，在“后台” 预请求与预缓存我们未来所需要的资源。
 
-![](/img/in-post/post-eleme-pwa/PRECACHE-future-routes.jpg)
-
+![](/img/post/20170712/PRECACHE-future-routes.jpg)
 
 我们已经使用 [Webpack][10] 在构建过程中进行 `.vue` 编译、文件名哈希等工作，于是我们编写了一个 webpack 插件来帮助我们收集需要缓存的依赖到一个“预缓存清单”中，并使用这个清单在每次构建时生成新的 Service Worker 文件。在新的 Service Worker 被激活时，清单里的资源就会被请求与缓存，这其实与 [SW-Precache 这个库的运行机制][11]非常接近。
 
@@ -73,28 +65,24 @@ tags:
 
 ---
 
-
 这四句话即是 PRPL 的全部了。有趣的是，我们发现多页应用在实现 PRPL 这件事甚至比单页还要容易一些。那么结果如何呢？
 
-![](/img/in-post/post-eleme-pwa/Lighthouse-before.png)
+![](/img/post/20170712/Lighthouse-before.png)
 
 根据 Google 推出的 Web 性能分析工具 Lighthouse（v1.6），在模拟的 3G 网络下，用户的初次访问（无任何缓存）大约在 2 秒左右达到“可交互”，可以说非常不错。而对于再次访问，由于所有资源都直接来自于 Service Worker 缓存，页面可以在 1 秒左右就达到可交互的状态了。
 
 但是，故事并不是这么简单得就结束了。在实际的体验中我们发现，**应用在页与页的切换时，仍然存在着非常明显的白屏空隙**，由于 PWA 是全屏运行的，白屏对用户体验所带来的负面影响甚至比以往在浏览器内更大。我们不是已经用 Service Worker 缓存了所有资源了吗，怎么还会这样呢？
 
-![](/img/in-post/post-eleme-pwa/before-skeleton.jpg)
+![](/img/post/20170712/before-skeleton.jpg)
 *从首页点击到发现页，跳转过程中的白屏*
 
-
-
 ## 多页应用的陷阱：重启开销
-
 
 与 SPA 不同，在多页应用中，路由的切换是原生的浏览器文档跳转（Navigating across documents），这意味着之前的页面会被完全丢弃而浏览器需要为下一个路由的页面重新执行所有的启动步骤：重新下载资源、重新解析 HTML、重新运行 JavaScript、重新解码图片、重新布局页面、重新绘制……即使其中的很多步骤本是可以在多个路由之间复用的。这些工作无疑将产生巨大的计算开销，也因此需要付出相当的时间成本。
 
 图中为我们的入口页（同时也是最重的页面）在 2 倍 CPU 节流模拟下的 profile 数据。即使我们可以将“可交互时间”控制在 1 秒左右，我们的用户仍然会觉得这对于“仅仅切换个标签”来说实在是太慢了。
 
-![](/img/in-post/post-eleme-pwa/msite-Before-Optim.png)
+![](/img/post/20170712/msite-Before-Optim.png)
 
 ### 巨大的 JavaScript 重启开销
 
@@ -112,7 +100,6 @@ V8 提供了[代码缓存（code caching）](http://v8project.blogspot.com/2015/
 
 Bfcache 其实非常适合多页应用。但不幸的是，Chrome 由于内存开销与其多进程架构等原因目前并不支持。Chrome 现阶段仅仅只是用了传统的 HTTP 磁盘缓存，来稍稍简化了一下加载过程而已。对于 Chromium 内核霸占的 Android 生态来说，我们没法指望了。
 
-
 ## 为“感知体验”奋斗
 
 尽管多页应用面临着现实中的不少性能问题，我们并不想这么快就妥协。一方面，我们尝试尽可能减少在页面达到可交互时间前的代码执行量，比如减少/推迟一些依赖脚本的执行，还有减少初次渲染的 DOM 节点数以节省 Virtual DOM 的初始化开销。另一方面，我们也意识到应用在感知体验上还有更多的优化空间。
@@ -121,11 +108,10 @@ Chrome 产品经理 Owen 写过一篇 [Reactive Web Design: The secret to buildi
 
 为了消除白屏时间，我们同样引入了尺寸稳定的骨架屏来帮助我们实现瞬间的加载与占位。即使是在硬件很弱的设备上，我们也可以在点击切换标签后立刻渲染出目标路由的骨架屏，以保证 UI 是稳定、连续、有响应的。我录了[两个](https://youtu.be/K5JBGnMYO1s)[视频](https://youtu.be/w1ZbNsHmRjs)放在 Youtube 上，不过如果你是国内读者，你可以直接访问饿了么移动网站来体验实地的效果 ;) 最终效果如下图所示。
 
-![](/img/in-post/post-eleme-pwa/after-skeleton.jpg)
+![](/img/post/20170712/after-skeleton.jpg)
 *在添加骨架屏后，从发现页点回首页的效果*
 
 这效果本该很轻松的就能实现，不过实际上我们还费了点功夫。
-
 
 ### 在构建时使用 Vue 预渲染骨架屏
 
@@ -134,7 +120,6 @@ Chrome 产品经理 Owen 写过一篇 [Reactive Web Design: The secret to buildi
 不过，我们并不准备手动编写这些骨架屏。你想啊，如果每次真实组件有迭代（每一个路由对我们来说都是一个 Vue 组件）我们都需要手动去同步每一个变化到骨架屏的话，那实在是太繁琐且难以维护了。好在，[骨架屏不过是当数据还未加载进来前，页面的一个空白版本而已](https://www.lukew.com/ff/entry.asp?1797)。如果我们能将骨架屏实现为真实组件的一个特殊状态 —— “空状态”的话，我们理论上就可以从真实组件中直接渲染出骨架屏来。
 
 而 Vue 的多才多艺就在这时体现出来了，我们真的可以用 [Vue.js 的服务端渲染模块](https://ssr.vuejs.org/en/) 来实现这个想法，不过不是用在真正的服务器上，而是在构建时用它把组件的空状态预先渲染成字符串并注入到 HTML 模板中。你需要调整你的 Vue 组件代码使得它可以在 Node 上执行，有些页面对 DOM/BOM 的依赖一时无法轻易去除得，我们目前只好额外编写一个 `*.shell.vue` 来暂时绕过这个问题。
-
 
 ### 关于浏览器的绘制（Painting）
 
@@ -146,26 +131,23 @@ HTML 文件中有标签并不意味着这些标签就能立刻被绘制到屏幕
 
 **而更重要的是，一个不阻塞 HTML 解析的脚本仍然可能阻塞到绘制。**我做了一个简化的**“最小多页 PWA”**（Minimal Multi-page PWA，或 MMPWA）来测试这个问题，：我们在一个 `async`（且确实不阻塞 HTML 解析）脚本中，生成并渲染 1000 个列表项，然后测试骨架屏能否在脚本执行之前渲染出来。下面是通过 USB Debugging 在我的 Nexus 5 真机上录制的 profile：
 
-![](/img/in-post/post-eleme-pwa/thisTick-&-Load.png)
-
+![](/img/post/20170712/thisTick-&-Load.png)
 
 是的，出乎意料吗？首次渲染确实被阻塞到脚本执行结束后才发生。究其原因，**如果我们在浏览器还未完成上一次绘制工作之前就过快得进行了 DOM 操作，我们亲爱的浏览器就只好抛弃所有它已经完成的像素，且一直要等待到 DOM 操作引起的所有工作结束之后才能重新进行下一次渲染。**而这种情况更容易在拥有较慢 CPU/GPU 的移动设备上出现。
-
 
 ### 黑魔法：利用 setTimeout() 让绘制提前
 
 不难发现，骨架屏的绘制与脚本执行实际是一个竞态。大概是 Vue 太快了，我们的骨架屏还是有非常大的概率绘制不出来。于是我们想着如何能让脚本执行慢点，或者说，“懒”点。于是我们想到了一个经典的 Hack： `setTimeout(callback, 0)`。我们试着把 MMPWA 中的 DOM 操作（渲染 1000 个列表）放进 `setTimeout(callback, 0)` 里……
 
-![](/img/in-post/post-eleme-pwa/nextTick-&-Load.png)
+![](/img/post/20170712/nextTick-&-Load.png)
 
 当当！首次渲染瞬间就被提前了。如果你熟悉浏览器的**事件循环模型（event loop）**的话，这招 Hack 其实是通过 setTimeout 的回调把 DOM 操作放到了事件循环的任务队列中以避免它在当前循环执行，这样浏览器就得以在主线程空闲时喘息一下（更新一下渲染）了。如果你想亲手试试 MMPWA 的话，你可以访问 [github.com/Huxpro/mmpwa](https://github.com/Huxpro/mmpwa) 或 [huangxuan.me/mmpwa/](https://huangxuan.me/mmpwa) 访问代码与 Demo。我把 UI 设计为了 A/B Test 的形式并改为渲染 5000 个列表项来让效果更夸张一些。
 
 回到饿了么 PWA 上，我们同样试着把 `new Vue()` 放到了 `setTimeout` 中。果然，黑魔法再次显灵，骨架屏在每次跳转后都能立刻被渲染。这时的 Profile 看起来是这样的：
 
-![](/img/in-post/post-eleme-pwa/msite-After-Optim.png)
+![](/img/post/20170712/msite-After-Optim.png)
 
 现在，我们在 400ms 时触发首次渲染（骨架屏），在 600ms 时完成真实 UI 的渲染并达到页面的可交互。你可以拉上去详细对比下优化前后 profile 的区别。
-
 
 ### 被我 “defer” 的有关 `defer` 的 Bug
 
@@ -175,12 +157,11 @@ HTML 文件中有标签并不意味着这些标签就能立刻被绘制到屏幕
 
 最后，是优化后的 Lighthouse 跑分结果，同样可以看到明显的性能提升。需要说明的是，能影响 Lighthouse 跑分的因素有很多，所以我建议你以控制变量（跑分用的设备、跑分时的网络环境等）的方式来进行对照实验。
 
-![](/img/in-post/post-eleme-pwa/Lighthouse-after.png)
+![](/img/post/20170712/Lighthouse-after.png)
 
 最后附上一张图，这张图当时是做给 Addy Osmani 的 I/O 演讲用的，描述了饿了么 PWA 是如何结合 Vue 来实现多页应用的 PRPL 模式，可以作为一个架构的参考与示意图。
 
-![](/img/in-post/post-eleme-pwa/Architecture.png)
-
+![](/img/post/20170712/Architecture.png)
 
 ## 一些感想
 
@@ -189,7 +170,6 @@ HTML 文件中有标签并不意味着这些标签就能立刻被绘制到屏幕
 Web 是一个极其多样化的平台。从静态的博客，到电商网站，再到桌面级的生产力软件，它们全都是 Web 这个大家庭的第一公民。而我们组织 web 应用的方式，也同样只会更多而不会更少：多页、单页、Universal JavaScript 应用、WebGL、以及可以预见的 Web Assembly。不同的技术之间没有贵贱，但是适用场景的差距确是客观存在的。
 
 [Jake](https://twitter.com/jaffathecake) 曾在 [Chrome Dev Summit 2016](https://youtu.be/J2dOTKBoTL4?list=PLNYkxOF6rcIBTs2KPy1E6tIYaWoFcG3uj) 上说过 "PWA !== SPA"。可是尽管我们已经用上了一系列最新的技术（PRPL、Service Worker、App Shell……），我们仍然因为多页应用模型本身的缺陷有着难以逾越的一些障碍。多页应用在未来可能会有“bfcache API”、Navigation Transition 等新的规范以缩小跟 SPA 的距离，不过我们也必须承认，时至今日，多页应用的局限性也是非常明显的。
-
 
 ### 而 PWA 终将带领 web 应用进入新的时代
 
@@ -202,8 +182,6 @@ PWA 作为[下一代 Web 应用模型](https://zhuanlan.zhihu.com/p/25167289)，
 ---
 
 最后，感谢饿了么的王亦斯、任光辉、题叶，Google 的 Michael Yeung、DevRel 团队， UC 浏览器团队，腾讯 X5 浏览器团队在这次项目中的合作。感谢尤雨溪、陈蒙迪和 Jake Archibald 在写作过程中给予我的帮助。
-
-
 
 [1]: https://twitter.com/vuejs/status/834087199008239619
 [2]: https://developers.google.com/web/progressive-web-apps/
@@ -218,4 +196,3 @@ PWA 作为[下一代 Web 应用模型](https://zhuanlan.zhihu.com/p/25167289)，
 [11]: https://medium.com/@Huxpro/how-does-sw-precache-works-2d99c3d3c725
 [12]: https://developers.google.com/web/updates/2015/11/app-shell
 [13]: https://googlechrome.github.io/sw-toolbox/
-

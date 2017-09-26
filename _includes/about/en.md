@@ -1,1 +1,1 @@
-Hi, I am Samuel Garcia.
+Hi, I am Samuel Garcia (STK).
