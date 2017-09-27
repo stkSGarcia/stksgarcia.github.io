@@ -13,6 +13,6 @@ tags:
 
 This is a simple description of popular free software license made by [Paul Miller](http://paulmillr.com/).
 
-![](img/post/20170927/open-source-licenses.png)
+![](/img/post/20170927/open-source-licenses.png)
 
 Choosing an open source license can be really confusing. Fortunately, GitHub has created [ChooseALicense.com](https://choosealicense.com/) to help us make that decision.
