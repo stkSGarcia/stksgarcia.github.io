@@ -1,0 +1,209 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Gibberish
+subtitle: STK (゜-゜)つロ 乾杯~
+description: I never fit in.<br>I am a true alternative.
+keywords: "Gibberish, STK, Samuel Garcia"
+author: Samuel Garcia
+language: en
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://samuelgarciastk.github.io/
+root: /
+permalink: :abbrlink/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:samuelgarciastk/samuelgarciastk.github.io.git
+  branch: master
+
+# Local search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# Hexo-all-minifier
+# https://github.com/chenzhutian/hexo-all-minifier
+all_minifier: true
+
+# hexo-abbrlink
+# https://github.com/rozbo/hexo-abbrlink
+abbrlink:
+  alg: crc32
+  rep: hex
+
+# Next Configuration
+theme_config:
+  favicon:
+    small: /images/favicon-16x16.png
+    medium: /images/favicon-32x32.png
+    apple_touch_icon: /images/apple-touch-icon.png
+    safari_pinned_tab: /images/safari-pinned-tab.svg
+    ms_browserconfig: /images/browserconfig.xml
+
+  rss: false
+
+  footer:
+    since: 2016
+    icon:
+      name: user
+      animated: false
+      color: "#808080"
+    copyright:
+    powered:
+      enable: false
+      version: false
+    theme:
+      enable: false
+      version: false
+
+  seo: true
+  index_with_subtitle: true
+
+  menu:
+    home: / || home
+    tags: /tags/ || tags
+    categories: /categories/ || th
+    archives: /archives/ || archive
+    about: /about/ || user
+
+  scheme: Gemini
+
+  social:
+    GitHub: https://github.com/samuelgarciastk || github
+    Twitter: https://twitter.com/SamuelGarciaSTK || twitter
+    Facebook: https://www.facebook.com/samuelgarciastk || facebook
+    微博: http://weibo.com/5124652607 || weibo
+
+  github_banner: https://github.com/samuelgarciastk || Follow me on GitHub
+
+  avatar:
+    url: /images/avatar.jpg
+    rounded: true
+    opacity: 1
+    rotated: false
+
+  toc:
+    enable: true
+    number: true
+    wrap: true
+
+  sidebar:
+    position: left
+    display: post
+    offset: 12
+    b2t: true
+    scrollpercent: true
+    onmobile: false
+
+  post_copyright:
+    enable: true
+    license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
+
+  highlight_theme: night
+
+  font:
+    enable: true
+    host:
+    global:
+      external: true
+      family: Lato
+      size:
+    headings:
+      external: true
+      family:
+      size:
+    posts:
+      external: true
+      family:
+    logo:
+      external: true
+      family: Comic Sans MS
+      size: 40
+    codes:
+      external: true
+      family:
+      size:
+
+  math:
+    enable: true
+    per_page: true
+    engine: mathjax
+    mathjax:
+      cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+  livere_uid: MTAyMC8zNDUxNy8xMTA1NQ==
+  google_site_verification: zMmHkaeXGJH3yQrAQJUeaWKL_J4ZVDn0gOUsS2eS734
+
+  local_search:
+    enable: true
+    trigger: auto
+    top_n_per_article: 1
+    unescape: false
