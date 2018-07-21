@@ -16,8 +16,8 @@ $ npm install
 $ npm install hexo-deployer-git --save
 $ npm install hexo-generator-searchdb --save
 $ npm install hexo-abbrlink --save
-$ npm install hexo-all-minifier --save
 $ npm install hexo-generator-sitemap --save
+# $ npm install hexo-all-minifier --save
 
 $ cd hexo
 $ git clone https://github.com/theme-next/hexo-theme-next themes/next
