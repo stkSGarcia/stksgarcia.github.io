@@ -2,13 +2,12 @@
 title: Tips for conducting a Systematic Literature Review
 categories:
   - Research
-  - SLR
 tags:
   - SLR
+  - Tips
 abbrlink: c973bd17
 date: 2017-08-07 14:33:50
 ---
-
 
 A good systematic review might achieve most or all of the following (Baumeister & Leary, 1997; Bem, 1995; Cooper, 2003):
 

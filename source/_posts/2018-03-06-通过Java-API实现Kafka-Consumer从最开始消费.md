@@ -1,15 +1,14 @@
 ---
 title: 通过Java API实现Kafka Consumer从最开始消费
 categories:
-  - Development
-  - Code
-  - Kafka
+  - Coding
+  - Java
 tags:
   - Kafka
+  - Java
 abbrlink: 14f63398
 date: 2018-03-06 22:07:41
 ---
-
 
 之前写项目的时候需要通过Java API实现Consumer每次都从最开始消费，也就是将Kafka topic下所有partition的offset重置到最初位置。
 

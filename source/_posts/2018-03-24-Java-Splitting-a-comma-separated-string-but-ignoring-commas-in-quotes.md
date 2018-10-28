@@ -1,15 +1,14 @@
 ---
 title: '[Java] Splitting a comma-separated string but ignoring commas in quotes'
 categories:
-  - Development
-  - Code
+  - Coding
+  - Java
 tags:
   - Java
   - Regular Expression
 abbrlink: 8716f485
 date: 2018-03-24 21:04:27
 ---
-
 
 Sometimes we need to parse strings like this:
 
@@ -80,6 +79,6 @@ The string "boo:and:foo", for example, yields the following results with these p
 |o|-2|{ "b", "", ":and:f", "", "" }|
 |o|0|{ "b", "", ":and:f" }|
 
-> Reference
-> stack overflow https://stackoverflow.com/questions/1757065
-> Java Doc https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#split(java.lang.String,%20int)
+> References
+> [1] Stack Overflow https://stackoverflow.com/questions/1757065
+> [2] Java Doc https://docs.oracle.com/javase/6/docs/api/java/lang/String.html#split(java.lang.String,%20int)

@@ -1,10 +1,11 @@
 ---
 title: How to choose an open source license?
 categories:
-  - Development
+  - Tips
 tags:
   - License
   - Open Source
+  - Tips
 abbrlink: 1ac9d79f
 date: 2017-09-27 13:45:00
 ---

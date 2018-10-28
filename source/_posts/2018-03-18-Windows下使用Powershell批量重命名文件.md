@@ -1,14 +1,14 @@
 ---
 title: Windows下使用Powershell批量重命名文件
 categories:
-  - Misc
+  - Tips
 tags:
   - Windows
   - Powershell
+  - Tips
 abbrlink: ee56f706
 date: 2018-03-18 18:47:16
 ---
-
 
 当我们下载了一部电视剧或是动漫时，通常文件名非常长，会包含视频的分辨率、字幕组等信息，但是我们通常只会关心这是第几集。。。
 

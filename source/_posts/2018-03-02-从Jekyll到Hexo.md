@@ -1,13 +1,12 @@
 ---
 title: 从Jekyll到Hexo
 categories:
-  - Misc
+  - Tips
 tags:
   - Blog
 abbrlink: a3785f97
 date: 2018-03-02 00:20:42
 ---
-
 
 我之前一个版本的博客也是托管在GitHub的静态博客，使用的是[Jekyll](https://www.jekyll.com.cn/)。但是它提供的主题不是很符合我的口味，所以就去网上找了许多模板，最终使用了Hux的模板（[主页](http://huangxuan.me/) | [项目](https://github.com/Huxpro/huxpro.github.io)）。虽然样式挺美观且简洁，但是可扩展性不强，更新起来麻烦。如果要使用的话需要自己改很多文件。于是最终放弃了Jekyll转到了Hexo阵营。
 
