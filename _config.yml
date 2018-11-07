@@ -109,21 +109,18 @@ theme_config:
     safari_pinned_tab: /images/safari-pinned-tab.svg
     ms_browserconfig: /images/browserconfig.xml
 
-  rss: false
-
   footer:
     since: 2016
     icon:
       name: user
       animated: false
       color: "#808080"
-    copyright:
     powered:
-      enable: false
-      version: false
+      enable: true
+      version: true
     theme:
-      enable: false
-      version: false
+      enable: true
+      version: true
 
   seo: true
   index_with_subtitle: true
@@ -148,8 +145,6 @@ theme_config:
   avatar:
     url: /images/avatar.jpg
     rounded: true
-    opacity: 1
-    rotated: false
 
   toc:
     enable: true
@@ -157,12 +152,7 @@ theme_config:
     wrap: true
 
   sidebar:
-    position: left
-    display: post
-    offset: 12
-    b2t: true
     scrollpercent: true
-    onmobile: false
 
   post_copyright:
     enable: true
@@ -171,27 +161,10 @@ theme_config:
   highlight_theme: night
 
   font:
-    enable: true
-    host:
-    global:
-      external: true
-      family: Lato
-      size:
-    headings:
-      external: true
-      family:
-      size:
-    posts:
-      external: true
-      family:
     logo:
       external: true
       family: Comic Sans MS
       size: 40
-    codes:
-      external: true
-      family:
-      size:
 
   math:
     enable: true
@@ -202,6 +175,7 @@ theme_config:
 
   livere_uid: MTAyMC8zNDUxNy8xMTA1NQ==
   google_site_verification: zMmHkaeXGJH3yQrAQJUeaWKL_J4ZVDn0gOUsS2eS734
+  baidu_push: true
 
   local_search:
     enable: true
