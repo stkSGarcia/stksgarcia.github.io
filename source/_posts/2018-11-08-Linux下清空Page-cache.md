@@ -9,7 +9,6 @@ abbrlink: 87ebabf0
 date: 2018-11-08 00:19:49
 ---
 
-
 ```shell
 sync; echo 1 > /proc/sys/vm/drop_caches
 ```
