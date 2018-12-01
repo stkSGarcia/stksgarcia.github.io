@@ -122,6 +122,11 @@ theme_config:
       enable: true
       version: true
 
+  creative_commons:
+    license: by-nc-sa
+    sidebar: true
+    post: true
+
   seo: true
   index_with_subtitle: true
 
@@ -153,10 +158,6 @@ theme_config:
 
   sidebar:
     scrollpercent: true
-
-  post_copyright:
-    enable: true
-    license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
 
   highlight_theme: night
 
