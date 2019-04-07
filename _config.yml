@@ -127,8 +127,15 @@ theme_config:
     sidebar: true
     post: true
 
+  github_banner:
+    enable: true
+    permalink: https://github.com/samuelgarciastk
+    title: Follow me on GitHub
+
   seo: true
   index_with_subtitle: true
+  google_site_verification: zMmHkaeXGJH3yQrAQJUeaWKL_J4ZVDn0gOUsS2eS734
+  baidu_push: true
 
   menu:
     home: / || home
@@ -145,18 +152,13 @@ theme_config:
     Facebook: https://www.facebook.com/samuelgarciastk || facebook
     微博: http://weibo.com/5124652607 || weibo
 
-  github_banner: https://github.com/samuelgarciastk || Follow me on GitHub
-
   avatar:
     url: /images/avatar.jpg
     rounded: true
 
-  toc:
+  back2top:
     enable: true
-    number: true
-    wrap: true
-
-  sidebar:
+    sidebar: false
     scrollpercent: true
 
   highlight_theme: night
@@ -175,8 +177,6 @@ theme_config:
       cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
   livere_uid: MTAyMC8zNDUxNy8xMTA1NQ==
-  google_site_verification: zMmHkaeXGJH3yQrAQJUeaWKL_J4ZVDn0gOUsS2eS734
-  baidu_push: true
 
   local_search:
     enable: true
