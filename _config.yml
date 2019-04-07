@@ -127,11 +127,6 @@ theme_config:
     sidebar: true
     post: true
 
-  github_banner:
-    enable: true
-    permalink: https://github.com/samuelgarciastk
-    title: Follow me on GitHub
-
   seo: true
   index_with_subtitle: true
   google_site_verification: zMmHkaeXGJH3yQrAQJUeaWKL_J4ZVDn0gOUsS2eS734
