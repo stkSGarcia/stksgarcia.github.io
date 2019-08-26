@@ -127,6 +127,7 @@ theme_config:
     sidebar: true
     post: true
 
+  disable_baidu_transformation: true
   seo: true
   index_with_subtitle: true
   google_site_verification: zMmHkaeXGJH3yQrAQJUeaWKL_J4ZVDn0gOUsS2eS734
@@ -143,26 +144,32 @@ theme_config:
 
   social:
     GitHub: https://github.com/samuelgarciastk || github
-    Twitter: https://twitter.com/SamuelGarciaSTK || twitter
+    Twitter: https://twitter.com/samuelgarciastk || twitter
     Facebook: https://www.facebook.com/samuelgarciastk || facebook
-    微博: http://weibo.com/5124652607 || weibo
+    Weibo: https://weibo.com/5124652607 || weibo
 
   avatar:
     url: /images/avatar.jpg
     rounded: true
+    rotated: false
 
   back2top:
     enable: true
     sidebar: false
     scrollpercent: true
 
-  highlight_theme: night
+  codeblock:
+    highlight_theme: night
+    copy_button:
+      enable: true
+      show_result: true
+      style: default
 
   font:
-    logo:
+    title:
       external: true
       family: Comic Sans MS
-      size: 40
+      size: 3
 
   math:
     enable: true
