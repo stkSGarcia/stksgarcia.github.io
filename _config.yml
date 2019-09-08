@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://samuelgarciastk.github.io/
+url: https://stksgarcia.github.io/
 root: /
 permalink: :abbrlink/
 permalink_defaults:
@@ -79,8 +79,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  # repo: https://github.com/samuelgarciastk/samuelgarciastk.github.io.git
-  repo: git@github.com:samuelgarciastk/samuelgarciastk.github.io.git
+  repo: git@github.com:stkSGarcia/stksgarcia.github.io.git
   branch: master
 
 # Local search
@@ -143,9 +142,9 @@ theme_config:
   scheme: Gemini
 
   social:
-    GitHub: https://github.com/samuelgarciastk || github
-    Twitter: https://twitter.com/samuelgarciastk || twitter
-    Facebook: https://www.facebook.com/samuelgarciastk || facebook
+    GitHub: https://github.com/stkSGarcia || github
+    Twitter: https://twitter.com/stk_SGarcia || twitter
+    Facebook: https://www.facebook.com/stkSGarcia || facebook
     Weibo: https://weibo.com/5124652607 || weibo
 
   avatar:
