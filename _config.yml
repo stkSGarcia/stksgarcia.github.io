@@ -129,7 +129,7 @@ theme_config:
   disable_baidu_transformation: true
   seo: true
   index_with_subtitle: true
-  google_site_verification: zMmHkaeXGJH3yQrAQJUeaWKL_J4ZVDn0gOUsS2eS734
+  google_site_verification: x8FBpDTLogK_m0agtArwdh4u0kVNjgE3fz55C9Tcy4A
   baidu_push: true
 
   menu:
