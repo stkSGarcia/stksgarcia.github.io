@@ -158,7 +158,6 @@ theme_config:
     GitHub: https://github.com/stkSGarcia || github
     Twitter: https://twitter.com/stk_SGarcia || twitter
     Facebook: https://www.facebook.com/stkSGarcia || facebook
-    Weibo: https://weibo.com/5124652607 || weibo
 
   avatar:
     url: /images/avatar.jpg
@@ -178,10 +177,11 @@ theme_config:
       style: default
 
   font:
+    enable: true
     title:
       external: true
       family: Comic Sans MS
-      size: 3
+      size: 2.5
 
   math:
     enable: true
