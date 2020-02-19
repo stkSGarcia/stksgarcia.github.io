@@ -1,7 +1,7 @@
 +++
 title = "JDK 10 新特性"
 date = 2018-03-24T19:27:00+08:00
-lastmod = 2020-02-19T19:46:24+08:00
+lastmod = 2020-02-19T21:35:57+08:00
 tags = ["java"]
 categories = ["programming", "java"]
 draft = false

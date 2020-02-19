@@ -1,7 +1,7 @@
 +++
 title = "关于《自控力》"
 date = 2018-11-22T01:43:00+08:00
-lastmod = 2020-02-19T19:46:28+08:00
+lastmod = 2020-02-19T21:36:03+08:00
 tags = ["self-control"]
 categories = ["reading"]
 draft = false

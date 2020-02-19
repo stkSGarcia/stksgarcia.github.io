@@ -1,7 +1,7 @@
 +++
 title = "Tips for conducting a Systematic Literature Review"
 date = 2017-08-07T14:33:00+08:00
-lastmod = 2020-02-19T19:46:26+08:00
+lastmod = 2020-02-19T21:36:01+08:00
 tags = ["tip", "slr"]
 categories = ["research"]
 draft = false

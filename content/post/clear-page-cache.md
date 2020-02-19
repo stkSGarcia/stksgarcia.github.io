@@ -1,7 +1,7 @@
 +++
 title = "Linux 下清空 Page cache"
 date = 2018-11-08T00:09:00+08:00
-lastmod = 2020-02-19T19:46:25+08:00
+lastmod = 2020-02-19T21:35:59+08:00
 tags = ["page-cache", "linux"]
 categories = ["programming", "linux"]
 draft = false

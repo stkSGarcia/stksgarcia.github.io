@@ -1,7 +1,7 @@
 +++
 title = "JVM 指令重排对双重校验锁单例模式的影响"
 date = 2018-10-28T18:27:00+08:00
-lastmod = 2020-02-19T19:46:24+08:00
+lastmod = 2020-02-19T21:35:58+08:00
 tags = ["java"]
 categories = ["programming", "java"]
 draft = false

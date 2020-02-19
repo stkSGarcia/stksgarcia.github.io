@@ -1,7 +1,7 @@
 +++
 title = "粒子群算法"
 date = 2018-10-28T15:42:00+08:00
-lastmod = 2020-02-19T19:46:26+08:00
+lastmod = 2020-02-19T21:36:00+08:00
 tags = ["particle-swarm-optimization", "heuristic-algorithm"]
 categories = ["algorithm", "heuristic-algorithm"]
 draft = false

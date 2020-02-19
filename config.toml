@@ -107,7 +107,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   baiduPush = true        # baidu push                  # 百度
   baiduAnalytics = ""      # Baidu Analytics
   baiduVerification = ""   # Baidu Verification
-  googleVerification = "x8FBpDTLogK_m0agtArwdh4u0kVNjgE3fz55C9Tcy4A"  # Google Verification         # 谷歌
+  googleVerification = "SigBkZ7juNMCBH3c25Jgpj0BuK-PF0z5FIS7n4Aog0s"  # Google Verification         # 谷歌
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)

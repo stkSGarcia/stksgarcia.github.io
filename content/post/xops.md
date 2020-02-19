@@ -1,7 +1,7 @@
 +++
 title = "什么会和“Ops”碰撞出火花？"
 date = 2017-09-09T08:12:00+08:00
-lastmod = 2020-02-19T19:46:27+08:00
+lastmod = 2020-02-19T21:36:01+08:00
 tags = ["devops", "aiops", "operations"]
 categories = ["research"]
 draft = false

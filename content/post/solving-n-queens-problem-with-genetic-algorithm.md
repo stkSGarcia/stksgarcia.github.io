@@ -1,7 +1,7 @@
 +++
 title = "用遗传算法求解 N 皇后问题"
 date = 2018-03-11T00:07:00+08:00
-lastmod = 2020-02-19T19:46:26+08:00
+lastmod = 2020-02-19T21:36:00+08:00
 tags = ["genetic-algorithm"]
 categories = ["algorithm", "heuristic-algorithm"]
 draft = false
