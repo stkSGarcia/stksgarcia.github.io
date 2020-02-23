@@ -1,12 +1,14 @@
 +++
 title = "Linux 下清空 Page cache"
 date = 2018-11-08T00:09:00+08:00
-lastmod = 2020-02-19T21:35:59+08:00
+lastmod = 2020-02-23T16:02:19+08:00
 tags = ["page-cache", "linux"]
 categories = ["programming", "linux"]
 draft = false
 toc = false
 +++
+
+使用下面这条命令：
 
 ```shell
 sync; echo 1 > /proc/sys/vm/drop_caches

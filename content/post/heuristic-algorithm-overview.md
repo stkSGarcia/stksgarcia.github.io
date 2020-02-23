@@ -1,7 +1,7 @@
 +++
 title = "启发式算法概述"
 date = 2018-10-28T15:42:00+08:00
-lastmod = 2020-02-19T21:36:00+08:00
+lastmod = 2020-02-23T16:02:20+08:00
 tags = ["heuristic-algorithm"]
 categories = ["algorithm", "heuristic-algorithm"]
 draft = false

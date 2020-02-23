@@ -1,7 +1,7 @@
 +++
 title = "How to choose an open source license?"
 date = 2017-09-27T13:45:00+08:00
-lastmod = 2020-02-19T21:36:02+08:00
+lastmod = 2020-02-23T16:02:23+08:00
 tags = ["tip", "license", "open-source"]
 categories = ["research"]
 draft = false

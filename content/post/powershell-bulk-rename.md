@@ -1,7 +1,7 @@
 +++
 title = "Windows 下使用 Powershell 批量重命名文件"
 date = 2018-03-18T18:47:00+08:00
-lastmod = 2020-02-19T21:35:59+08:00
+lastmod = 2020-02-23T16:02:19+08:00
 tags = ["powershell", "windows"]
 categories = ["programming", "windows"]
 draft = false

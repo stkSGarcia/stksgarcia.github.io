@@ -1,7 +1,7 @@
 +++
 title = "智能时代的新运维「CNUTCon 2017 上海」"
 date = 2017-09-17T12:39:00+08:00
-lastmod = 2020-02-19T21:36:01+08:00
+lastmod = 2020-02-23T16:02:22+08:00
 tags = ["aiops", "devops", "operations"]
 categories = ["research"]
 draft = false

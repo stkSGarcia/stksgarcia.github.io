@@ -11,7 +11,6 @@ CLOSED: [2018-03-06 Tue 22:07]
 :EXPORT_FILE_NAME: kafka-consume-data-from-the-beginning
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 之前写项目的时候需要通过 Java API 实现 Consumer 每次都从最开始消费，也就是将 Kafka topic 下所有 partition 的 offset 重置到最初位置。
 
 <!--more-->
@@ -44,7 +43,6 @@ CLOSED: [2018-03-24 Sat 19:27]
 :PROPERTIES:
 :EXPORT_FILE_NAME: jdk-10-new-features
 :END:
-
 前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
 下面介绍一下几个比较重要的新特性。
 
@@ -169,7 +167,6 @@ CLOSED: [2018-03-24 Sat 21:04]
 :EXPORT_FILE_NAME: split-a-comma-separated-string
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 Sometimes we need to parse strings like this:
 
 #+BEGIN_SRC
@@ -249,7 +246,6 @@ CLOSED: [2018-07-14 Sat 17:53]
 :EXPORT_FILE_NAME: java-8-stream
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 Java 8 的一个重要新特性就是 Stream。
 Stream 是用函数式编程方式在集合类上进行复杂操作的工具，其集成了 Java 8 中的众多新特性之一的聚合操作，开发者可以更容易地使用 Lambda 表达式，并且更方便地实现对集合的查找、遍历、过滤以及常见计算等。
 
@@ -265,7 +261,6 @@ CLOSED: [2018-10-28 Sun 18:27]
 :PROPERTIES:
 :EXPORT_FILE_NAME: singleton-and-jvm-instruction-rearrangement
 :END:
-
 下面的双重校验锁单例是线程安全的吗？
 
 #+BEGIN_SRC java
@@ -403,7 +398,6 @@ CLOSED: [2018-04-15 Sun 18:13]
 :PROPERTIES:
 :EXPORT_FILE_NAME: scala-materials
 :END:
-
 记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。
 [[http://hongjiang.info/scala/][原帖地址]]
 
@@ -590,7 +584,6 @@ CLOSED: [2018-03-03 Sat 19:04]
 :EXPORT_FILE_NAME: package-dependency-via-gradle
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 有时候我们需要通过 Gradle 将依赖打包进 Jar 包中，下面代码中的 =fatJar= 任务可以实现此功能。
 
 <!--more-->
@@ -637,7 +630,6 @@ CLOSED: [2018-04-30 Mon 20:09]
 :EXPORT_FILE_NAME: git-clone-slow-solution
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 在国内 Git clone 仓库奇慢无比，通过以下配置可以提升下载速度。
 
 #+BEGIN_SRC shell
@@ -649,6 +641,7 @@ CLOSED: [2018-11-08 Thu 00:09]
 :EXPORT_FILE_NAME: clear-page-cache
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
+使用下面这条命令：
 
 #+BEGIN_SRC shell
 sync; echo 1 > /proc/sys/vm/drop_caches
@@ -683,7 +676,6 @@ CLOSED: [2018-03-18 Sun 18:47]
 :EXPORT_FILE_NAME: powershell-bulk-rename
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 当我们下载了一部电视剧或是动漫时，通常文件名非常长，会包含视频的分辨率、字幕组等信息，但是我们通常只会关心这是第几集。。。
 
 <!--more-->
@@ -709,7 +701,6 @@ CLOSED: [2018-03-11 Sun 00:07]
 :PROPERTIES:
 :EXPORT_FILE_NAME: solving-n-queens-problem-with-genetic-algorithm
 :END:
-
 **** N 皇后问题
 首先介绍八皇后问题。八皇后问题是一个以国际象棋为背景的问题：如何能够在 =8×8= 的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？
 为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。
@@ -909,8 +900,6 @@ CLOSED: [2018-10-28 Sun 15:42]
 :EXPORT_FILE_NAME: heuristic-algorithm-overview
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
-
 启发式算法（Heuristic Algorithm）是相对于最优化算法提出的。它有不同的定义：
 - 其中一种是，一个基于直观或经验构造的算法，在可接受的花费（指计算时间和空间）下给出待解决组合优化问题每一个实例的一个可行解，该可行解与最优解的偏离程度一般不能被预计。
 - 另一种是，启发式算法是一种技术，这种技术使得在可接受的计算成本内去搜寻最好的解，但不一定能保证所得的可行解和最优解，甚至在多数情况下，无法阐述所得解同最优解的近似程度。
@@ -944,7 +933,6 @@ CLOSED: [2018-10-28 Sun 15:42]
 :EXPORT_FILE_NAME: particle-swarm-optimization
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :mathjax true :mathjaxEnableSingleDollar true
 :END:
-
 **** 粒子群算法 （Particle Swarm Optimization, PSO）
 粒子群算法，也称粒子群优化算法或鸟群觅食算法，来源于对一个简化社会模型的模拟。
 PSO 算法属于进化算法的一种，和模拟退火算法相似，它也是从随机解出发，通过迭代寻找最优解，它也是通过适应度来评价解的品质，但它比遗传算法规则更为简单，它没有遗传算法的“交叉”（Crossover）和“变异”（Mutation）操作，它通过追随当前搜索到的最优值来寻找全局最优。
@@ -953,7 +941,7 @@ PSO 算法属于进化算法的一种，和模拟退火算法相似，它也是�
 
 <!--more-->
 
-***** 算法原理
+**** 算法原理
 设想这样一个场景：一群鸟在随机搜索食物。
 在这个区域里只有一块食物。
 所有的鸟都不知道食物在那里。
@@ -981,7 +969,7 @@ $$x_{id} = x_{id} + v_{id}$$
 其中 $w$ 为惯性权重（Inertia Weight）， $c_1$ 和 $c_2$ 为加速常数（Acceleration Constants），rand()为在[0,1]范围里变化的随机值。
 此外，微粒的速度 $V_i$ 被一个最大速度 $V_{max}$ 所限制。
 如果当前对微粒的加速导致它的在某维的速度 $v_{id}$ 超过该维的最大速度 $v_{max,d}$ ，则该维的速度被限制为该维最大速度 $v_{max,d}$ 。
-***** 算法流程
+**** 算法流程
 1. 初始化一群微粒（群体规模为 $m$ ），包括随机的位置和速度；
 2. 评价每个微粒的适应度；
 3. 对每个微粒，将它的适应值和它经历过的最好位置 $pBest$ 的作比较，如果较好，则将其作为当前的最好位置 $pBest$ ；
@@ -995,7 +983,6 @@ CLOSED: [2017-08-07 Mon 14:33]
 :EXPORT_FILE_NAME: tips-for-conducting-a-slr
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 A good systematic review might achieve most or all of the following (Baumeister & Leary, 1997; Bem, 1995; Cooper, 2003):
 
 <!--more-->
@@ -1011,7 +998,6 @@ CLOSED: [2017-09-09 Sat 08:12]
 :PROPERTIES:
 :EXPORT_FILE_NAME: xops
 :END:
-
 最近 AIOps 非常火，加上之前对 DevOps 做了一些研究，现在找了一些带有 Ops 的词，在此做了一些整理。
 
 <!--more-->
@@ -1131,7 +1117,6 @@ CLOSED: [2017-09-17 Sun 12:39]
 :PROPERTIES:
 :EXPORT_FILE_NAME: cnutcon2017
 :END:
-
 在今年的 9 月 10 至 11 日，有幸获得导师的邀请，参加了全球运维技术大会。
 这篇博客记录了会上一些有意思的内容。
 文章写的比较随意，主要是给自己看 ~(￣▽￣)~*
@@ -1212,7 +1197,6 @@ CLOSED: [2017-09-22 Fri 09:15]
 :EXPORT_FILE_NAME: compile-latex-in-chinese
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 之前想用中文写 LaTeX，查了几次总是忘记，在此记录。
 
 <!--more-->
@@ -1229,7 +1213,6 @@ CLOSED: [2017-09-27 Wed 13:45]
 :EXPORT_FILE_NAME: choose-an-open-source-license
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 This is a simple description of popular free software license made by [[http://paulmillr.com/][Paul Miller]].
 
 <!--more-->
@@ -1244,7 +1227,6 @@ CLOSED: [2019-01-29 Tue 01:32]
 :EXPORT_FILE_NAME: org-mode-export-pdf-in-chinese
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 只要在文件开头加入以下代码
 
 <!--more-->
@@ -1259,7 +1241,6 @@ CLOSED: [2016-07-10 Sun 14:57]
 :PROPERTIES:
 :EXPORT_FILE_NAME: notes-on-technical-architecture-of-large-websites
 :END:
-
 本文为《大型网站技术架构：核心原理与案例分析》的读书笔记。
 
 <!--more-->
@@ -1410,7 +1391,6 @@ CLOSED: [2018-11-22 Thu 01:43]
 :PROPERTIES:
 :EXPORT_FILE_NAME: about-self-control
 :END:
-
 读完《自控力》后在此对一些重要观点进行记录。
 
 <!--more-->
@@ -1525,7 +1505,6 @@ CLOSED: [2018-03-02 Fri 00:20]
 :EXPORT_FILE_NAME: migration-from-jekyll-to-hexo
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
 :END:
-
 我之前一个版本的博客也是托管在 GitHub 的静态博客，使用的是[[https://www.jekyll.com.cn/][Jekyll]]。
 但是它提供的主题不是很符合我的口味，所以就去网上找了许多模板，最终使用了 Hux 的模板（[[http://huangxuan.me/][主页]]|[[https://github.com/Huxpro/huxpro.github.io][项目]]）。
 虽然样式挺美观且简洁，但是可扩展性不强，更新起来麻烦。
@@ -1535,3 +1514,9 @@ CLOSED: [2018-03-02 Fri 00:20]
 Hexo 是基于 Node.js 的博客框架，在 Windows 下只需要安装 Node.js 就可以写博客了，而不像 Jekyll 需要安装 Ruby 和其他依赖，另外 Ruby 对 Windows 也不友好。
 Hexo 的开源贡献者有一大部分是国人，所以有中文文档（文档写的有点简略啊）。
 最主要的是[[http://theme-next.iissnan.com/][Next 主题]]好看，容易配置和更新。
+** TODO 从 Hexo 到 Hugo :blog:
+:PROPERTIES:
+:EXPORT_FILE_NAME: migration-from-hexo-to-hugo
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false
+:END:
+距离上次
