@@ -1,7 +1,7 @@
 +++
 title = "大型网站技术架构读书笔记"
 date = 2016-07-10T14:57:00+08:00
-lastmod = 2020-02-23T16:02:23+08:00
+lastmod = 2020-05-03T14:12:59+08:00
 tags = ["architecture"]
 categories = ["reading"]
 draft = false
@@ -164,25 +164,25 @@ draft = false
     HTTP302 响应码重定向可能使搜索引擎判断为 SEO 作弊，降低排名。
     因此不多见。
 
-    {{< figure src="/notes-on-technical-architecture-of-large-websites/1.jpg" >}}
+    {{< figure src="/notes-on-technical-architecture-of-large-websites/redirect-load-balance.jpg" >}}
 
 -   DNS 域名解析负载均衡：在 DNS 中映射多个 IP，根据算法返回 IP 地址。
 
     大型网站总是部分使用 DNS 域名解析，作为第一级的负载均衡手段，得到的服务器同样也是负载均衡的内部服务器，最后将请求分发到真实的服务器上。
 
-    {{< figure src="/notes-on-technical-architecture-of-large-websites/2.jpg" >}}
+    {{< figure src="/notes-on-technical-architecture-of-large-websites/dns-load-balance.jpg" >}}
 
 -   反向代理负载均衡：优点是负载均衡和反向代理集成在一起，部署简单。缺点是可能成为瓶颈。
 
-    {{< figure src="/notes-on-technical-architecture-of-large-websites/3.jpg" >}}
+    {{< figure src="/notes-on-technical-architecture-of-large-websites/reverse-proxy-load-balance.jpg" >}}
 
 -   IP 负载均衡：将用户请求的目的地址修改为真实服务器地址，并接收响应，最后修改源地址返回给用户。
 
-    {{< figure src="/notes-on-technical-architecture-of-large-websites/4.jpg" >}}
+    {{< figure src="/notes-on-technical-architecture-of-large-websites/ip-load-balance.jpg" >}}
 
 -   数据链路层负载均衡：将真实服务器设置和负载均衡服务器相同的虚拟 IP，把用户请求的 mac 地址修改为真实服务器，服务器直接响应到用户。
 
-    {{< figure src="/notes-on-technical-architecture-of-large-websites/5.jpg" >}}
+    {{< figure src="/notes-on-technical-architecture-of-large-websites/data-link-load-balance.jpg" >}}
 
 -   负载均衡算法
     -   轮询（Round Robin, RR）
