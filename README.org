@@ -1,0 +1,8 @@
+This is the source of my personal blog.
+
+It is based on [[https://gohugo.io/][Hugo]] and uses [[https://github.com/olOwOlo/hugo-theme-even/][Even]] as the blog theme.
+
+* Install
+#+BEGIN_SRC sh
+git clone --recurse-submodules git@github.com:stkSGarcia/stksgarcia.github.io.git
+#+END_SRC
