@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gibberish - STK (゜-゜)つロ 乾杯~</title><link>https://stksgarcia.github.io/post/</link><description>Recent content in Posts on Gibberish - STK (゜-゜)つロ 乾杯~</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Apr 2020 18:12:00 +0800</lastBuildDate><atom:link href="https://stksgarcia.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>从 Hexo 到 Hugo</title><link>https://stksgarcia.github.io/post/migration-from-hexo-to-hugo/</link><pubDate>Fri, 10 Apr 2020 18:12:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/migration-from-hexo-to-hugo/</guid><description>&lt;p>最近又开始折腾博客了，大概拖了有一个月了才开始记录迁移博客的感受。
+简言之，让我从 Hexo 迁移到 Hugo 最大的原因是 Emacs Org mode 下的 Hugo 插件。&lt;/p></description></item><item><title>如何成为卓有成效的管理者？</title><link>https://stksgarcia.github.io/post/how-to-be-an-effective-executive/</link><pubDate>Sun, 08 Mar 2020 18:39:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/how-to-be-an-effective-executive/</guid><description>&lt;p>读完《卓有成效的管理者》后在此对一些重要观点进行记录。&lt;/p></description></item><item><title>Org mode 导出中文 PDF</title><link>https://stksgarcia.github.io/post/org-mode-export-pdf-in-chinese/</link><pubDate>Tue, 29 Jan 2019 01:32:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/org-mode-export-pdf-in-chinese/</guid><description>&lt;p>只要在文件开头加入以下代码&lt;/p></description></item><item><title>关于《自控力》</title><link>https://stksgarcia.github.io/post/about-self-control/</link><pubDate>Thu, 22 Nov 2018 01:43:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/about-self-control/</guid><description>&lt;p>读完《自控力》后在此对一些重要观点进行记录。&lt;/p></description></item><item><title>Linux 下清空 Page cache</title><link>https://stksgarcia.github.io/post/clear-page-cache/</link><pubDate>Thu, 08 Nov 2018 00:09:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/clear-page-cache/</guid><description>&lt;p>使用下面这条命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-shell" data-lang="shell">sync&lt;span class="p">;&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="m">1&lt;/span> &amp;gt; /proc/sys/vm/drop_caches
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>JVM 指令重排对双重校验锁单例模式的影响</title><link>https://stksgarcia.github.io/post/singleton-and-jvm-instruction-rearrangement/</link><pubDate>Sun, 28 Oct 2018 18:27:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/singleton-and-jvm-instruction-rearrangement/</guid><description>&lt;p>下面的双重校验锁单例是线程安全的吗？&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">Singleton&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;span class="kd">private&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="n">instance&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">null&lt;/span>
+&lt;span class="kd">private&lt;/span> &lt;span class="nf">Singleton&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{}&lt;/span>
+&lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="nf">getInstance&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="n">instance&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;span class="n">synchronzied&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">Singleton&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="n">instance&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;span class="n">instance&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="n">Singleton&lt;/span>&lt;span class="o">();&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="n">instance&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>启发式算法概述</title><link>https://stksgarcia.github.io/post/heuristic-algorithm-overview/</link><pubDate>Sun, 28 Oct 2018 15:42:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/heuristic-algorithm-overview/</guid><description>&lt;p>启发式算法（Heuristic Algorithm）是相对于最优化算法提出的。它有不同的定义：&lt;/p>
+&lt;ul>
+&lt;li>其中一种是，一个基于直观或经验构造的算法，在可接受的花费（指计算时间和空间）下给出待解决组合优化问题每一个实例的一个可行解，该可行解与最优解的偏离程度一般不能被预计。&lt;/li>
+&lt;li>另一种是，启发式算法是一种技术，这种技术使得在可接受的计算成本内去搜寻最好的解，但不一定能保证所得的可行解和最优解，甚至在多数情况下，无法阐述所得解同最优解的近似程度。&lt;/li>
+&lt;/ul></description></item><item><title>粒子群算法</title><link>https://stksgarcia.github.io/post/particle-swarm-optimization/</link><pubDate>Sun, 28 Oct 2018 15:42:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/particle-swarm-optimization/</guid><description>&lt;h2 id="粒子群算法-particle-swarm-optimization-pso">粒子群算法 （Particle Swarm Optimization, PSO）&lt;/h2>
+&lt;p>粒子群算法，也称粒子群优化算法或鸟群觅食算法，来源于对一个简化社会模型的模拟。
+PSO 算法属于进化算法的一种，和模拟退火算法相似，它也是从随机解出发，通过迭代寻找最优解，它也是通过适应度来评价解的品质，但它比遗传算法规则更为简单，它没有遗传算法的“交叉”（Crossover）和“变异”（Mutation）操作，它通过追随当前搜索到的最优值来寻找全局最优。
+这种算法以其实现容易、精度高、收敛快等优点引起了学术界的重视，并且在解决实际问题中展示了其优越性。
+粒子群算法是一种并行算法。&lt;/p></description></item><item><title>Java 8 Stream 语法</title><link>https://stksgarcia.github.io/post/java-8-stream/</link><pubDate>Sat, 14 Jul 2018 17:53:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/java-8-stream/</guid><description>&lt;p>Java 8 的一个重要新特性就是 Stream。
+Stream 是用函数式编程方式在集合类上进行复杂操作的工具，其集成了 Java 8 中的众多新特性之一的聚合操作，开发者可以更容易地使用 Lambda 表达式，并且更方便地实现对集合的查找、遍历、过滤以及常见计算等。&lt;/p></description></item><item><title>Git Clone 下载速度慢的解决方法</title><link>https://stksgarcia.github.io/post/git-clone-slow-solution/</link><pubDate>Mon, 30 Apr 2018 20:09:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/git-clone-slow-solution/</guid><description>在国内 Git clone 仓库奇慢无比，通过以下配置可以提升下载速度。 1 git config --global http.postBuffer 524288000</description></item><item><title>Scala 学习资料</title><link>https://stksgarcia.github.io/post/scala-materials/</link><pubDate>Sun, 15 Apr 2018 18:13:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/scala-materials/</guid><description>&lt;p>记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。
+&lt;a href="http://hongjiang.info/scala/">原帖地址&lt;/a>&lt;/p></description></item><item><title>[Java] Splitting a comma-separated string but ignoring commas in quotes</title><link>https://stksgarcia.github.io/post/split-a-comma-separated-string/</link><pubDate>Sat, 24 Mar 2018 21:04:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/split-a-comma-separated-string/</guid><description>&lt;p>Sometimes we need to parse strings like this:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">&amp;#34;1234567890&amp;#34;,&amp;#34;James&amp;#34;,man,&amp;#34;New York, NY, USA&amp;#34;
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And the output we need is as follows:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">&amp;#34;1234567890&amp;#34;
+&amp;#34;James&amp;#34;
+man
+&amp;#34;New York, NY, USA&amp;#34;
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>JDK 10 新特性</title><link>https://stksgarcia.github.io/post/jdk-10-new-features/</link><pubDate>Sat, 24 Mar 2018 19:27:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/jdk-10-new-features/</guid><description>&lt;p>前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
+下面介绍一下几个比较重要的新特性。&lt;/p></description></item><item><title>Windows 下使用 Powershell 批量重命名文件</title><link>https://stksgarcia.github.io/post/powershell-bulk-rename/</link><pubDate>Sun, 18 Mar 2018 18:47:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/powershell-bulk-rename/</guid><description>&lt;p>当我们下载了一部电视剧或是动漫时，通常文件名非常长，会包含视频的分辨率、字幕组等信息，但是我们通常只会关心这是第几集。。。&lt;/p></description></item><item><title>用遗传算法求解 N 皇后问题</title><link>https://stksgarcia.github.io/post/solving-n-queens-problem-with-genetic-algorithm/</link><pubDate>Sun, 11 Mar 2018 00:07:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/solving-n-queens-problem-with-genetic-algorithm/</guid><description>&lt;h2 id="n-皇后问题">N 皇后问题&lt;/h2>
+&lt;p>首先介绍八皇后问题。八皇后问题是一个以国际象棋为背景的问题：如何能够在 &lt;code>8×8&lt;/code> 的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？
+为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。&lt;/p>
+&lt;p>八皇后问题可以推广为更一般的 N 皇后摆放问题：这时棋盘的大小变为 &lt;code>N×N&lt;/code> 。&lt;/p></description></item><item><title>通过 Java API 实现 Kafka Consumer 从最开始消费</title><link>https://stksgarcia.github.io/post/kafka-consume-data-from-the-beginning/</link><pubDate>Tue, 06 Mar 2018 22:07:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/kafka-consume-data-from-the-beginning/</guid><description>&lt;p>之前写项目的时候需要通过 Java API 实现 Consumer 每次都从最开始消费，也就是将 Kafka topic 下所有 partition 的 offset 重置到最初位置。&lt;/p></description></item><item><title>通过 Gradle 打包外部依赖</title><link>https://stksgarcia.github.io/post/package-dependency-via-gradle/</link><pubDate>Sat, 03 Mar 2018 19:04:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/package-dependency-via-gradle/</guid><description>&lt;p>有时候我们需要通过 Gradle 将依赖打包进 Jar 包中，下面代码中的 &lt;code>fatJar&lt;/code> 任务可以实现此功能。&lt;/p></description></item><item><title>从 Jekyll 到 Hexo</title><link>https://stksgarcia.github.io/post/migration-from-jekyll-to-hexo/</link><pubDate>Fri, 02 Mar 2018 00:20:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/migration-from-jekyll-to-hexo/</guid><description>我之前一个版本的博客也是托管在 GitHub 的静态博客，使用的是Jekyll。 但是它提供的主题不是很符合我的口味，所以就去网上找了许多模板，最终使用了 Hux</description></item><item><title>How to choose an open source license?</title><link>https://stksgarcia.github.io/post/choose-an-open-source-license/</link><pubDate>Wed, 27 Sep 2017 13:45:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/choose-an-open-source-license/</guid><description>&lt;p>This is a simple description of popular free software license made by &lt;a href="http://paulmillr.com/">Paul Miller&lt;/a>.&lt;/p></description></item><item><title>编译中文 LaTeX</title><link>https://stksgarcia.github.io/post/compile-latex-in-chinese/</link><pubDate>Fri, 22 Sep 2017 09:15:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/compile-latex-in-chinese/</guid><description>&lt;p>之前想用中文写 LaTeX，查了几次总是忘记，在此记录。&lt;/p></description></item><item><title>智能时代的新运维「CNUTCon 2017 上海」</title><link>https://stksgarcia.github.io/post/cnutcon2017/</link><pubDate>Sun, 17 Sep 2017 12:39:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/cnutcon2017/</guid><description>&lt;p>在今年的 9 月 10 至 11 日，有幸获得导师的邀请，参加了全球运维技术大会。
+这篇博客记录了会上一些有意思的内容。
+文章写的比较随意，主要是给自己看 ~(￣▽￣)~*&lt;/p></description></item><item><title>什么会和“Ops”碰撞出火花？</title><link>https://stksgarcia.github.io/post/xops/</link><pubDate>Sat, 09 Sep 2017 08:12:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/xops/</guid><description>&lt;p>最近 AIOps 非常火，加上之前对 DevOps 做了一些研究，现在找了一些带有 Ops 的词，在此做了一些整理。&lt;/p></description></item><item><title>Tips for conducting a Systematic Literature Review</title><link>https://stksgarcia.github.io/post/tips-for-conducting-a-slr/</link><pubDate>Mon, 07 Aug 2017 14:33:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/tips-for-conducting-a-slr/</guid><description>&lt;p>A good systematic review might achieve most or all of the following (Baumeister &amp;amp; Leary, 1997; Bem, 1995; Cooper, 2003):&lt;/p></description></item><item><title>《Chris Richardson 谈微服务软件架构设计》笔记</title><link>https://stksgarcia.github.io/post/notes-on-microservice-architecture/</link><pubDate>Sat, 10 Dec 2016 16:47:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/notes-on-microservice-architecture/</guid><description>&lt;p>读完《Chris Richardson 谈微服务软件架构设计》后在此对一些重要观点进行记录。&lt;/p></description></item><item><title>大型网站技术架构读书笔记</title><link>https://stksgarcia.github.io/post/notes-on-technical-architecture-of-large-websites/</link><pubDate>Sun, 10 Jul 2016 14:57:00 +0800</pubDate><guid>https://stksgarcia.github.io/post/notes-on-technical-architecture-of-large-websites/</guid><description>&lt;p>本文为《大型网站技术架构：核心原理与案例分析》的读书笔记。&lt;/p></description></item></channel></rss>
