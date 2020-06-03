@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Scala 学习资料 - Gibberish - STK (゜-゜)つロ 乾杯~</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Samuel Garcia" /><meta name="description" content="记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。 原帖地址
+" /><meta name="keywords" content="Gibberish, STK, Samuel Garcia" />
+
+
+
+<meta name="google-site-verification" content="SigBkZ7juNMCBH3c25Jgpj0BuK-PF0z5FIS7n4Aog0s" />
+
+
+<meta name="generator" content="Hugo 0.71.0 with theme even" />
+
+
+<link rel="canonical" href="https://stksgarcia.github.io/post/scala-materials/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.8c3cbcb0324c2bb4875ceccba4007cbad4b4ac8377f33af9953c3e7684534a50.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Scala 学习资料" />
+<meta property="og:description" content="记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。
+原帖地址" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stksgarcia.github.io/post/scala-materials/" />
+<meta property="article:published_time" content="2018-04-15T18:13:00+08:00" />
+<meta property="article:modified_time" content="2020-02-23T16:02:17+08:00" />
+<meta itemprop="name" content="Scala 学习资料">
+<meta itemprop="description" content="记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。
+原帖地址">
+<meta itemprop="datePublished" content="2018-04-15T18:13:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-23T16:02:17&#43;08:00" />
+<meta itemprop="wordCount" content="2451">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scala 学习资料"/>
+<meta name="twitter:description" content="记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。
+原帖地址"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Gibberish</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Gibberish</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Scala 学习资料</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-04-15 </span>
+        <div class="post-category">
+            <a href="/categories/programming/"> programming </a>
+            <a href="/categories/scala/"> scala </a>
+            </div>
+          <span class="more-meta"> 2451 words </span>
+          <span class="more-meta"> 5 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#akka">Akka</a></li>
+    <li><a href="#模式匹配">模式匹配</a></li>
+    <li><a href="#类型相关">类型相关</a></li>
+    <li><a href="#shapeless">Shapeless</a></li>
+    <li><a href="#类型推导相关">类型推导相关</a></li>
+    <li><a href="#spray">Spray</a></li>
+    <li><a href="#monads-and-monoids">Monads &amp; Monoids</a></li>
+    <li><a href="#翻译-and-笔记">翻译&amp;笔记</a></li>
+    <li><a href="#scala-pitfalls">Scala pitfalls</a></li>
+    <li><a href="#诊断">诊断</a></li>
+    <li><a href="#函数与函数式风格">函数与函数式风格</a></li>
+    <li><a href="#集合相关">集合相关</a></li>
+    <li><a href="#api-pitfalls">API pitfalls</a></li>
+    <li><a href="#repl-相关">REPL 相关</a></li>
+    <li><a href="#scala-2-dot-10-plus">Scala 2.10+</a></li>
+    <li><a href="#未分类">未分类</a></li>
+    <li><a href="#分享与交流">分享与交流</a></li>
+    <li><a href="#依赖注入">依赖注入</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。
+<a href="http://hongjiang.info/scala/">原帖地址</a></p>
+<h2 id="akka">Akka</h2>
+<ul>
+<li><a href="http://hongjiang.info/akka-in-practice-1/">Actor 里的偏函数与性能</a></li>
+<li><a href="http://hongjiang.info/akka-patterns-ask-with-temporary-actor/">Patterns.ask 是使用一个临时创建的 actor 发消息而非自身</a></li>
+<li><a href="http://hongjiang.info/akka-mailbox-counter-extension/">对 actor 的邮箱计数</a></li>
+<li><a href="http://hongjiang.info/never-ever-block-an-actor/">Never ever block an actor</a></li>
+</ul>
+<h2 id="模式匹配">模式匹配</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-pattern-matching-1/">话说模式匹配(1) 什么是模式？</a></li>
+<li><a href="http://hongjiang.info/scala-pattern-matching-2/">话说模式匹配(2) scala 里是怎么实现的?</a></li>
+<li><a href="http://hongjiang.info/scala-pattern-matching-3/">话说模式匹配(3) 模式匹配的核心功能是解构！</a></li>
+<li><a href="http://hongjiang.info/scala-pattern-matching-4/">话说模式匹配(4) 赋值语句与模式匹配</a></li>
+<li><a href="http://hongjiang.info/scala-pattern-matching-5/">话说模式匹配(5) for 表达式中的模式匹配</a></li>
+<li><a href="http://hongjiang.info/scala-pattern-matching-6/">话说模式匹配(6) case 类的细节</a></li>
+<li><a href="http://hongjiang.info/scala-pattern-matching-7/">话说模式匹配(7) 一个构造器模式的例子(by case class)</a></li>
+<li><a href="http://hongjiang.info/scala-pattern-matching-8/">话说模式匹配(8) 一个抽取器的例子</a></li>
+</ul>
+<h2 id="类型相关">类型相关</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-type-and-class/">scala 类型系统：1) 类型与类</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-classof-and-getclass/">scala 类型系统：2) classOf 与 getClass 方法的差异</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-singleton-type/">scala 类型系统：3) 单例类型</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-inner-type-and-type-projection/">scala 类型系统：4) 内部类，路径依赖类型&amp;类型投影</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-structural-type/">scala 类型系统：5) 结构类型</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-compund-type/">scala 类型系统：6) 复合类型与 with 关键字</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-infix-type/">scala 类型系统：7) 中缀类型</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-type-keyword/">scala 类型系统：8) type 关键字</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-self-type/">scala 类型系统：9) this 别名&amp;自身类型</a></li>
+<li><a href="http://hongjiang.info/scala-intersection-type-and-union-type/">scala 类型系统：10) 交集类型与联合类型</a></li>
+<li><a href="http://hongjiang.info/scala-upper-bounds-and-lower-bounds/">scala 类型系统：11) upper bounds &amp; lower bounds</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-view-bounds/">scala 类型系统：12) view bounds</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-context-bounds/">scala 类型系统：13) context bounds</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-multiple-bounds/">scala 类型系统：14) multiple bounds</a></li>
+<li><a href="http://hongjiang.info/scala-covariance-and-contravariance/">scala 类型系统：15) 协变与逆变</a></li>
+<li><a href="http://hongjiang.info/scala-function-type/">scala 类型系统：16) 函数类型</a></li>
+<li><a href="http://hongjiang.info/scala-structural-type-detail/">scala 类型系统：17) 结构类型的细节问题</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-volatile-type/">scala 类型系统：18) 不稳定(volatile)类型</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-manifest-vs-typetag/">scala 类型系统：19) Manifest 与 TypeTag</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-array-type/">scala 类型系统：20) 数组类型</a></li>
+<li><a href="http://hongjiang.info/scala-type-specialization/">scala 类型系统：21) type specialization 与类爆炸</a></li>
+<li><a href="http://hongjiang.info/scala-type-contraints-and-specialized-methods/">scala 类型系统：22) 类型约束与特定方法</a></li>
+<li><a href="http://hongjiang.info/scala-type-evidence-and-union-type/">scala 类型系统：23) 用类型证明实现联合类型</a></li>
+<li><a href="http://hongjiang.info/scala-higher-kinded-type/">scala 类型系统：24) 理解higher-kinded-type</a></li>
+<li><a href="http://hongjiang.info/scala-type-lambda/">scala 类型系统：25) type lambda</a></li>
+<li><a href="http://hongjiang.info/scala-type-classes-pattern/">scala 类型系统：26) type classes 模式</a></li>
+<li><a href="http://hongjiang.info/scala-type-classes-review/">scala 类型系统：27) 回顾常见的 type classes</a></li>
+<li><a href="http://hongjiang.info/scala-type-system-dependent-types/">scala 类型系统：28) 依赖类型</a></li>
+<li><a href="http://hongjiang.info/scala-case-class-and-algebraic-data-type/">scala 类型系统：case class 与代数数据类型</a></li>
+<li><a href="http://hongjiang.info/scala-type-inference/">scala 类型系统：类型推导</a></li>
+<li><a href="http://hongjiang.info/scala-curry-howard-isomorphism/">scala 类型系统：柯里-霍华德同构</a></li>
+<li><a href="http://hongjiang.info/scala-value-class-in-array/">scala 类型系统：值类型与数组</a></li>
+<li><a href="http://hongjiang.info/scala-null-and-nothing/">scala 类型系统：Null 与 Nothing，造型问题</a></li>
+<li><a href="http://hongjiang.info/scala-value-classes-detail/">scala 类型系统：值类型的细节</a></li>
+<li><a href="http://hongjiang.info/scala-universal-traits/">scala 类型系统：通用特质(universal traits)</a></li>
+<li><a href="http://hongjiang.info/scala-value-class-boxing-question/">scala 类型系统：值类型的装箱问题</a></li>
+<li><a href="http://hongjiang.info/scala-value-classes/">scala 类型系统：值类型的一些限制</a></li>
+</ul>
+<h2 id="shapeless">Shapeless</h2>
+<ul>
+<li><a href="http://hongjiang.info/shapeless-1-polymorphic-question/">shapeless(1): 从方法与函数的多态谈起</a></li>
+<li><a href="http://hongjiang.info/shapeless-2-polymorphic-function-impl/">shapeless(2): 对函数(值)实现参数化多态</a></li>
+</ul>
+<h2 id="类型推导相关">类型推导相关</h2>
+<ul>
+<li><a href="http://hongjiang.info/generic-methods-2-partially-applied-functions/">泛型方法转换为部分应用函数时的类型推导问题</a></li>
+</ul>
+<h2 id="spray">Spray</h2>
+<ul>
+<li><a href="http://hongjiang.info/spray-magnet-pattern/">spray 中的 Magnet 模式: typeclass 的一种特定方式</a></li>
+</ul>
+<h2 id="monads-and-monoids">Monads &amp; Monoids</h2>
+<ul>
+<li><a href="http://hongjiang.info/understand-monad-0/">我所理解的 monad(0)</a></li>
+<li><a href="http://hongjiang.info/semigroup-and-monoid/">我所理解的 monad(1)：半群(semigroup)与幺半群(monoid)</a></li>
+<li><a href="http://hongjiang.info/fold-and-monoid/">我所理解的 monad(2)：fold 与 monoid</a></li>
+<li><a href="http://hongjiang.info/semigroup-and-parallel/">我所理解的 monad(3)：半群(semigroup)与并行运算</a></li>
+<li><a href="http://hongjiang.info/understand-monad-4-what-is-functor/">我所理解的 monad(4)：函子(functor)是什么</a></li>
+<li><a href="http://hongjiang.info/understand-monad-5-what-is-endofunctor/">我所理解的 monad(5)：自函子(Endofunctor)是什么</a></li>
+<li><a href="http://hongjiang.info/understand-monad-6-combinator/">我所理解的 monad(6)：从组合子(combinator)说起</a></li>
+<li><a href="http://hongjiang.info/understand-monad-7-action-combinator/">我所理解的 monad(7)：把 monad 看做行为的组合子</a></li>
+</ul>
+<h2 id="翻译-and-笔记">翻译&amp;笔记</h2>
+<ul>
+<li><a href="http://hongjiang.info/programming-in-scala-notes/">Programming in Scala 的阅读笔记</a></li>
+<li><a href="http://hongjiang.info/effective-scala-chinese/">Effective Scala 中文版</a></li>
+<li><a href="http://hongjiang.info/monads-are-elephants-part1-chinese">翻译 monads-are-elephants 第一部分</a></li>
+<li><a href="http://hongjiang.info/monads-are-elephants-part2-chinese">翻译 monads-are-elephants 第二部分</a></li>
+<li><a href="http://hongjiang.info/monads-are-elephants-part3-chinese">翻译 monads-are-elephants 第三部分</a></li>
+</ul>
+<h2 id="scala-pitfalls">Scala pitfalls</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-pitfalls-0/">scala 雾中风景(0): 序</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-1/">scala 雾中风景(1): lambda 表达式的缩写</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-2/">scala 雾中风景(2): 小括号与花括号</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-3/">scala 雾中风景(3): for 表达式的背后</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-4/">scala 雾中风景(4): Unit 类型</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-5/">scala 雾中风景(5): 中缀表达</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-6/">scala 雾中风景(6): 内部类与模式匹配</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-7/">scala 雾中风景(7): val x:Int = x + 1 的问题</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-8/">scala 雾中风景(8): 高阶函数与 Unit 的谜题</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-9/">scala 雾中风景(9): List(1,2,3) == Seq(1,2,3) ?</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-10/">scala 雾中风景(10): 逆变点与协变点</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-11-type-erasure/">scala 雾中风景(11): isInstanceOf 与类型擦拭</a></li>
+<li><a href="http://hongjiang.info/scala-app-trait-delay-init/">scala 雾中风景(12): App 特质的延迟初始化</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-13/">scala 雾中风景(13): 模式匹配中的逻辑或</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-14/">scala 雾中风景(14): trait 的泛型参数为何不支持 context bounds</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-15/">scala 雾中风景(15): class A { type T }与 class A[T] {}</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-16/">scala 雾中风景(16): println(1,2,3)为什么 work?</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-17/">scala 雾中风景(17): toSet()的谜题</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-18/">scala 雾中风景(18): postfix operator 的问题</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-19/">scala 雾中风景(19): MutableList 与 mutable.LinkedList 的问题</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-20/">scala 雾中风景(20): MutableList 迭代器的 bug</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-21-auto-tupling-and-auto-detupling/">scala 雾中风景(21): auto-tupling 与 auto-detupling</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-22/">scala 雾中风景(22): var 变量与赋值操作符</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-23-nothing-caused-npe/">scala 雾中风景(23): Nothing 类型引发的 NullPointerException</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-24/">scala 雾中风景(24): break 与异常捕获</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-25-try-finally-expr-type-infer/">scala 雾中风景(25): try-finally 表达式的类型推导</a></li>
+<li><a href="http://hongjiang.info/scala-pitfalls-26/">scala 雾中风景(26): 变量查找的问题</a></li>
+</ul>
+<h2 id="诊断">诊断</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-diagnose-1/">scala 的诊断方法(1) 使用-Xprint:typer 看语法糖的背后</a></li>
+<li><a href="http://hongjiang.info/scala-diagnose-2/">scala 的诊断方法(2) 在 repl 下用 reify 查看表达式的翻译结果</a></li>
+<li><a href="http://hongjiang.info/scala-diagnose-3/">scala 的诊断方法(3) 在 repl 下统计方法的执行时间</a></li>
+<li><a href="http://hongjiang.info/scala-diagnose-4/">scala 的诊断方法(4) -Ytyper-debug 编译项</a></li>
+<li><a href="http://hongjiang.info/scalac-aspects/">scala 的诊断方法(5) 用 scalac-aspects 诊断 scalac 各阶段耗时</a></li>
+</ul>
+<h2 id="函数与函数式风格">函数与函数式风格</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-parenthesis-and-apply/">无参方法与小括号问题</a></li>
+<li><a href="http://hongjiang.info/scala-uniform-access-principle/">scala 中的无参方法与统一访问原则</a></li>
+<li><a href="http://hongjiang.info/scala-eta-conversion/">scala 中的 eta-conversion</a></li>
+<li><a href="http://hongjiang.info/closure-var-banding/">闭包变量绑定问题</a></li>
+<li><a href="http://hongjiang.info/scala-quicksort/">如何写一段符合 scala 语言习惯的快速排序</a></li>
+<li><a href="http://hongjiang.info/double-pound-sign-and-hashcode/">Any.##方法与 hashCode 的区别</a></li>
+<li><a href="http://hongjiang.info/scala-named-arguments/">scala 中的有名参数</a></li>
+<li><a href="http://hongjiang.info/scala-canbuildfrom-detail/">map 函数，隐式参数 CanBuildFrom 的细节</a></li>
+<li><a href="http://hongjiang.info/scala-function-polymorphic/">scala 中函数类型的多态</a></li>
+<li><a href="http://hongjiang.info/scala-vs-ocaml/">scala 不是函数式语言，与 Ocaml 的对比</a></li>
+<li><a href="http://hongjiang.info/foldleft-and-foldright/">foldLeft 与 foldRight</a></li>
+<li><a href="http://hongjiang.info/eta-conversion-and-eta-expansion/">再谈 eta-conversion 与 eta-expansion</a></li>
+<li><a href="http://hongjiang.info/currying-and-builder-pattern/">柯里化(currying)与构造器(Builder)模式</a></li>
+</ul>
+<h2 id="集合相关">集合相关</h2>
+<ul>
+<li><a href="http://hongjiang.info/tuple-iterator/">对 tuple 进行迭代</a></li>
+<li><a href="http://hongjiang.info/string-as-collection/">String 当作集合处理时的方法</a></li>
+<li><a href="http://hongjiang.info/scala-union-diff-intersect/">scala 中集合的交集、并集、差集</a></li>
+<li><a href="http://hongjiang.info/tuple1-purpose/">Tuple1 的存在意义？</a></li>
+<li><a href="http://hongjiang.info/why-tuples-only-to-22/">为什么 scala 中的 tuple 定义了 22 个(Tuple22)?</a></li>
+<li><a href="http://hongjiang.info/scala-any2arrowassoc/">二元组箭头表达式背后的语法糖</a></li>
+<li><a href="http://hongjiang.info/scala-list-apply/">通过 List.apply 方法构造 List 的背后逻辑</a></li>
+</ul>
+<h2 id="api-pitfalls">API pitfalls</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-api-pitfalls-1/">scala 类库中的 api 陷阱(1): LinkedList.append</a></li>
+</ul>
+<h2 id="repl-相关">REPL 相关</h2>
+<ul>
+<li><a href="http://hongjiang.info/repl-misc/">repl 杂记</a></li>
+<li><a href="http://hongjiang.info/scala-repl-modes/">repl 下的几种模式</a></li>
+<li><a href="http://hongjiang.info/scala-repl-javap/">repl 下的 javap</a></li>
+<li><a href="http://hongjiang.info/scala-repl-kind/">scala2.11 的 repl 下增加了 kind 命令</a></li>
+</ul>
+<h2 id="scala-2-dot-10-plus">Scala 2.10+</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala210-eval-script/">scala2.10 中 eval 一段 script</a></li>
+<li><a href="http://hongjiang.info/scala210-repl-cp-do-not-work/">scala2.10.1 的 repl 下:cp 命令不能工作</a></li>
+<li><a href="http://hongjiang.info/scala-sip-18/">scala2.10 中采纳了 SIP-18:模块化语言特性</a></li>
+<li><a href="http://hongjiang.info/for-comprehension-val-definition/">scala2.10 里的 for 表达式已经不允许对变量声明 val</a></li>
+<li><a href="http://hongjiang.info/scala-compiler-delambdafy/">scala2.11 编译环节的一些变动: delambdafy</a></li>
+<li><a href="http://hongjiang.info/scala-211-compiler-lint/">scala2.11 编译器对 lint 的增强</a></li>
+</ul>
+<h2 id="未分类">未分类</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-lazy-and-dcl/">lazy 变量与双重检测锁(DCL)</a></li>
+<li><a href="http://hongjiang.info/scala-static-forwarders/">scala 里的静态代理(static-forwarders)</a></li>
+<li><a href="http://hongjiang.info/scala-counting%E2%80%A6ated-character/">统计诗经中最常使用的叠词</a></li>
+<li><a href="http://hongjiang.info/serializable-annotation-deprecated/">scala2.9 中@serializable 注释已不鼓励使用</a></li>
+<li><a href="http://hongjiang.info/scala-package-root-prefix/">import <!-- raw HTML omitted -->root<!-- raw HTML omitted -->.xxx 中的_root_前缀表示 xxx 包名是绝对路径</a></li>
+<li><a href="http://hongjiang.info/scala-process/">scala 中执行外部命令(scala.sys.process)</a></li>
+<li><a href="http://hongjiang.info/classloader-question-on-import-classes/">classloader 问题：import my.package._ 是否会 load 该包下所有的 class?</a></li>
+<li><a href="http://hongjiang.info/scala-unicode-reserved-words/">scala 中有 Unicode 的关键字</a></li>
+<li><a href="http://hongjiang.info/cannot-find-soucecode-of-class-any/">Any 类的源码在哪儿？</a></li>
+<li><a href="http://hongjiang.info/scala-compiler-bug/">scala 编译器的一个 bug</a></li>
+<li><a href="http://hongjiang.info/scala-bug-210-object-as-type/">scala bug 系列：2.10 编译器把单例当作类型的 bug</a></li>
+<li><a href="http://hongjiang.info/scala-simulate-javascript-generator/">scala 里模拟 javascript/python 里的生成器的效果</a></li>
+<li><a href="http://hongjiang.info/null-cast-to-value-type/">null 造型为值类型时为何不抛异常</a></li>
+<li><a href="http://hongjiang.info/scala-int-unbox-for-null/">Int 与 Integer 的拆箱问题</a></li>
+<li><a href="http://hongjiang.info/functional-programming-in-scala-chinese-version/">Scala 函数式编程中文版已上架</a></li>
+<li><a href="http://hongjiang.info/scala-style-checker/">scalastyle 工具</a></li>
+</ul>
+<h2 id="分享与交流">分享与交流</h2>
+<ul>
+<li><a href="http://hongjiang.info/scala-function-and-closure/">分享 ppt: scala 中的函数与闭包</a></li>
+<li><a href="http://hongjiang.info/scala-19lou/">与 19 楼的交流</a></li>
+<li><a href="http://hongjiang.info/scala-shanghai-512/">上海 scala 爱好者聚会(2013)</a></li>
+<li><a href="http://hongjiang.info/adc2013/">阿里技术嘉年华 2013</a></li>
+<li><a href="http://hongjiang.info/scala-hangzhou-2013-1019/">2013 华东 scala 爱好者聚会(杭州)</a></li>
+<li><a href="http://hongjiang.info/scala-shanghai-2014/">华东地区 scala 爱好者聚会(2014 上海)</a></li>
+<li><a href="http://hongjiang.info/scala-shanghai-2015/">华东地区 scala 爱好者聚会(2015 上海)</a></li>
+<li><a href="http://hongjiang.info/scala-in-wacai/">Scala 在挖财的应用实践</a></li>
+<li><a href="http://hongjiang.info/archsummit-beijing-2015/">ArchSummit 北京 2015 小记</a></li>
+</ul>
+<h2 id="依赖注入">依赖注入</h2>
+<ul>
+<li><a href="http://hongjiang.info/cake-pattern-and-di/">Cake Pattern 与依赖注入</a></li>
+<li><a href="http://hongjiang.info/scala-self-type-and-di/">scala 中的 self type(自身类型)与依赖注入</a></li>
+</ul>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Samuel Garcia</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-02-23
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/git-clone-slow-solution/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Git Clone 下载速度慢的解决方法</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/split-a-comma-separated-string/">
+            <span class="next-text nav-default">[Java] Splitting a comma-separated string but ignoring commas in quotes</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDUxNy8xMTA1NQ==">
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') { return; }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+    <noscript>Please enable JavaScript to view the comments powered by <a href="https://livere.com/">LiveRe.</a></noscript>
+    </div>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/stkSGarcia" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.facebook.com/stkSGarcia" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://twitter.com/stk_SGarcia" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://space.bilibili.com/516366" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://stksgarcia.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2016 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Samuel Garcia</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+<script id="baidu_push">
+  (function(){
+    if (window.location.hostname === 'localhost') return;
+    var bp = document.createElement('script'); bp.async = true;
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>

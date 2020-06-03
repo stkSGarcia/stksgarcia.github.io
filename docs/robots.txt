@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://stksgarcia.github.io/sitemap.xml

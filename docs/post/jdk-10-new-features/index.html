@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>JDK 10 新特性 - Gibberish - STK (゜-゜)つロ 乾杯~</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Samuel Garcia" /><meta name="description" content="前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。 下面介绍一下几个比较重要的新特性。
+" /><meta name="keywords" content="Gibberish, STK, Samuel Garcia" />
+
+
+
+<meta name="google-site-verification" content="SigBkZ7juNMCBH3c25Jgpj0BuK-PF0z5FIS7n4Aog0s" />
+
+
+<meta name="generator" content="Hugo 0.71.0 with theme even" />
+
+
+<link rel="canonical" href="https://stksgarcia.github.io/post/jdk-10-new-features/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.8c3cbcb0324c2bb4875ceccba4007cbad4b4ac8377f33af9953c3e7684534a50.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="JDK 10 新特性" />
+<meta property="og:description" content="前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
+下面介绍一下几个比较重要的新特性。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stksgarcia.github.io/post/jdk-10-new-features/" />
+<meta property="article:published_time" content="2018-03-24T19:27:00+08:00" />
+<meta property="article:modified_time" content="2020-02-23T16:02:15+08:00" />
+<meta itemprop="name" content="JDK 10 新特性">
+<meta itemprop="description" content="前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
+下面介绍一下几个比较重要的新特性。">
+<meta itemprop="datePublished" content="2018-03-24T19:27:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-23T16:02:15&#43;08:00" />
+<meta itemprop="wordCount" content="975">
+
+
+
+<meta itemprop="keywords" content="java," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JDK 10 新特性"/>
+<meta name="twitter:description" content="前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
+下面介绍一下几个比较重要的新特性。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Gibberish</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Gibberish</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">JDK 10 新特性</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-24 </span>
+        <div class="post-category">
+            <a href="/categories/programming/"> programming </a>
+            <a href="/categories/java/"> java </a>
+            </div>
+          <span class="more-meta"> 975 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#局部变量类型推断">局部变量类型推断</a></li>
+    <li><a href="#并行全垃圾回收器-g1">并行全垃圾回收器 G1</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
+下面介绍一下几个比较重要的新特性。</p>
+<h2 id="局部变量类型推断">局部变量类型推断</h2>
+<p>对于开发者来说，这是 JDK 10 唯一的真正特性。
+它向 Java 中引入在其他语言中很常见的 <code>var</code> ，比如 JavaScript。
+只要编译器可以推断此种类型，你不再需要专门声明一个局部变量的类型。
+一个简单的例子是：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">var</span> <span class="n">x</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>首先，Java 的 <code>var</code> 和 JavaScript 的完全不同，不要这样去类比。
+Java 的 <code>var</code> 是用于局部类型推断的，而不是 JS 那样的动态类型，所以下面这个样子是不行的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">var</span> <span class="n">a</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s">&#34;abc&#34;</span><span class="o">;</span> <span class="c1">//error!
+</span></code></pre></td></tr></table>
+</div>
+</div><p>其次，这个 <code>var</code> 只能用于局部变量声明，在其他地方使用都是错误的。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">C</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="n">var</span> <span class="n">a</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span> <span class="c1">//error
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="n">var</span> <span class="nf">f</span><span class="o">()</span> <span class="o">{</span> <span class="c1">//error
+</span><span class="c1"></span>        <span class="k">return</span> <span class="n">10</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>所以 <code>var</code> 并不会对库的接口产生影响，影响的只可能是内部的实现。</p>
+<p>还有些人觉得 <code>var</code> 只是一个简单的语法糖，用来少打几个字符。
+但其实并不仅仅是这样， <code>var</code> 还能够用来弥补 Java 8 lambda 表达式的缺陷。</p>
+<p>我们知道 Java 8 的 lambda 表达式不能够捕获可变变量，也就是说下面这个代码是错误的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+<span class="n">List</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="s">&#34;ice1000&#34;</span><span class="o">,</span> <span class="s">&#34;Glavo&#34;</span><span class="o">).</span><span class="na">forEach</span><span class="o">(</span><span class="n">e</span> <span class="o">-&gt;</span> <span class="n">count</span> <span class="o">+=</span> <span class="n">1</span><span class="o">);</span> <span class="c1">//error
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">count</span><span class="o">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>之前想要绕过这个限制，我们可以用单元素的数组实现。
+而在 Java 10 中我们又多了一种选择：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">var</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">()</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="n">List</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="s">&#34;ice1000&#34;</span><span class="o">,</span> <span class="s">&#34;Glavo&#34;</span><span class="o">).</span><span class="na">forEach</span><span class="o">(</span><span class="n">e</span> <span class="o">-&gt;</span> <span class="n">context</span><span class="o">.</span><span class="na">count</span> <span class="o">+=</span> <span class="n">1</span><span class="o">);</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">count</span><span class="o">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>除了帮助我们捕获可变参数， <code>var</code> 还能够帮助我们实现嵌套函数：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span> <span class="nf">factorial</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">var</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="nf">fact</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="kt">int</span> <span class="n">accumulator</span><span class="o">)</span> <span class="o">{</span>
+         <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">1</span><span class="o">)</span>
+            <span class="k">return</span> <span class="n">accumulator</span><span class="o">;</span>
+         <span class="k">else</span>
+            <span class="k">return</span> <span class="n">fact</span><span class="o">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">1</span><span class="o">,</span> <span class="n">i</span> <span class="o">*</span> <span class="n">accumulator</span><span class="o">);</span>
+      <span class="o">}</span>
+  <span class="o">};</span>
+  <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">fact</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="n">1</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在使用长的 Stream 操作链的时候，我们也可以把一些操作放在 context 中，从而简化操作链，增强可读性：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">int</span><span class="o">[]</span> <span class="nf">parseAndLogInts</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">,</span> <span class="kt">int</span> <span class="n">radix</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">var</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="nf">parseAndLogInt</span><span class="o">(</span><span class="n">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+      <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">str</span><span class="o">,</span> <span class="n">radix</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">};</span>
+  <span class="k">return</span> <span class="n">list</span><span class="o">.</span><span class="na">stream</span><span class="o">().</span><span class="na">mapToInt</span><span class="o">(</span><span class="n">context</span><span class="o">::</span><span class="n">parseAndLogInt</span><span class="o">).</span><span class="na">toArray</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>为了兼容原有代码， <code>var</code> 不是一个关键字，而是一个保留类型，这意味着你还是能像这样 <code>var</code> 当做一个变量名：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">void</span> <span class="nf">f</span><span class="o">()</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">var</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>var</code> 还有一个特殊的特性：在用匿名内部类初始化 <code>var</code> 声明的变量时，这个变量会被推断成一个局部的类型，所以你可以这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="n">var</span> <span class="n">o</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">()</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">f</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello world!&#34;</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">};</span>
+<span class="n">o</span><span class="o">.</span><span class="na">f</span><span class="o">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>注意我们用 <code>final var</code> 声明了不可变变量 <code>o</code> ，不过其实就算不用 <code>final var</code> 声明，你也不能把 <code>o</code> 赋值为它的初始值和 <code>null</code> 以外的任何值。</p>
+<h2 id="并行全垃圾回收器-g1">并行全垃圾回收器 G1</h2>
+<p>G1 是设计来作为一种低延时的垃圾回收器（但是如果它跟不上旧的堆碎片产生的提升速率的话，将仍然采用完整压缩集合）。
+在 JDK9 之前，默认的收集器是并行，吞吐，收集器。
+为了减少在使用默认的收集器的应用性能配置文件的差异，G1 现在有一个并行完整收集机制。</p>
+<blockquote>
+<ul>
+<li><a href="http://www.ajiatech.com/news/industryNews/828.html">JDK 10 的 109 项新特性</a></li>
+<li><a href="https://www.zhihu.com/question/269244201/answer/347062385">如何评价 JDK 10？</a></li>
+</ul>
+</blockquote>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Samuel Garcia</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-02-23
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/java/">java</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/split-a-comma-separated-string/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[Java] Splitting a comma-separated string but ignoring commas in quotes</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/powershell-bulk-rename/">
+            <span class="next-text nav-default">Windows 下使用 Powershell 批量重命名文件</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDUxNy8xMTA1NQ==">
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') { return; }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+    <noscript>Please enable JavaScript to view the comments powered by <a href="https://livere.com/">LiveRe.</a></noscript>
+    </div>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/stkSGarcia" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.facebook.com/stkSGarcia" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://twitter.com/stk_SGarcia" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://space.bilibili.com/516366" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://stksgarcia.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2016 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Samuel Garcia</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+<script id="baidu_push">
+  (function(){
+    if (window.location.hostname === 'localhost') return;
+    var bp = document.createElement('script'); bp.async = true;
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>

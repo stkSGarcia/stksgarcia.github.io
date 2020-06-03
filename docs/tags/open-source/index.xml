@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open-source on Gibberish - STK (゜-゜)つロ 乾杯~</title>
+    <link>https://stksgarcia.github.io/tags/open-source/</link>
+    <description>Recent content in open-source on Gibberish - STK (゜-゜)つロ 乾杯~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Sep 2017 13:45:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://stksgarcia.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to choose an open source license?</title>
+      <link>https://stksgarcia.github.io/post/choose-an-open-source-license/</link>
+      <pubDate>Wed, 27 Sep 2017 13:45:00 +0800</pubDate>
+      
+      <guid>https://stksgarcia.github.io/post/choose-an-open-source-license/</guid>
+      <description>&lt;p&gt;This is a simple description of popular free software license made by &lt;a href=&#34;http://paulmillr.com/&#34;&gt;Paul Miller&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

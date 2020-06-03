@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genetic-algorithm on Gibberish - STK (゜-゜)つロ 乾杯~</title>
+    <link>https://stksgarcia.github.io/tags/genetic-algorithm/</link>
+    <description>Recent content in genetic-algorithm on Gibberish - STK (゜-゜)つロ 乾杯~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Mar 2018 00:07:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://stksgarcia.github.io/tags/genetic-algorithm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用遗传算法求解 N 皇后问题</title>
+      <link>https://stksgarcia.github.io/post/solving-n-queens-problem-with-genetic-algorithm/</link>
+      <pubDate>Sun, 11 Mar 2018 00:07:00 +0800</pubDate>
+      
+      <guid>https://stksgarcia.github.io/post/solving-n-queens-problem-with-genetic-algorithm/</guid>
+      <description>&lt;h2 id=&#34;n-皇后问题&#34;&gt;N 皇后问题&lt;/h2&gt;
+&lt;p&gt;首先介绍八皇后问题。八皇后问题是一个以国际象棋为背景的问题：如何能够在 &lt;code&gt;8×8&lt;/code&gt; 的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？
+为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。&lt;/p&gt;
+&lt;p&gt;八皇后问题可以推广为更一般的 N 皇后摆放问题：这时棋盘的大小变为 &lt;code&gt;N×N&lt;/code&gt; 。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

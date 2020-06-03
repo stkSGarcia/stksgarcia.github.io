@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>microservices on Gibberish - STK (゜-゜)つロ 乾杯~</title>
+    <link>https://stksgarcia.github.io/tags/microservices/</link>
+    <description>Recent content in microservices on Gibberish - STK (゜-゜)つロ 乾杯~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Dec 2016 16:47:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://stksgarcia.github.io/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>《Chris Richardson 谈微服务软件架构设计》笔记</title>
+      <link>https://stksgarcia.github.io/post/notes-on-microservice-architecture/</link>
+      <pubDate>Sat, 10 Dec 2016 16:47:00 +0800</pubDate>
+      
+      <guid>https://stksgarcia.github.io/post/notes-on-microservice-architecture/</guid>
+      <description>&lt;p&gt;读完《Chris Richardson 谈微服务软件架构设计》后在此对一些重要观点进行记录。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

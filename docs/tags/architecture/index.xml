@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>architecture on Gibberish - STK (゜-゜)つロ 乾杯~</title>
+    <link>https://stksgarcia.github.io/tags/architecture/</link>
+    <description>Recent content in architecture on Gibberish - STK (゜-゜)つロ 乾杯~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Jul 2016 14:57:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://stksgarcia.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>大型网站技术架构读书笔记</title>
+      <link>https://stksgarcia.github.io/post/notes-on-technical-architecture-of-large-websites/</link>
+      <pubDate>Sun, 10 Jul 2016 14:57:00 +0800</pubDate>
+      
+      <guid>https://stksgarcia.github.io/post/notes-on-technical-architecture-of-large-websites/</guid>
+      <description>&lt;p&gt;本文为《大型网站技术架构：核心原理与案例分析》的读书笔记。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

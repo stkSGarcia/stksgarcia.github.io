@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scala on Gibberish - STK (゜-゜)つロ 乾杯~</title>
+    <link>https://stksgarcia.github.io/categories/scala/</link>
+    <description>Recent content in scala on Gibberish - STK (゜-゜)つロ 乾杯~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Apr 2018 18:13:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://stksgarcia.github.io/categories/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scala 学习资料</title>
+      <link>https://stksgarcia.github.io/post/scala-materials/</link>
+      <pubDate>Sun, 15 Apr 2018 18:13:00 +0800</pubDate>
+      
+      <guid>https://stksgarcia.github.io/post/scala-materials/</guid>
+      <description>&lt;p&gt;记录一些 Scala 的学习资料，感谢@hongjiang_wang 的整理。
+&lt;a href=&#34;http://hongjiang.info/scala/&#34;&gt;原帖地址&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
