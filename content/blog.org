@@ -1,3 +1,4 @@
+#+STARTUP: fold
 #+OPTIONS: author:nil
 #+HUGO_SECTION: post
 #+HUGO_BASE_DIR: ../
