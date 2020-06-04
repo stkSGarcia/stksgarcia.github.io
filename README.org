@@ -1,6 +1,6 @@
 This is the source of my personal blog.
 
-It is based on [[https://gohugo.io/][Hugo]] and uses [[https://github.com/olOwOlo/hugo-theme-even/][Even]] as the blog theme.
+It is based on [[https://gohugo.io/][Hugo]] and uses [[https://github.com/zzossig/hugo-theme-zzo/][Zzo]] as the blog theme.
 
 * Install
 #+BEGIN_SRC sh
