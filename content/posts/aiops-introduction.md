@@ -2,7 +2,7 @@
 title = "AIOps 简介"
 author = ["Samuel Garcia"]
 date = 2020-06-20T21:21:00+08:00
-lastmod = 2020-06-20T21:21:40+08:00
+lastmod = 2020-06-25T20:55:45+08:00
 tags = ["aiops", "operations"]
 categories = ["research"]
 draft = false
@@ -41,13 +41,13 @@ AIOps 已经成为监控和管理混合、动态、分布式和组件化的现�
 因此，IT 公司对智能化运维的需求也越来越迫切了。
 
 近年来，机器学习算法的突破、计算能力的提升、海量的数据引发了 AI 革命，而 AIOps 也在这个时期逐渐诞生。
-早在 2012 年，全球权威的 IT 研究与顾问咨询公司高德纳公司（Gartner）在一份报告中提及了 ITOA，其定义为 IT 运维分析（IT Operations Analytics）。
+早在 2012 年，全球权威的 IT 研究与顾问咨询公司高德纳公司（Gartner）在一份报告[^fn:1]中提及了 ITOA，其定义为 IT 运维分析（IT Operations Analytics）。
 ITOA 通过技术与服务手段，采集、存储、展现海量的 IT 运维数据，并进行有效的推理与归纳得出分析结论。
 ITOA 为 AIOps 的发展奠定了基础。
-随着时间的推移，在 2016 年 Gartner 将 ITOA 的概念升级为了 AIOps，其最早的含义是基于算法的 IT 运维（Algorithmic IT Operations）。
+随着时间的推移，在 2016 年 Gartner 将 ITOA 的概念升级为了 AIOps[^fn:2]，其最早的含义是基于算法的 IT 运维（Algorithmic IT Operations）。
 这一阶段的 AIOps 平台利用大数据，现代的机器学习技术和其他高级分析技术，通过主动、个性化和动态的洞察力直接或间接地持续地增强 IT 操作功能。
 它可以同时使用多个数据源，多种数据收集方法，实时分析技术，深层分析技术以及展示技术。
-随着人工智能在多个领域的井喷式发展，Gartner 在 2017 年的一份报告中将 AIOps 的含义定义为了基于人工智能的 IT 运维（Artificial Intelligence for IT Operations），也就是现在所说的智能运维。
+随着人工智能在多个领域的井喷式发展，Gartner 在 2017 年的一份报告[^fn:3]中将 AIOps 的含义定义为了基于人工智能的 IT 运维（Artificial Intelligence for IT Operations），也就是现在所说的智能运维。
 
 AIOps 将人工智能应用于运维领域，通过融合已有的运维数据，利用机器学习技术以及大数据技术来进一步解决自动化运维所不能解决的问题，真正打破数据烟囱，对监控、自动化、服务台进行支持，提高系统的预判能力、稳定性、降低 IT 成本以更好的支撑业务，并提高企业的产品竞争力。
 AIOps 以创造商业价值为导向，对 IT 运维以及业务运维产生持续洞察，为 DevOps 提供持续反馈，加快企业在竞争日趋激烈市场环境中，数字化转型的步伐。
@@ -132,3 +132,7 @@ AIOps 为运维团队提供了所需的速度和敏捷性，以确保关键服�
 -   预测：AIOps 可以让工具能对未来进行自动预测，例如用户流量在特定的时间点可能会怎样的变化，然后做出相应的反应。
 -   报警管理：AIOps 在帮助运维团队应对他们必须处理的大量警报，以支持正常的运维方面发挥着越来越重要的作用。
 -   智能修复：AIOps 通过自动化工具驱动闭环的故障修复，而不依赖于运维人员。
+
+[^fn:1]: <https://www.gartner.com/en/documents/2158125>
+[^fn:2]: <https://www.gartner.com/en/documents/3263717>
+[^fn:3]: <https://www.gartner.com/en/documents/3770467>
