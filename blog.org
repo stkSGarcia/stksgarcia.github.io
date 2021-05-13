@@ -1,3 +1,4 @@
+#+STARTUP: logdone
 #+STARTUP: fold
 #+HUGO_SECTION: posts
 #+HUGO_BASE_DIR: .
