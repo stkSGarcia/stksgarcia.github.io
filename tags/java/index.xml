@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>java on Gibberish - STK (゜-゜)つロ 乾杯~</title><link>https://stksgarcia.github.io/tags/java/</link><description>Recent content in java on Gibberish - STK (゜-゜)つロ 乾杯~</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 28 Oct 2018 18:27:00 +0800</lastBuildDate><atom:link href="https://stksgarcia.github.io/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>JVM 指令重排对双重校验锁单例模式的影响</title><link>https://stksgarcia.github.io/posts/singleton-and-jvm-instruction-rearrangement/</link><pubDate>Sun, 28 Oct 2018 18:27:00 +0800</pubDate><atom:modified>Fri, 05 Jun 2020 00:52:17 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/singleton-and-jvm-instruction-rearrangement/</guid><description>&lt;p>下面的双重校验锁单例是线程安全的吗？&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>java on Gibberish - STK (゜-゜)つロ 乾杯~</title><link>https://stksgarcia.github.io/tags/java/</link><description>Recent content in java on Gibberish - STK (゜-゜)つロ 乾杯~</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2021, All Rights Reserved</copyright><lastBuildDate>Sun, 28 Oct 2018 18:27:00 +0800</lastBuildDate><atom:link href="https://stksgarcia.github.io/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>JVM 指令重排对双重校验锁单例模式的影响</title><link>https://stksgarcia.github.io/posts/singleton-and-jvm-instruction-rearrangement/</link><pubDate>Sun, 28 Oct 2018 18:27:00 +0800</pubDate><atom:modified>Fri, 05 Jun 2020 00:52:17 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/singleton-and-jvm-instruction-rearrangement/</guid><description>&lt;p>下面的双重校验锁单例是线程安全的吗？&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
 &lt;/span>&lt;span class="lnt"> 3
 &lt;/span>&lt;span class="lnt"> 4
@@ -19,7 +19,7 @@
 &lt;/span>&lt;span class="lnt">16
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">Singleton&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">Singleton&lt;/span> &lt;span class="o">{&lt;/span>
 &lt;span class="kd">private&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="n">instance&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">null&lt;/span>
 &lt;span class="kd">private&lt;/span> &lt;span class="nf">Singleton&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{}&lt;/span>
 &lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="nf">getInstance&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
@@ -39,22 +39,22 @@
 Stream 是用函数式编程方式在集合类上进行复杂操作的工具，其集成了 Java 8 中的众多新特性之一的聚合操作，开发者可以更容易地使用 Lambda 表达式，并且更方便地实现对集合的查找、遍历、过滤以及常见计算等。&lt;/p></description><dc:creator>[Samuel Garcia]</dc:creator><category>java</category><category>programming</category><category>java</category></item><item><title>[Java] Splitting a comma-separated string but ignoring commas in quotes</title><link>https://stksgarcia.github.io/posts/split-a-comma-separated-string/</link><pubDate>Sat, 24 Mar 2018 21:04:00 +0800</pubDate><atom:modified>Fri, 05 Jun 2020 00:52:16 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/split-a-comma-separated-string/</guid><description>&lt;p>Sometimes we need to parse strings like this:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-text" data-lang="text">&amp;#34;1234567890&amp;#34;,&amp;#34;James&amp;#34;,man,&amp;#34;New York, NY, USA&amp;#34;
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&amp;#34;1234567890&amp;#34;,&amp;#34;James&amp;#34;,man,&amp;#34;New York, NY, USA&amp;#34;
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>And the output we need is as follows:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;span class="lnt">4
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-text" data-lang="text">&amp;#34;1234567890&amp;#34;
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&amp;#34;1234567890&amp;#34;
 &amp;#34;James&amp;#34;
 man
 &amp;#34;New York, NY, USA&amp;#34;
