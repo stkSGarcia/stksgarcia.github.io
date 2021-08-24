@@ -2,9 +2,8 @@
 title = "AIOps 简介"
 author = ["Samuel Garcia"]
 date = 2020-06-20T21:21:00+08:00
-lastmod = 2020-06-25T20:55:45+08:00
-tags = ["aiops", "operations"]
-categories = ["research"]
+lastmod = 2021-08-24T23:12:36+08:00
+tags = ["aiops"]
 draft = false
 +++
 

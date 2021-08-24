@@ -2,9 +2,8 @@
 title = "JDK 10 新特性"
 author = ["Samuel Garcia"]
 date = 2018-03-24T19:27:00+08:00
-lastmod = 2020-06-05T00:52:16+08:00
+lastmod = 2021-08-24T23:12:34+08:00
 tags = ["java"]
-categories = ["programming", "java"]
 draft = false
 +++
 

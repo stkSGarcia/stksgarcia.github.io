@@ -2,9 +2,8 @@
 title = "JVM 指令重排对双重校验锁单例模式的影响"
 author = ["Samuel Garcia"]
 date = 2018-10-28T18:27:00+08:00
-lastmod = 2020-06-05T00:52:17+08:00
+lastmod = 2021-08-24T23:12:35+08:00
 tags = ["java"]
-categories = ["programming", "java"]
 draft = false
 +++
 

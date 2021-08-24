@@ -2,9 +2,8 @@
 title = "How to choose an open source license?"
 author = ["Samuel Garcia"]
 date = 2017-09-27T13:45:00+08:00
-lastmod = 2020-06-05T00:52:19+08:00
-tags = ["tip", "license", "open-source"]
-categories = ["research"]
+lastmod = 2021-08-24T23:12:33+08:00
+tags = ["license", "open-source"]
 draft = false
 +++
 

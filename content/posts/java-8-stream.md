@@ -2,9 +2,8 @@
 title = "Java 8 Stream 语法"
 author = ["Samuel Garcia"]
 date = 2018-07-14T17:53:00+08:00
-lastmod = 2020-06-05T00:52:17+08:00
+lastmod = 2021-08-24T23:12:34+08:00
 tags = ["java"]
-categories = ["programming", "java"]
 draft = false
 +++
 

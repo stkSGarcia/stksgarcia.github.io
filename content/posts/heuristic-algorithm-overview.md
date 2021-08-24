@@ -2,9 +2,8 @@
 title = "启发式算法概述"
 author = ["Samuel Garcia"]
 date = 2018-10-28T15:42:00+08:00
-lastmod = 2020-06-05T00:52:18+08:00
+lastmod = 2021-08-24T23:12:34+08:00
 tags = ["heuristic-algorithm"]
-categories = ["algorithm", "heuristic-algorithm"]
 draft = false
 +++
 

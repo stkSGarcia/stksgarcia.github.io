@@ -2,9 +2,8 @@
 title = "从 Jekyll 到 Hexo"
 author = ["Samuel Garcia"]
 date = 2018-03-02T00:20:00+08:00
-lastmod = 2020-06-05T00:52:21+08:00
+lastmod = 2021-08-24T23:12:33+08:00
 tags = ["blog"]
-categories = ["blog"]
 draft = false
 +++
 

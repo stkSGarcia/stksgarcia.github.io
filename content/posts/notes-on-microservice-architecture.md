@@ -2,9 +2,8 @@
 title = "《Chris Richardson 谈微服务软件架构设计》笔记"
 author = ["Samuel Garcia"]
 date = 2016-12-10T16:47:00+08:00
-lastmod = 2020-06-05T00:52:20+08:00
-tags = ["microservices"]
-categories = ["reading"]
+lastmod = 2021-08-24T23:12:32+08:00
+tags = ["microservices", "architecture", "reading"]
 draft = false
 +++
 

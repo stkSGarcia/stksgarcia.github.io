@@ -2,9 +2,8 @@
 title = "用遗传算法求解 N 皇后问题"
 author = ["Samuel Garcia"]
 date = 2018-03-11T00:07:00+08:00
-lastmod = 2020-06-05T00:52:18+08:00
+lastmod = 2021-08-24T23:12:33+08:00
 tags = ["genetic-algorithm"]
-categories = ["algorithm", "heuristic-algorithm"]
 draft = false
 +++
 

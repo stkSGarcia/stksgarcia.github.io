@@ -2,9 +2,8 @@
 title = "Org mode 导出中文 PDF"
 author = ["Samuel Garcia"]
 date = 2019-01-29T01:32:00+08:00
-lastmod = 2020-06-05T00:52:20+08:00
+lastmod = 2021-08-24T23:12:35+08:00
 tags = ["org-mode", "latex", "emacs"]
-categories = ["emacs"]
 draft = false
 +++
 

@@ -2,9 +2,8 @@
 title = "Git Clone 下载速度慢的解决方法"
 author = ["Samuel Garcia"]
 date = 2018-04-30T20:09:00+08:00
-lastmod = 2020-06-05T00:52:18+08:00
-tags = ["tip", "git"]
-categories = ["programming", "linux"]
+lastmod = 2021-08-24T23:12:34+08:00
+tags = ["git"]
 draft = false
 +++
 

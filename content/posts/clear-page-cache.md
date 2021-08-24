@@ -2,9 +2,8 @@
 title = "Linux 下清空 Page cache"
 author = ["Samuel Garcia"]
 date = 2018-11-08T00:09:00+08:00
-lastmod = 2020-06-05T00:52:18+08:00
+lastmod = 2021-08-24T23:12:35+08:00
 tags = ["page-cache", "linux"]
-categories = ["programming", "linux"]
 draft = false
 +++
 

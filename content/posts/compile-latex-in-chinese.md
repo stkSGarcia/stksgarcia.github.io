@@ -2,9 +2,8 @@
 title = "编译中文 LaTeX"
 author = ["Samuel Garcia"]
 date = 2017-09-22T09:15:00+08:00
-lastmod = 2020-06-05T00:52:19+08:00
-tags = ["tip", "latex"]
-categories = ["research"]
+lastmod = 2021-08-24T23:21:54+08:00
+tags = ["latex"]
 draft = false
 +++
 

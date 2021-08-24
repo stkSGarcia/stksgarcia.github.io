@@ -2,9 +2,8 @@
 title = "通过 Gradle 打包外部依赖"
 author = ["Samuel Garcia"]
 date = 2018-03-03T19:04:00+08:00
-lastmod = 2020-06-05T00:52:17+08:00
-tags = ["gradle", "build"]
-categories = ["programming", "build"]
+lastmod = 2021-08-24T23:12:33+08:00
+tags = ["gradle"]
 draft = false
 +++
 

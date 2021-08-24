@@ -2,9 +2,8 @@
 title = "关于《自控力》"
 author = ["Samuel Garcia"]
 date = 2018-11-22T01:43:00+08:00
-lastmod = 2020-06-05T00:52:20+08:00
-tags = ["self-control"]
-categories = ["reading"]
+lastmod = 2021-08-24T23:12:35+08:00
+tags = ["self-control", "reading"]
 draft = false
 +++
 

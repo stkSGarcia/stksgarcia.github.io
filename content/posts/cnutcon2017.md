@@ -2,9 +2,8 @@
 title = "智能时代的新运维「CNUTCon 2017 上海」"
 author = ["Samuel Garcia"]
 date = 2017-09-17T12:39:00+08:00
-lastmod = 2020-06-05T00:52:19+08:00
-tags = ["aiops", "devops", "operations"]
-categories = ["research"]
+lastmod = 2021-08-24T23:12:32+08:00
+tags = ["aiops", "devops"]
 draft = false
 +++
 

@@ -2,9 +2,8 @@
 title = "通过 Java API 实现 Kafka Consumer 从最开始消费"
 author = ["Samuel Garcia"]
 date = 2018-03-06T22:07:00+08:00
-lastmod = 2020-06-05T00:52:16+08:00
+lastmod = 2021-08-24T23:12:33+08:00
 tags = ["kafka", "java"]
-categories = ["programming", "java"]
 draft = false
 +++
 

@@ -2,9 +2,8 @@
 title = "如何成为卓有成效的管理者？"
 author = ["Samuel Garcia"]
 date = 2020-03-08T18:39:00+08:00
-lastmod = 2020-06-05T00:52:20+08:00
-tags = ["management"]
-categories = ["reading"]
+lastmod = 2021-08-24T23:12:36+08:00
+tags = ["management", "reading"]
 draft = false
 +++
 
