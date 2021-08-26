@@ -2,8 +2,8 @@
 title = "Scala 学习资料"
 author = ["Samuel Garcia"]
 date = 2018-04-15T18:13:00+08:00
-lastmod = 2021-08-24T23:12:34+08:00
-categories = ["scala"]
+lastmod = 2021-08-26T23:43:28+08:00
+tags = ["scala"]
 draft = false
 +++
 
