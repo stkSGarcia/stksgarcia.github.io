@@ -1,10 +1,9 @@
 +++
 title = "Windows 下使用 Powershell 批量重命名文件"
-author = ["Samuel Garcia"]
+author = "Samuel Garcia"
 date = 2018-03-18T18:47:00+08:00
 lastmod = 2021-08-24T23:12:33+08:00
 tags = ["powershell", "windows"]
-draft = false
 +++
 
 当我们下载了一部电视剧或是动漫时，通常文件名非常长，会包含视频的分辨率、字幕组等信息，但是我们通常只会关心这是第几集。。。

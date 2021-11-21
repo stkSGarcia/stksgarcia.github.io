@@ -1,10 +1,9 @@
 +++
 title = "JDK 10 新特性"
-author = ["Samuel Garcia"]
+author = "Samuel Garcia"
 date = 2018-03-24T19:27:00+08:00
 lastmod = 2021-08-24T23:12:34+08:00
 tags = ["java"]
-draft = false
 +++
 
 前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
@@ -12,8 +11,7 @@ draft = false
 
 <!--more-->
 
-
-## 局部变量类型推断 {#局部变量类型推断}
+## 局部变量类型推断
 
 对于开发者来说，这是 JDK 10 唯一的真正特性。
 它向 Java 中引入在其他语言中很常见的 `var` ，比如 JavaScript。
@@ -118,12 +116,11 @@ o.f();
 
 注意我们用 `final var` 声明了不可变变量 `o` ，不过其实就算不用 `final var` 声明，你也不能把 `o` 赋值为它的初始值和 `null` 以外的任何值。
 
-
-## 并行全垃圾回收器 G1 {#并行全垃圾回收器-g1}
+## 并行全垃圾回收器 G1
 
 G1 是设计来作为一种低延时的垃圾回收器（但是如果它跟不上旧的堆碎片产生的提升速率的话，将仍然采用完整压缩集合）。
 在 JDK9 之前，默认的收集器是并行，吞吐，收集器。
 为了减少在使用默认的收集器的应用性能配置文件的差异，G1 现在有一个并行完整收集机制。
 
-> -   [JDK 10 的 109 项新特性](http://www.ajiatech.com/news/industryNews/828.html)
-> -   [如何评价 JDK 10？](https://www.zhihu.com/question/269244201/answer/347062385)
+> - [JDK 10 的 109 项新特性](http://www.ajiatech.com/news/industryNews/828.html)
+> - [如何评价 JDK 10？](https://www.zhihu.com/question/269244201/answer/347062385)

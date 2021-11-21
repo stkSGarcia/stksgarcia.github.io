@@ -1,10 +1,9 @@
 +++
 title = "从 Jekyll 到 Hexo"
-author = ["Samuel Garcia"]
+author = "Samuel Garcia"
 date = 2018-03-02T00:20:00+08:00
 lastmod = 2021-08-24T23:12:33+08:00
 tags = ["blog"]
-draft = false
 +++
 
 我之前一个版本的博客也是托管在 GitHub 的静态博客，使用的是[Jekyll](https://www.jekyll.com.cn/)。

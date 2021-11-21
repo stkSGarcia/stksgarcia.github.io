@@ -1,10 +1,9 @@
 +++
 title = "从 Hexo 到 Hugo"
-author = ["Samuel Garcia"]
+author = "Samuel Garcia"
 date = 2020-04-10T18:12:00+08:00
 lastmod = 2021-08-24T23:12:36+08:00
 tags = ["blog"]
-draft = false
 +++
 
 最近又开始折腾博客了，大概拖了有一个月了才开始记录迁移博客的感受。
