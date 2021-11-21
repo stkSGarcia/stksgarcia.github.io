@@ -17,14 +17,14 @@
 <meta name=created content="2021-08-26T23:39:00+0800">
 <meta name=modified content="2021-08-27T11:27:44+0800">
 <meta property="article:published_time" content="2021-08-26T23:39:00+0800">
-<meta name=author content="[Samuel Garcia]">
-<meta property="article:author" content="https://stksgarcia.github.io/posts/validity-introduction/@[Samuel Garcia]">
+<meta name=author content="Samuel Garcia">
+<meta property="article:author" content="https://stksgarcia.github.io/posts/validity-introduction/@Samuel Garcia">
 <meta property="og:site_name" content="Gibberish - STK (゜-゜)つロ 乾杯~">
 <meta property="og:title" content="内部效度，外部效度，构念效度和统计结论效度">
 <meta property="og:url" content="https://stksgarcia.github.io/posts/validity-introduction/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Gibberish - STK (゜-゜)つロ 乾杯~">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.89.4">
 <meta name=msapplication-TileColor content="#fff">
 <meta name=theme-color content="#fff">
 <meta name=msapplication-navbutton-color content="#fff">
@@ -47,7 +47,7 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta name=msapplication-TileColor content="#ffffff">
 <meta name=msapplication-TileImage content="/ms-icon-144x144.png">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"内部效度，外部效度，构念效度和统计结论效度","datePublished":"2021-08-26T23:39:00+08:00","dateModified":"2021-08-27T11:27:44+08:00","url":"https://stksgarcia.github.io/posts/validity-introduction/","description":"\u003cp\u003e研究设计的质量取决于四个关键设计属性：内部效度，外部效度，构念效度和统计结论效度。\u003cbr /\u003e 以下将详细介绍这四个效度。\u003c/p\u003e","keywords":["validity"],"author":{"@type":"Person","name":["Samuel Garcia"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"内部效度，外部效度，构念效度和统计结论效度","datePublished":"2021-08-26T23:39:00+08:00","dateModified":"2021-08-27T11:27:44+08:00","url":"https://stksgarcia.github.io/posts/validity-introduction/","description":"\u003cp\u003e研究设计的质量取决于四个关键设计属性：内部效度，外部效度，构念效度和统计结论效度。 以下将详细介绍这四个效度。\u003c/p\u003e","keywords":["validity"],"author":{"@type":"Person","name":"Samuel Garcia"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
 </head>
 <body id=root class=theme__dark>
 <script>var localTheme=localStorage.getItem('theme');localTheme&&(document.getElementById('root').className='theme__'+localTheme)</script>
@@ -104,8 +104,8 @@ kimbie
 <li class=navbarm__menu--item>
 <a href=/tags>Tags</a>
 </li>
-<li class=navbarm__menu--item>
-<a href=/archive>Archive</a>
+<li class="navbarm__menu--item active">
+<a href=/posts>Posts</a>
 </li>
 <li class=navbarm__menu--item>
 <a href=/about>About</a>
@@ -145,7 +145,7 @@ kimbie
 </div>
 </div>
 <a href=/tags class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Tags</a>
-<a href=/archive class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Archive</a>
+<a href=/posts class="navbar__menu-item navbar__slide-down active" dir=ltr data-ani=true>Posts</a>
 <a href=/about class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>About</a>
 </div>
 </nav>
@@ -174,7 +174,7 @@ kimbie
 <time class=single__info title="Written At">📅&nbsp;Aug 26, 2021 </time>
 &nbsp;&#183;&nbsp; <time class=single__info title="Modified At"> 📝&nbsp;Aug 27, 2021 </time>
 &nbsp;&#183;&nbsp; <span class=single__info title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
-&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;[Samuel Garcia]</span>
+&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;Samuel Garcia</span>
 <span class=single__info>
 </span>
 </div>
@@ -184,47 +184,45 @@ kimbie
 </ul>
 </div>
 <article class=single__contents data-dir=ltr data-ani=true>
-<p>研究设计的质量取决于四个关键设计属性：内部效度，外部效度，构念效度和统计结论效度。<br>
+<p>研究设计的质量取决于四个关键设计属性：内部效度，外部效度，构念效度和统计结论效度。
 以下将详细介绍这四个效度。</p>
 <h2 id=内部效度>内部效度</h2>
-<p>内部效度也被称为因果关系，它研究因变量的变化是否确实由假定的自变量的变化所造成，而不是由与研究背景毫无关联的外生变量所引起的。<br>
+<p>内部效度也被称为因果关系，它研究因变量的变化是否确实由假定的自变量的变化所造成，而不是由与研究背景毫无关联的外生变量所引起的。
 因果关系的存在需要三个条件：</p>
 <ol>
 <li>原因和结果相互关联（也就是说，如果原因发生了，那么也会产生相应的结果；如果原因不发生，那么也不会产生相应的结果）；</li>
 <li>时间优先：原因必须先于结果而发生；</li>
 <li>没有其他看似合理的解释（或伪相关）。</li>
 </ol>
-<p>某些研究设计，例如实验室实验，具有较高的内部效度。<br>
-这是因为实验室实验能够在控制外生变量影响的同时，通过某些控制条件对自变量（即原因）进行操控，并在控制施加的一段时间后观察结果（因变量）的变化。<br>
-其他的研究设计，如现场调查，由于无法操控自变量（即原因），而且原因和结果都是在相同的时间点观察到的（这与原因必须优先于结果的条件相违背，并造成似乎是预期的结果影响到原因，而不是原因影响结果），因而缺乏内部效度。<br>
+<p>某些研究设计，例如实验室实验，具有较高的内部效度。
+这是因为实验室实验能够在控制外生变量影响的同时，通过某些控制条件对自变量（即原因）进行操控，并在控制施加的一段时间后观察结果（因变量）的变化。
+其他的研究设计，如现场调查，由于无法操控自变量（即原因），而且原因和结果都是在相同的时间点观察到的（这与原因必须优先于结果的条件相违背，并造成似乎是预期的结果影响到原因，而不是原因影响结果），因而缺乏内部效度。
 虽然实验研究与其他研究方法相比具有较高的内部效度，但是实验研究易受到历史记录、测试、试验设备、回归和其他因素的影响。</p>
 <h2 id=外部效度>外部效度</h2>
-<p>外部效度或可推广性主要指所观察的相关性是否可以从样本推广到总体（总体效度），或是否适用于其他人、其他组织、其他情境，或其他时间（即生态效度）。<br>
-比如，从美国金融公司样本推出的结论是否可以推广至所有金融公司（总体效度）或美国的其它公司（生态效度）？<br>
-调查研究的数据来源于各种各样的个人、企业或者其他分析单位。<br>
-这种研究往往比实验研究更具普遍性。<br>
+<p>外部效度或可推广性主要指所观察的相关性是否可以从样本推广到总体（总体效度），或是否适用于其他人、其他组织、其他情境，或其他时间（即生态效度）。
+比如，从美国金融公司样本推出的结论是否可以推广至所有金融公司（总体效度）或美国的其它公司（生态效度）？
+调查研究的数据来源于各种各样的个人、企业或者其他分析单位。
+这种研究往往比实验研究更具普遍性。
 这是因为实验研究会严格地人为控制外生变量，但在现实环境下这些外生变量是不可控的，因而导致实验研究的结论很难得到推广。</p>
 <p>各种研究设计的内部效度和外部效度间的关系如下图所示。</p>
-<figure><img src=/validity-introduction/internal-external.png>
-</figure>
-<p>一些研究人员认为内部效度和外部效度之间存在着权衡关系，即只有在牺牲内部效度的情况下才能获得高的外部效度，反之亦然。<br>
-但是，也未必总是如此。<br>
-如现场实验、纵向现场调查、以及多案例研究等研究设计就可以同时实现较高的内部效度和外部效度。<br>
-就我个人而言，我更倾向于兼具合理的内部效度和外部效度的研究设计，即落于如上图所示的锥形区域内的研究设计。<br>
-但这并不能表明位于锥形区域之外的研究设计的价值或有用性更低。<br>
+<p><img src=internal-external.png alt></p>
+<p>一些研究人员认为内部效度和外部效度之间存在着权衡关系，即只有在牺牲内部效度的情况下才能获得高的外部效度，反之亦然。
+但是，也未必总是如此。
+如现场实验、纵向现场调查、以及多案例研究等研究设计就可以同时实现较高的内部效度和外部效度。
+就我个人而言，我更倾向于兼具合理的内部效度和外部效度的研究设计，即落于如上图所示的锥形区域内的研究设计。
+但这并不能表明位于锥形区域之外的研究设计的价值或有用性更低。
 研究者最终将根据个人的偏好和能力，以及他想获得的内部效度和外部效度水平来选择研究设计。</p>
 <h2 id=构念效度>构念效度</h2>
-<p>构念效度衡量的是给定的量表在多大程度上测量了该理论构念。<br>
-社会科学研究中的许多构念，如移情、变革阻力以及组织学习等都是难以界定的，更不用说去衡量了。<br>
-例如，构念效度必须保证对移情这一构念的衡量确实反映的是共同感受而不是同情怜悯。<br>
+<p>构念效度衡量的是给定的量表在多大程度上测量了该理论构念。
+社会科学研究中的许多构念，如移情、变革阻力以及组织学习等都是难以界定的，更不用说去衡量了。
+例如，构念效度必须保证对移情这一构念的衡量确实反映的是共同感受而不是同情怜悯。
 要做到这一点可能会比较困难，这是因为这些构念在意义上比较相近。</p>
 <h2 id=统计结论效度>统计结论效度</h2>
-<p>统计结论效度检验的是在多大程度上由统计方法所推导出的结论是有效的。<br>
-例如，统计结论效度会分析假设检验是否使用了正确的统计方法、所使用的研究变量是否符合统计检验的假定条件（如样本大小或分布要求）等。<br>
+<p>统计结论效度检验的是在多大程度上由统计方法所推导出的结论是有效的。
+例如，统计结论效度会分析假设检验是否使用了正确的统计方法、所使用的研究变量是否符合统计检验的假定条件（如样本大小或分布要求）等。
 因为诠释性研究设计并不使用统计检验，所以诠释性研究不存在统计结论效度的问题。</p>
 <p>下图给出了不同的效度及其在理论和实证研究层面所处的位置。</p>
-<figure><img src=/validity-introduction/validity.png>
-</figure>
+<p><img src=validity.png alt></p>
 <blockquote>
 <ul>
 <li><a href=https://www.opentextbooks.org.hk/ditatopic/36007>研究设计的关键属性</a></li>
@@ -243,7 +241,7 @@ Share on
 <div class=donation__icons>
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fstksgarcia.github.io%2fposts%2fvalidity-introduction%2f" title=Facebook aria-label="Facebook Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191V.169c-.378-.052-1.678-.169-3.192-.169-3.159.0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/></svg>
 </a>
-<a href="https://twitter.com/intent/tweet?text=%e5%86%85%e9%83%a8%e6%95%88%e5%ba%a6%ef%bc%8c%e5%a4%96%e9%83%a8%e6%95%88%e5%ba%a6%ef%bc%8c%e6%9e%84%e5%bf%b5%e6%95%88%e5%ba%a6%e5%92%8c%e7%bb%9f%e8%ae%a1%e7%bb%93%e8%ae%ba%e6%95%88%e5%ba%a6&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fvalidity-introduction%2f&hashtags=validity&via=%5bSamuel%20Garcia%5d" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
+<a href="https://twitter.com/intent/tweet?text=%e5%86%85%e9%83%a8%e6%95%88%e5%ba%a6%ef%bc%8c%e5%a4%96%e9%83%a8%e6%95%88%e5%ba%a6%ef%bc%8c%e6%9e%84%e5%bf%b5%e6%95%88%e5%ba%a6%e5%92%8c%e7%bb%9f%e8%ae%a1%e7%bb%93%e8%ae%ba%e6%95%88%e5%ba%a6&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fvalidity-introduction%2f&hashtags=validity&via=Samuel%20Garcia" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
 </a>
 </div>
 </div>
@@ -258,7 +256,7 @@ Share on
 WRITTEN BY
 </div>
 <div class=whoami__title>
-[Samuel Garcia]
+Samuel Garcia
 </div>
 <div class=whoami__desc>
 I never fit in. I am a true alternative.

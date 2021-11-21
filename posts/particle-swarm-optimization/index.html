@@ -17,14 +17,14 @@
 <meta name=created content="2018-10-28T15:42:00+0800">
 <meta name=modified content="2021-08-24T23:12:35+0800">
 <meta property="article:published_time" content="2018-10-28T15:42:00+0800">
-<meta name=author content="[Samuel Garcia]">
-<meta property="article:author" content="https://stksgarcia.github.io/posts/particle-swarm-optimization/@[Samuel Garcia]">
+<meta name=author content="Samuel Garcia">
+<meta property="article:author" content="https://stksgarcia.github.io/posts/particle-swarm-optimization/@Samuel Garcia">
 <meta property="og:site_name" content="Gibberish - STK (゜-゜)つロ 乾杯~">
 <meta property="og:title" content="粒子群算法">
 <meta property="og:url" content="https://stksgarcia.github.io/posts/particle-swarm-optimization/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Gibberish - STK (゜-゜)つロ 乾杯~">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.89.4">
 <meta name=msapplication-TileColor content="#fff">
 <meta name=theme-color content="#fff">
 <meta name=msapplication-navbutton-color content="#fff">
@@ -47,7 +47,7 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta name=msapplication-TileColor content="#ffffff">
 <meta name=msapplication-TileImage content="/ms-icon-144x144.png">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"粒子群算法","datePublished":"2018-10-28T15:42:00+08:00","dateModified":"2021-08-24T23:12:35+08:00","url":"https://stksgarcia.github.io/posts/particle-swarm-optimization/","description":"\u003ch2 id=\"粒子群算法-particle-swarm-optimization-pso\"\u003e粒子群算法 （Particle Swarm Optimization, PSO）\u003c/h2\u003e \u003cp\u003e粒子群算法，也称粒子群优化算法或鸟群觅食算法，来源于对一个简化社会模型的模拟。\u003cbr /\u003e PSO 算法属于进化算法的一种，和模拟退火算法相似，它也是从随机解出发，通过迭代寻找最优解，它也是通过适应度来评价解的品质，但它比遗传算法规则更为简单，它没有遗传算法的“交 …\u003c/p\u003e","keywords":["particle-swarm-optimization","heuristic-algorithm"],"author":{"@type":"Person","name":["Samuel Garcia"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"粒子群算法","datePublished":"2018-10-28T15:42:00+08:00","dateModified":"2021-08-24T23:12:35+08:00","url":"https://stksgarcia.github.io/posts/particle-swarm-optimization/","description":"\u003ch2 id=\"粒子群算法\"\u003e粒子群算法\u003c/h2\u003e \u003cp\u003e粒子群算法，也称粒子群优化算法或鸟群觅食算法，来源于对一个简化社会模型的模拟。 PSO 算法属于进化算法的一种，和模拟退火算法相似，它也是从随机解出发，通过迭代寻找最优解，它也是通过适应度来评价解的品质，但它比遗传算法规则更为简单，它没有遗传算法的“交叉”（Crossover）和“变异”（Mutation）操作，它通过追随当前 …\u003c/p\u003e","keywords":["particle-swarm-optimization","heuristic-algorithm"],"author":{"@type":"Person","name":"Samuel Garcia"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
 </head>
 <body id=root class=theme__dark>
 <script>var localTheme=localStorage.getItem('theme');localTheme&&(document.getElementById('root').className='theme__'+localTheme)</script>
@@ -104,8 +104,8 @@ kimbie
 <li class=navbarm__menu--item>
 <a href=/tags>Tags</a>
 </li>
-<li class=navbarm__menu--item>
-<a href=/archive>Archive</a>
+<li class="navbarm__menu--item active">
+<a href=/posts>Posts</a>
 </li>
 <li class=navbarm__menu--item>
 <a href=/about>About</a>
@@ -145,7 +145,7 @@ kimbie
 </div>
 </div>
 <a href=/tags class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Tags</a>
-<a href=/archive class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Archive</a>
+<a href=/posts class="navbar__menu-item navbar__slide-down active" dir=ltr data-ani=true>Posts</a>
 <a href=/about class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>About</a>
 </div>
 </nav>
@@ -174,7 +174,7 @@ kimbie
 <time class=single__info title="Written At">📅&nbsp;Oct 28, 2018 </time>
 &nbsp;&#183;&nbsp; <time class=single__info title="Modified At"> 📝&nbsp;Aug 24, 2021 </time>
 &nbsp;&#183;&nbsp; <span class=single__info title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
-&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;[Samuel Garcia]</span>
+&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;Samuel Garcia</span>
 <span class=single__info>
 </span>
 </div>
@@ -185,33 +185,33 @@ kimbie
 </ul>
 </div>
 <article class=single__contents data-dir=ltr data-ani=true>
-<h2 id=粒子群算法-particle-swarm-optimization-pso>粒子群算法 （Particle Swarm Optimization, PSO）</h2>
-<p>粒子群算法，也称粒子群优化算法或鸟群觅食算法，来源于对一个简化社会模型的模拟。<br>
-PSO 算法属于进化算法的一种，和模拟退火算法相似，它也是从随机解出发，通过迭代寻找最优解，它也是通过适应度来评价解的品质，但它比遗传算法规则更为简单，它没有遗传算法的“交叉”（Crossover）和“变异”（Mutation）操作，它通过追随当前搜索到的最优值来寻找全局最优。<br>
-这种算法以其实现容易、精度高、收敛快等优点引起了学术界的重视，并且在解决实际问题中展示了其优越性。<br>
+<h2 id=粒子群算法>粒子群算法</h2>
+<p>粒子群算法，也称粒子群优化算法或鸟群觅食算法，来源于对一个简化社会模型的模拟。
+PSO 算法属于进化算法的一种，和模拟退火算法相似，它也是从随机解出发，通过迭代寻找最优解，它也是通过适应度来评价解的品质，但它比遗传算法规则更为简单，它没有遗传算法的“交叉”（Crossover）和“变异”（Mutation）操作，它通过追随当前搜索到的最优值来寻找全局最优。
+这种算法以其实现容易、精度高、收敛快等优点引起了学术界的重视，并且在解决实际问题中展示了其优越性。
 粒子群算法是一种并行算法。</p>
 <h2 id=算法原理>算法原理</h2>
-<p>设想这样一个场景：一群鸟在随机搜索食物。<br>
-在这个区域里只有一块食物。<br>
-所有的鸟都不知道食物在那里。<br>
-但是他们知道当前的位置离食物还有多远。<br>
-那么找到食物的最优策略是什么呢。<br>
+<p>设想这样一个场景：一群鸟在随机搜索食物。
+在这个区域里只有一块食物。
+所有的鸟都不知道食物在那里。
+但是他们知道当前的位置离食物还有多远。
+那么找到食物的最优策略是什么呢。
 最简单有效的就是搜寻目前离食物最近的鸟的周围区域。</p>
-<p>PSO 从这种模型中得到启示并用于解决优化问题。<br>
-PSO 中，每个优化问题的解都是搜索空间中的一只鸟。<br>
-我们称之为“粒子”。<br>
-所有的粒子都有一个由被优化的函数决定的适应值（fitness value），每个粒子还有一个速度决定他们飞翔的方向和距离。<br>
+<p>PSO 从这种模型中得到启示并用于解决优化问题。
+PSO 中，每个优化问题的解都是搜索空间中的一只鸟。
+我们称之为“粒子”。
+所有的粒子都有一个由被优化的函数决定的适应值（fitness value），每个粒子还有一个速度决定他们飞翔的方向和距离。
 然后粒子们就追随当前的最优粒子在解空间中搜索。</p>
-<p>PSO 算法是基于群体的，根据对环境的适应度将群体中的个体移动到好的区域。<br>
-然而它不对个体使用演化算子，而是将每个个体看作是\(D\)维搜索空间中的一个没有体积的微粒（点），在搜索空间中以一定的速度飞行，这个速度根据它本身的飞行经验和同伴的飞行经验来动态调整。<br>
-第\(i\)个微粒表示为\(X_i = (x_{i1}, x_{i2}, &mldr;, x_{iD})\)，它经历过的最好位置（有最好的适应值）记为\(P_i = (p_{i1}, p_{i2}, &mldr;, p_{iD})\)，也称为 \(pBest\) 。<br>
-在群体所有微粒经历过的最好位置的索引号用符号\(g\)表示，即\(P_g\)，也称为\(gBest\)。<br>
-微粒\(i\)的速度用\(V_i = (v_{i1}, v_{i2}, &mldr;, v_{iD})\)表示。<br>
+<p>PSO 算法是基于群体的，根据对环境的适应度将群体中的个体移动到好的区域。
+然而它不对个体使用演化算子，而是将每个个体看作是\(D\)维搜索空间中的一个没有体积的微粒（点），在搜索空间中以一定的速度飞行，这个速度根据它本身的飞行经验和同伴的飞行经验来动态调整。
+第\(i\)个微粒表示为\(X_i = (x_{i1}, x_{i2}, &mldr;, x_{iD})\)，它经历过的最好位置（有最好的适应值）记为\(P_i = (p_{i1}, p_{i2}, &mldr;, p_{iD})\)，也称为 \(pBest\) 。
+在群体所有微粒经历过的最好位置的索引号用符号\(g\)表示，即\(P_g\)，也称为\(gBest\)。
+微粒\(i\)的速度用\(V_i = (v_{i1}, v_{i2}, &mldr;, v_{iD})\)表示。
 对每一代，它的第\(d\)维\((1 ≤ d ≤ D)\)根据如下方程进行变化：</p>
 <p>\(v_{id} = w \cdot v_{id} + c_1 \cdot rand() \cdot (p_{id} - x_{id}) + c_2 \cdot rand() \cdot (p_{gd} - x_{id})\)</p>
 <p>\(x_{id} = x_{id} + v_{id}\)</p>
-<p>其中\(w\)为惯性权重（Inertia Weight），\(c_1\)和\(c_2\)为加速常数（Acceleration Constants），rand()为在[0,1]范围里变化的随机值。<br>
-此外，微粒的速度\(V_i\)被一个最大速度\(V_{max}\)所限制。<br>
+<p>其中\(w\)为惯性权重（Inertia Weight），\(c_1\)和\(c_2\)为加速常数（Acceleration Constants），rand()为在[0,1]范围里变化的随机值。
+此外，微粒的速度\(V_i\)被一个最大速度\(V_{max}\)所限制。
 如果当前对微粒的加速导致它的在某维的速度\(v_{id}\)超过该维的最大速度\(v_{max,d}\)，则该维的速度被限制为该维最大速度\(v_{max,d}\)。</p>
 <h2 id=算法流程>算法流程</h2>
 <ol>
@@ -235,7 +235,7 @@ Share on
 <div class=donation__icons>
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fstksgarcia.github.io%2fposts%2fparticle-swarm-optimization%2f" title=Facebook aria-label="Facebook Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191V.169c-.378-.052-1.678-.169-3.192-.169-3.159.0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/></svg>
 </a>
-<a href="https://twitter.com/intent/tweet?text=%e7%b2%92%e5%ad%90%e7%be%a4%e7%ae%97%e6%b3%95&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fparticle-swarm-optimization%2f&hashtags=particle-swarm-optimization%2cheuristic-algorithm&via=%5bSamuel%20Garcia%5d" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
+<a href="https://twitter.com/intent/tweet?text=%e7%b2%92%e5%ad%90%e7%be%a4%e7%ae%97%e6%b3%95&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fparticle-swarm-optimization%2f&hashtags=particle-swarm-optimization%2cheuristic-algorithm&via=Samuel%20Garcia" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
 </a>
 </div>
 </div>
@@ -250,7 +250,7 @@ Share on
 WRITTEN BY
 </div>
 <div class=whoami__title>
-[Samuel Garcia]
+Samuel Garcia
 </div>
 <div class=whoami__desc>
 I never fit in. I am a true alternative.
@@ -360,7 +360,7 @@ See Also
 <div class=toc data-dir=ltr data-folding=false data-ani=true>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#粒子群算法-particle-swarm-optimization-pso>粒子群算法 （Particle Swarm Optimization, PSO）</a></li>
+<li><a href=#粒子群算法>粒子群算法</a></li>
 <li><a href=#算法原理>算法原理</a></li>
 <li><a href=#算法流程>算法流程</a></li>
 </ul>

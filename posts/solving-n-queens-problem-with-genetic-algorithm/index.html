@@ -17,14 +17,14 @@
 <meta name=created content="2018-03-11T00:07:00+0800">
 <meta name=modified content="2021-08-24T23:12:33+0800">
 <meta property="article:published_time" content="2018-03-11T00:07:00+0800">
-<meta name=author content="[Samuel Garcia]">
-<meta property="article:author" content="https://stksgarcia.github.io/posts/solving-n-queens-problem-with-genetic-algorithm/@[Samuel Garcia]">
+<meta name=author content="Samuel Garcia">
+<meta property="article:author" content="https://stksgarcia.github.io/posts/solving-n-queens-problem-with-genetic-algorithm/@Samuel Garcia">
 <meta property="og:site_name" content="Gibberish - STK (゜-゜)つロ 乾杯~">
 <meta property="og:title" content="用遗传算法求解 N 皇后问题">
 <meta property="og:url" content="https://stksgarcia.github.io/posts/solving-n-queens-problem-with-genetic-algorithm/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Gibberish - STK (゜-゜)つロ 乾杯~">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.89.4">
 <meta name=msapplication-TileColor content="#fff">
 <meta name=theme-color content="#fff">
 <meta name=msapplication-navbutton-color content="#fff">
@@ -47,7 +47,7 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta name=msapplication-TileColor content="#ffffff">
 <meta name=msapplication-TileImage content="/ms-icon-144x144.png">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"用遗传算法求解 N 皇后问题","datePublished":"2018-03-11T00:07:00+08:00","dateModified":"2021-08-24T23:12:33+08:00","url":"https://stksgarcia.github.io/posts/solving-n-queens-problem-with-genetic-algorithm/","description":"\u003ch2 id=\"n-皇后问题\"\u003eN 皇后问题\u003c/h2\u003e \u003cp\u003e首先介绍八皇后问题。八皇后问题是一个以国际象棋为背景的问题：如何能够在 \u003ccode\u003e8×8\u003c/code\u003e 的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？\u003cbr /\u003e 为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。\u003c/p\u003e \u003cp\u003e八皇后问题可以推广为更一般的 N 皇后摆放问题：这时棋盘的大小变为 \u003ccode\u003eN×N\u003c/code\u003e 。\u003c/p\u003e","keywords":["genetic-algorithm"],"author":{"@type":"Person","name":["Samuel Garcia"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"用遗传算法求解 N 皇后问题","datePublished":"2018-03-11T00:07:00+08:00","dateModified":"2021-08-24T23:12:33+08:00","url":"https://stksgarcia.github.io/posts/solving-n-queens-problem-with-genetic-algorithm/","description":"\u003ch2 id=\"n-皇后问题\"\u003eN 皇后问题\u003c/h2\u003e \u003cp\u003e首先介绍八皇后问题。八皇后问题是一个以国际象棋为背景的问题：如何能够在 \u003ccode\u003e8×8\u003c/code\u003e 的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？ 为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。\u003c/p\u003e \u003cp\u003e八皇后问题可以推广为更一般的 N 皇后摆放问题：这时棋盘的大小变为 \u003ccode\u003eN×N\u003c/code\u003e 。\u003c/p\u003e","keywords":["genetic-algorithm"],"author":{"@type":"Person","name":"Samuel Garcia"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
 </head>
 <body id=root class=theme__dark>
 <script>var localTheme=localStorage.getItem('theme');localTheme&&(document.getElementById('root').className='theme__'+localTheme)</script>
@@ -104,8 +104,8 @@ kimbie
 <li class=navbarm__menu--item>
 <a href=/tags>Tags</a>
 </li>
-<li class=navbarm__menu--item>
-<a href=/archive>Archive</a>
+<li class="navbarm__menu--item active">
+<a href=/posts>Posts</a>
 </li>
 <li class=navbarm__menu--item>
 <a href=/about>About</a>
@@ -145,7 +145,7 @@ kimbie
 </div>
 </div>
 <a href=/tags class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Tags</a>
-<a href=/archive class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Archive</a>
+<a href=/posts class="navbar__menu-item navbar__slide-down active" dir=ltr data-ani=true>Posts</a>
 <a href=/about class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>About</a>
 </div>
 </nav>
@@ -174,7 +174,7 @@ kimbie
 <time class=single__info title="Written At">📅&nbsp;Mar 11, 2018 </time>
 &nbsp;&#183;&nbsp; <time class=single__info title="Modified At"> 📝&nbsp;Aug 24, 2021 </time>
 &nbsp;&#183;&nbsp; <span class=single__info title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
-&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;[Samuel Garcia]</span>
+&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;Samuel Garcia</span>
 <span class=single__info>
 </span>
 </div>
@@ -185,11 +185,11 @@ kimbie
 </div>
 <article class=single__contents data-dir=ltr data-ani=true>
 <h2 id=n-皇后问题>N 皇后问题</h2>
-<p>首先介绍八皇后问题。八皇后问题是一个以国际象棋为背景的问题：如何能够在 <code>8×8</code> 的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？<br>
+<p>首先介绍八皇后问题。八皇后问题是一个以国际象棋为背景的问题：如何能够在 <code>8×8</code> 的国际象棋棋盘上放置八个皇后，使得任何一个皇后都无法直接吃掉其他的皇后？
 为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。</p>
 <p>八皇后问题可以推广为更一般的 N 皇后摆放问题：这时棋盘的大小变为 <code>N×N</code> 。</p>
 <h2 id=遗传算法>遗传算法</h2>
-<p>遗传算法（Genetic Algorithm, GA）是借鉴生物界自然选择和自然遗传机制的启发式搜索算法。<br>
+<p>遗传算法（Genetic Algorithm, GA）是借鉴生物界自然选择和自然遗传机制的启发式搜索算法。
 它模拟一个人工种群的进化过程，通过选择、交叉以及变异等机制，在每次迭代中都保留一组候选个体，重复此过程，种群经过若干代进化后，理想情况下其适应度达到近似最优的状态。</p>
 <h3 id=算法过程>算法过程</h3>
 <p>总结一下是下列几个步骤：</p>
@@ -201,7 +201,21 @@ kimbie
 <li>变异（Mutation）</li>
 </ol>
 <p>用伪代码来描述就是：</p>
-<pre><code class=language-nil data-lang=nil>START
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-text data-lang=text>START
 Generate the initial population
 Compute fitness
 REPEAT
@@ -211,31 +225,33 @@ REPEAT
     Compute fitness
 UNTIL population has converged
 STOP
-</code></pre><h3 id=编码与解码>编码与解码</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=编码与解码>编码与解码</h3>
 <p>实现遗传算法的第一步就是明确对求解问题的编码和解码方式。</p>
 <p>一般有两种编码方式，各具优缺点：</p>
 <ul>
 <li>实数编码：直接用实数表示基因，容易理解且不需要解码过程，但容易过早收敛，从而陷入局部最优。</li>
 <li>二进制编码：稳定性高，种群多样性大，但需要的存储空间大，需要解码且难以理解。</li>
 </ul>
-<p>在本问题中可以采用实数编码，例如，当 <code>N = 8</code> 时，其中一个编码可以是 <code>78563412</code> ，其中每一个数字的位置代表皇后在棋盘上的行数，每一个值代表皇后在当前行中所出列的位置。<br>
+<p>在本问题中可以采用实数编码，例如，当 <code>N = 8</code> 时，其中一个编码可以是 <code>78563412</code> ，其中每一个数字的位置代表皇后在棋盘上的行数，每一个值代表皇后在当前行中所出列的位置。
 比如 <code>6</code> 代表该皇后在棋盘的第 4 行第 6 列。</p>
 <h3 id=个体与种群>个体与种群</h3>
-<p>“染色体”表达了某种特征，这种特征的载体，称为“个体”。<br>
+<p>“染色体”表达了某种特征，这种特征的载体，称为“个体”。
 许多这样的个体组成了一个种群。</p>
 <h3 id=适应度函数>适应度函数</h3>
-<p>遗传算法中，一个个体（解）的好坏用适应度函数值来评价。<br>
+<p>遗传算法中，一个个体（解）的好坏用适应度函数值来评价。
 在本问题中，有多少皇后满足要求就是适应度函数。</p>
-<p>适应度函数值越大，解的质量越高。<br>
+<p>适应度函数值越大，解的质量越高。
 适应度函数是遗传算法进化的驱动力，也是进行自然选择的唯一标准，它的设计应结合求解问题本身的要求而定。</p>
 <h3 id=选择>选择</h3>
 <p>选择操作是从前代种群中选择多对较优个体，一对较优个体称之为一对父母，让父母们将它们的基因传递到下一代，直到下一代个体数量达到种群数量上限。</p>
 <p>在选择操作前，将种群中个体按照适应度从小到大进行排列。</p>
-<p>采用轮盘赌选择方法（当然还有很多别的选择方法），各个个体被选中的概率与其适应度函数值大小成正比。<br>
+<p>采用轮盘赌选择方法（当然还有很多别的选择方法），各个个体被选中的概率与其适应度函数值大小成正比。
 轮盘赌选择方法具有随机性，在选择的过程中可能会丢掉较好的个体，所以可以使用精英机制，将前代最优个体直接选择。</p>
 <p>在本问题中，直接将适应度最高的两个个体作为父母。</p>
 <h3 id=交叉>交叉</h3>
-<p>两个待交叉的不同的染色体（父母）根据交叉概率按某种方式交换其部分基因。<br>
+<p>两个待交叉的不同的染色体（父母）根据交叉概率按某种方式交换其部分基因。
 一般来说交叉概率比较大。</p>
 <p>可以采用单点交叉法，也可以使用其他交叉方法，应根据实际情况定义合适的交叉算法。</p>
 <h3 id=变异>变异</h3>
@@ -555,7 +571,7 @@ Share on
 <div class=donation__icons>
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fstksgarcia.github.io%2fposts%2fsolving-n-queens-problem-with-genetic-algorithm%2f" title=Facebook aria-label="Facebook Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191V.169c-.378-.052-1.678-.169-3.192-.169-3.159.0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/></svg>
 </a>
-<a href="https://twitter.com/intent/tweet?text=%e7%94%a8%e9%81%97%e4%bc%a0%e7%ae%97%e6%b3%95%e6%b1%82%e8%a7%a3%20N%20%e7%9a%87%e5%90%8e%e9%97%ae%e9%a2%98&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fsolving-n-queens-problem-with-genetic-algorithm%2f&hashtags=genetic-algorithm&via=%5bSamuel%20Garcia%5d" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
+<a href="https://twitter.com/intent/tweet?text=%e7%94%a8%e9%81%97%e4%bc%a0%e7%ae%97%e6%b3%95%e6%b1%82%e8%a7%a3%20N%20%e7%9a%87%e5%90%8e%e9%97%ae%e9%a2%98&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fsolving-n-queens-problem-with-genetic-algorithm%2f&hashtags=genetic-algorithm&via=Samuel%20Garcia" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
 </a>
 </div>
 </div>
@@ -570,7 +586,7 @@ Share on
 WRITTEN BY
 </div>
 <div class=whoami__title>
-[Samuel Garcia]
+Samuel Garcia
 </div>
 <div class=whoami__desc>
 I never fit in. I am a true alternative.

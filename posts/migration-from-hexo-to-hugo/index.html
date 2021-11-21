@@ -17,14 +17,14 @@
 <meta name=created content="2020-04-10T18:12:00+0800">
 <meta name=modified content="2021-08-24T23:12:36+0800">
 <meta property="article:published_time" content="2020-04-10T18:12:00+0800">
-<meta name=author content="[Samuel Garcia]">
-<meta property="article:author" content="https://stksgarcia.github.io/posts/migration-from-hexo-to-hugo/@[Samuel Garcia]">
+<meta name=author content="Samuel Garcia">
+<meta property="article:author" content="https://stksgarcia.github.io/posts/migration-from-hexo-to-hugo/@Samuel Garcia">
 <meta property="og:site_name" content="Gibberish - STK (゜-゜)つロ 乾杯~">
 <meta property="og:title" content="从 Hexo 到 Hugo">
 <meta property="og:url" content="https://stksgarcia.github.io/posts/migration-from-hexo-to-hugo/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Gibberish - STK (゜-゜)つロ 乾杯~">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.89.4">
 <meta name=msapplication-TileColor content="#fff">
 <meta name=theme-color content="#fff">
 <meta name=msapplication-navbutton-color content="#fff">
@@ -47,7 +47,7 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta name=msapplication-TileColor content="#ffffff">
 <meta name=msapplication-TileImage content="/ms-icon-144x144.png">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"从 Hexo 到 Hugo","datePublished":"2020-04-10T18:12:00+08:00","dateModified":"2021-08-24T23:12:36+08:00","url":"https://stksgarcia.github.io/posts/migration-from-hexo-to-hugo/","description":"\u003cp\u003e最近又开始折腾博客了，大概拖了有一个月了才开始记录迁移博客的感受。\u003cbr /\u003e 简言之，让我从 Hexo 迁移到 Hugo 最大的原因是 Emacs Org mode 下的 Hugo 插件。\u003c/p\u003e","keywords":["blog"],"author":{"@type":"Person","name":["Samuel Garcia"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"从 Hexo 到 Hugo","datePublished":"2020-04-10T18:12:00+08:00","dateModified":"2021-08-24T23:12:36+08:00","url":"https://stksgarcia.github.io/posts/migration-from-hexo-to-hugo/","description":"\u003cp\u003e最近又开始折腾博客了，大概拖了有一个月了才开始记录迁移博客的感受。 简言之，让我从 Hexo 迁移到 Hugo 最大的原因是 Emacs Org mode 下的 Hugo 插件。\u003c/p\u003e","keywords":["blog"],"author":{"@type":"Person","name":"Samuel Garcia"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://stksgarcia.github.io/"},"publisher":{"@type":"Organization","name":"Gibberish - STK (゜-゜)つロ 乾杯~","url":"https://stksgarcia.github.io/"}}</script>
 </head>
 <body id=root class=theme__dark>
 <script>var localTheme=localStorage.getItem('theme');localTheme&&(document.getElementById('root').className='theme__'+localTheme)</script>
@@ -104,8 +104,8 @@ kimbie
 <li class=navbarm__menu--item>
 <a href=/tags>Tags</a>
 </li>
-<li class=navbarm__menu--item>
-<a href=/archive>Archive</a>
+<li class="navbarm__menu--item active">
+<a href=/posts>Posts</a>
 </li>
 <li class=navbarm__menu--item>
 <a href=/about>About</a>
@@ -145,7 +145,7 @@ kimbie
 </div>
 </div>
 <a href=/tags class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Tags</a>
-<a href=/archive class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Archive</a>
+<a href=/posts class="navbar__menu-item navbar__slide-down active" dir=ltr data-ani=true>Posts</a>
 <a href=/about class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>About</a>
 </div>
 </nav>
@@ -174,7 +174,7 @@ kimbie
 <time class=single__info title="Written At">📅&nbsp;Apr 10, 2020 </time>
 &nbsp;&#183;&nbsp; <time class=single__info title="Modified At"> 📝&nbsp;Aug 24, 2021 </time>
 &nbsp;&#183;&nbsp; <span class=single__info title="Reading Time"> ☕&nbsp;1&nbsp;min read </span>
-&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;[Samuel Garcia]</span>
+&nbsp;&#183;&nbsp; <span class=single__info title="WRITTEN BY">✍️&nbsp;Samuel Garcia</span>
 <span class=single__info>
 </span>
 </div>
@@ -184,20 +184,20 @@ kimbie
 </ul>
 </div>
 <article class=single__contents data-dir=ltr data-ani=true>
-<p>最近又开始折腾博客了，大概拖了有一个月了才开始记录迁移博客的感受。<br>
+<p>最近又开始折腾博客了，大概拖了有一个月了才开始记录迁移博客的感受。
 简言之，让我从 Hexo 迁移到 Hugo 最大的原因是 Emacs Org mode 下的 Hugo 插件。</p>
-<p>一切的开始要从我入坑 Doom Emacs 说起。<br>
-以前我一直使用的是 Spacemacs，我非常感谢开发者做的贡献，让我使用到了那么易用的 Emacs 编辑器。<br>
-但是 Spacemacs 的速度有点慢，定制化的时候觉得有些杂乱，不是很方便，还有些卡。<br>
-还有 Spacemacs 的版本更新的有点慢，Issue 也似乎堆积的有点多。<br>
+<p>一切的开始要从我入坑 Doom Emacs 说起。
+以前我一直使用的是 Spacemacs，我非常感谢开发者做的贡献，让我使用到了那么易用的 Emacs 编辑器。
+但是 Spacemacs 的速度有点慢，定制化的时候觉得有些杂乱，不是很方便，还有些卡。
+还有 Spacemacs 的版本更新的有点慢，Issue 也似乎堆积的有点多。
 加之最近放假闲下来了一段时间，所以又开始折腾乱七八遭的东西。</p>
-<p>然后我就看到了 Doom Emacs。<br>
-有很多人推荐它，另外更新频率也很高，就开始用它了。<br>
+<p>然后我就看到了 Doom Emacs。
+有很多人推荐它，另外更新频率也很高，就开始用它了。
 目前使用了已经有一段时间了，真的很不错。</p>
-<p>在这之后，我就用 Doom Emacs 折腾博客了，想整一套 Org mode 写博客的工作流。<br>
-浏览网页的时候无意间看到了用 Org mode Hugo 来生成博客。<br>
-这种方式的优点是，写博客深度整合 Org mode 的特性，从内容编写到网页生成都很流畅。<br>
-所有的博客可以使用一个 Org 文件保存，方便管理和回顾。<br>
+<p>在这之后，我就用 Doom Emacs 折腾博客了，想整一套 Org mode 写博客的工作流。
+浏览网页的时候无意间看到了用 Org mode Hugo 来生成博客。
+这种方式的优点是，写博客深度整合 Org mode 的特性，从内容编写到网页生成都很流畅。
+所有的博客可以使用一个 Org 文件保存，方便管理和回顾。
 此外，Hugo 生成博客的速度真的比 Hexo 快好多。</p>
 <p>总之，一个能让我在 Emacs 里面完成所有博客相关活动的平台真的很舒服。</p>
 </article>
@@ -213,7 +213,7 @@ Share on
 <div class=donation__icons>
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fstksgarcia.github.io%2fposts%2fmigration-from-hexo-to-hugo%2f" title=Facebook aria-label="Facebook Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191V.169c-.378-.052-1.678-.169-3.192-.169-3.159.0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/></svg>
 </a>
-<a href="https://twitter.com/intent/tweet?text=%e4%bb%8e%20Hexo%20%e5%88%b0%20Hugo&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fmigration-from-hexo-to-hugo%2f&hashtags=blog&via=%5bSamuel%20Garcia%5d" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
+<a href="https://twitter.com/intent/tweet?text=%e4%bb%8e%20Hexo%20%e5%88%b0%20Hugo&url=https%3a%2f%2fstksgarcia.github.io%2fposts%2fmigration-from-hexo-to-hugo%2f&hashtags=blog&via=Samuel%20Garcia" title=Twitter aria-label="Twitter Share Button" class=donation__item target=_blank rel=noreferrer data-type=share><svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113C22.51 6.42 23.331 5.555 24 4.559v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724.0-4.917 2.211-4.917 4.921.0.39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487.0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315.0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403.0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683.0 14.342-7.244 13.986-14.637z"/></svg>
 </a>
 </div>
 </div>
@@ -228,7 +228,7 @@ Share on
 WRITTEN BY
 </div>
 <div class=whoami__title>
-[Samuel Garcia]
+Samuel Garcia
 </div>
 <div class=whoami__desc>
 I never fit in. I am a true alternative.

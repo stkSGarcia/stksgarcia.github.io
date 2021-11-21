@@ -7,4 +7,4 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">sync&lt;span class="p">;&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="m">1&lt;/span> &amp;gt; /proc/sys/vm/drop_caches
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><dc:creator>[Samuel Garcia]</dc:creator><category>page-cache</category><category>linux</category></item></channel></rss>
+&lt;/div></description><dc:creator>Samuel Garcia</dc:creator><category>page-cache</category><category>linux</category></item></channel></rss>
