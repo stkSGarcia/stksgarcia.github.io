@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Gibberish - STK (゜-゜)つロ 乾杯~</title><link>https://stksgarcia.github.io/</link><description>Recent content on Gibberish - STK (゜-゜)つロ 乾杯~</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2021, All Rights Reserved</copyright><lastBuildDate>Thu, 26 Aug 2021 23:39:00 +0800</lastBuildDate><atom:link href="https://stksgarcia.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>内部效度，外部效度，构念效度和统计结论效度</title><link>https://stksgarcia.github.io/posts/validity-introduction/</link><pubDate>Thu, 26 Aug 2021 23:39:00 +0800</pubDate><atom:modified>Fri, 27 Aug 2021 11:27:44 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/validity-introduction/</guid><description>&lt;p>研究设计的质量取决于四个关键设计属性：内部效度，外部效度，构念效度和统计结论效度。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Gibberish - STK (゜-゜)つロ 乾杯~</title><link>https://stksgarcia.github.io/</link><description>Recent content on Gibberish - STK (゜-゜)つロ 乾杯~</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2023, All Rights Reserved</copyright><lastBuildDate>Thu, 26 Aug 2021 23:39:00 +0800</lastBuildDate><atom:link href="https://stksgarcia.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>内部效度，外部效度，构念效度和统计结论效度</title><link>https://stksgarcia.github.io/posts/validity-introduction/</link><pubDate>Thu, 26 Aug 2021 23:39:00 +0800</pubDate><atom:modified>Fri, 27 Aug 2021 11:27:44 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/validity-introduction/</guid><description>&lt;p>研究设计的质量取决于四个关键设计属性：内部效度，外部效度，构念效度和统计结论效度。
 以下将详细介绍这四个效度。&lt;/p></description><dc:creator>Samuel Garcia</dc:creator><category>validity</category></item><item><title>AIOps 简介</title><link>https://stksgarcia.github.io/posts/aiops-introduction/</link><pubDate>Sat, 20 Jun 2020 21:21:00 +0800</pubDate><atom:modified>Tue, 24 Aug 2021 23:12:36 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/aiops-introduction/</guid><description>&lt;p>AIOps 是人工智能在软件运维中的应用，即利用机器学习、大数据和自动化决策来完成一系列需要人为进行大量手工干预的传统运维操作流程。
 通过对运维数据的算法分析，AIOps 能够帮助运维或 DevOps 团队更智能、更快速的完成运维工作，从而在业务运营和客户受到影响之前，更早的发现软件系统问题并快速解决。
 在 DevOps 环境下，运维团队能够通过 AIOps 应对现代 IT 环境产生的大量复杂数据，从而防止中断，维持正常运行时间，实现持续的服务保障。
@@ -10,8 +10,8 @@ AIOps 已经成为监控和管理混合、动态、分布式和组件化的现�
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">sync&lt;span class="p">;&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="m">1&lt;/span> &amp;gt; /proc/sys/vm/drop_caches
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sync&lt;span class="p">;&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="m">1&lt;/span> &amp;gt; /proc/sys/vm/drop_caches
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description><dc:creator>Samuel Garcia</dc:creator><category>page-cache</category><category>linux</category></item><item><title>JVM 指令重排对双重校验锁单例模式的影响</title><link>https://stksgarcia.github.io/posts/singleton-and-jvm-instruction-rearrangement/</link><pubDate>Sun, 28 Oct 2018 18:27:00 +0800</pubDate><atom:modified>Tue, 24 Aug 2021 23:12:35 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/singleton-and-jvm-instruction-rearrangement/</guid><description>&lt;p>下面的双重校验锁单例是线程安全的吗？&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -34,21 +34,23 @@ AIOps 已经成为监控和管理混合、动态、分布式和组件化的现�
 &lt;/span>&lt;span class="lnt">16
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">Singleton&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="kd">private&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="n">instance&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">null&lt;/span>
-&lt;span class="kd">private&lt;/span> &lt;span class="nf">Singleton&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{}&lt;/span>
-&lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="nf">getInstance&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="n">instance&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="n">synchronzied&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">Singleton&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="n">instance&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="n">instance&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="n">Singleton&lt;/span>&lt;span class="o">();&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;span class="k">return&lt;/span> &lt;span class="n">instance&lt;/span>&lt;span class="o">;&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">Singleton&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">private&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="n">instance&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">null&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">private&lt;/span> &lt;span class="nf">Singleton&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="n">Singleton&lt;/span> &lt;span class="nf">getInstance&lt;/span>&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="n">instance&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">synchronzied&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">Singleton&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="n">instance&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="kc">null&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">instance&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="n">Singleton&lt;/span>&lt;span class="o">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">instance&lt;/span>&lt;span class="o">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description><dc:creator>Samuel Garcia</dc:creator><category>java</category></item><item><title>启发式算法概述</title><link>https://stksgarcia.github.io/posts/heuristic-algorithm-overview/</link><pubDate>Sun, 28 Oct 2018 15:42:00 +0800</pubDate><atom:modified>Tue, 24 Aug 2021 23:12:34 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/heuristic-algorithm-overview/</guid><description>&lt;p>启发式算法（Heuristic Algorithm）是相对于最优化算法提出的。
 它有不同的定义：&lt;/p>
@@ -67,8 +69,8 @@ Stream 是用函数式编程方式在集合类上进行复杂操作的工具，�
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&amp;#34;1234567890&amp;#34;,&amp;#34;James&amp;#34;,man,&amp;#34;New York, NY, USA&amp;#34;
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">&amp;#34;1234567890&amp;#34;,&amp;#34;James&amp;#34;,man,&amp;#34;New York, NY, USA&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>And the output we need is as follows:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -79,11 +81,11 @@ Stream 是用函数式编程方式在集合类上进行复杂操作的工具，�
 &lt;/span>&lt;span class="lnt">4
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&amp;#34;1234567890&amp;#34;
-&amp;#34;James&amp;#34;
-man
-&amp;#34;New York, NY, USA&amp;#34;
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">&amp;#34;1234567890&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;James&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">man
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;New York, NY, USA&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description><dc:creator>Samuel Garcia</dc:creator><category>regex</category><category>java</category></item><item><title>JDK 10 新特性</title><link>https://stksgarcia.github.io/posts/jdk-10-new-features/</link><pubDate>Sat, 24 Mar 2018 19:27:00 +0800</pubDate><atom:modified>Tue, 24 Aug 2021 23:12:34 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/jdk-10-new-features/</guid><description>&lt;p>前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
 下面介绍一下几个比较重要的新特性。&lt;/p></description><dc:creator>Samuel Garcia</dc:creator><category>java</category></item><item><title>Windows 下使用 Powershell 批量重命名文件</title><link>https://stksgarcia.github.io/posts/powershell-bulk-rename/</link><pubDate>Sun, 18 Mar 2018 18:47:00 +0800</pubDate><atom:modified>Tue, 24 Aug 2021 23:12:33 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/powershell-bulk-rename/</guid><description>&lt;p>当我们下载了一部电视剧或是动漫时，通常文件名非常长，会包含视频的分辨率、字幕组等信息，但是我们通常只会关心这是第几集。。。&lt;/p></description><dc:creator>Samuel Garcia</dc:creator><category>powershell</category><category>windows</category></item><item><title>用遗传算法求解 N 皇后问题</title><link>https://stksgarcia.github.io/posts/solving-n-queens-problem-with-genetic-algorithm/</link><pubDate>Sun, 11 Mar 2018 00:07:00 +0800</pubDate><atom:modified>Tue, 24 Aug 2021 23:12:33 +0800</atom:modified><guid>https://stksgarcia.github.io/posts/solving-n-queens-problem-with-genetic-algorithm/</guid><description>&lt;h2 id="n-皇后问题">N 皇后问题&lt;/h2>
