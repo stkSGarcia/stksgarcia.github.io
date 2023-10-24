@@ -50,7 +50,7 @@ skills:
   - name: Technical
     items:
       - name: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.)
-        percent: 80
+        percent: 90
         icon: python
         icon_pack: fab
       - name: Java (Scala)
