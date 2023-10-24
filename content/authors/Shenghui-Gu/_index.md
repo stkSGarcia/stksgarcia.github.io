@@ -47,7 +47,7 @@ education:
 # Skills
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 skills:
-  # - name: Technical
+  - name: Technical
     items:
       - name: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.)
         icon: python
