@@ -116,11 +116,11 @@ sections:
   - block: skills
     content:
       title: Skills
-      text: ''
+      text: ""
       # Choose a user to display skills from (a folder name within `content/authors/`)
       username: Shenghui-Gu
     design:
-      columns: '1'
+      columns: "1"
   - block: tag_cloud
     content:
       title: Popular Topics

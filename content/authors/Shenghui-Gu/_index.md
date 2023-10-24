@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Postdoctoral Researcher in Software Engineering
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -47,7 +47,7 @@ education:
 # Skills
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 skills:
-  - name: Technical
+  # - name: Technical
     items:
       - name: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.)
         icon: python
@@ -76,25 +76,25 @@ skills:
       - name: Git
         icon: git-alt
         icon_pack: fab
-  - name: Hobbies
-    color: "#eeac02"
-    color_border: "#f0bf23"
-    items:
-      - name: Hiking
-        description: ""
-        percent: 60
-        icon: person-hiking
-        icon_pack: fas
-      - name: Cats
-        description: ""
-        percent: 100
-        icon: cat
-        icon_pack: fas
-      - name: Photography
-        description: ""
-        percent: 80
-        icon: camera-retro
-        icon_pack: fas
+  # - name: Hobbies
+  #   color: "#eeac02"
+  #   color_border: "#f0bf23"
+  #   items:
+  #     - name: Hiking
+  #       description: ""
+  #       percent: 60
+  #       icon: person-hiking
+  #       icon_pack: fas
+  #     - name: Cats
+  #       description: ""
+  #       percent: 100
+  #       icon: cat
+  #       icon_pack: fas
+  #     - name: Photography
+  #       description: ""
+  #       percent: 80
+  #       icon: camera-retro
+  #       icon_pack: fas
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -131,5 +131,4 @@ highlight_name: true
 ---
 
 Shenghui (Samuel) Gu is a postdoctoral researcher in software engineering at the university of Ottawa, Ontario, Canada. He received the Ph.D. degree in software engineering from Nanjing University, China. His research interests are in software engineering, particularly in AIOps, software log analytics, DevOps, as well as empirical and evidence-based software engineering.
-
 {style="text-align: justify;"}
