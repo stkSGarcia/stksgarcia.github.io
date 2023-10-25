@@ -93,6 +93,10 @@ skills:
         percent: 100
         icon: cat
         icon_pack: fas
+      - name: Fitness
+        percent: 100
+        icon: dumbbell
+        icon_pack: fas
       - name: Games
         percent: 90
         icon: gamepad
