@@ -29,6 +29,8 @@ bio: My research interests include AIOps, software log analytics, DevOps, and em
 
 # Interests to show in About widget
 interests:
+  - Trustworthy AI
+  - Automated software testing and analysis
   - AIOps
   - Artificial Intelligence
   - Software Log Analytics
@@ -140,5 +142,5 @@ social:
 highlight_name: true
 ---
 
-Shenghui (Samuel) Gu is a postdoctoral researcher in software engineering at the university of Ottawa, Ontario, Canada. He received the Ph.D. degree in software engineering from Nanjing University, China. His research interests are in software engineering, particularly in AIOps, software log analytics, DevOps, as well as empirical and evidence-based software engineering.
+Shenghui (Samuel) Gu is a postdoctoral fellow at the School of Electrical Engineering and Computer Science (EECS), University of Ottawa, Ontario, Canada. He received the Ph.D. degree in software engineering from Nanjing University, China. His research interests are in software engineering, particularly in trustworthy AI, automated software testing and analysis, AIOps, software log analytics, DevOps, as well as empirical and evidence-based software engineering.
 {style="text-align: justify;"}
