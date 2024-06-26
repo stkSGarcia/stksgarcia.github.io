@@ -67,8 +67,8 @@ education:
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
-    company_url: ''
-    company_logo: ''
+    company_url: https://www.nanda-lab.ca
+    company_logo: custom/uottawa
     date_start: 2021-01-01
     date_end: ''
     summary: |2-
@@ -76,28 +76,15 @@ work:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - position: Postdoctoral Researcher
+    company_name: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
+    company_url: https://www.nanda-lab.ca
+    # company_logo: 'custom/uottawa'
+    # location: Ottawa, Ontario, Canada
+    date_start: 2023-10-10
+    date_end: ''
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-# work:
-#   - position: Postdoctoral Researcher
-#     company_name: 'Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa'
-#     company_url: 'https://www.nanda-lab.ca'
-#     # company_logo: 'custom/uottawa'
-#     # location: Ottawa, Ontario, Canada
-#     date_start: 2023-10-10
-#     date_end: ''
-#     summary: |
-#       - Work on the topic of Trustworthy AI.
+      - Work on the topic of Trustworthy AI.
 #   - position: Backend Development Engineer Intern
 #     company: 'Meituan, Basic Development Platform, System Monitoring Team'
 #     company_url: 'https://about.meituan.com'
