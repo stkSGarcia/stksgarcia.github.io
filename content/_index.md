@@ -33,8 +33,6 @@ sections:
     id: posts
     content:
       title: Recent Posts
-      subtitle: ''
-      text: 'Check out my recent blog posts below!'
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
@@ -50,7 +48,8 @@ sections:
       sort_ascending: false
     design:
       # Choose a listing view
-      view: card
+      view: showcase
+      flip_alt_rows: true
   - block: collection
     id: publications
     content:
@@ -72,4 +71,18 @@ sections:
     design:
       view: article-grid
       columns: 1
+  - block: resume-experience
+    content:
+      username: Shenghui-Gu
+    design:
+      # Hugo date format
+      date_format: 'January 2006'
+      # Education or Experience section first?
+      is_education_first: false
+  - block: resume-skills
+    content:
+      title: Skills & Hobbies
+      username: Shenghui-Gu
+    design:
+      show_skill_percentage: false
 ---

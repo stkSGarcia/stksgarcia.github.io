@@ -180,7 +180,6 @@ skills:
         icon_pack: fas
 ---
 
-
 ## About Me
 
 Shenghui (Samuel) Gu is a postdoctoral fellow at the School of Electrical Engineering and Computer Science (EECS), University of Ottawa, Ontario, Canada. He received the Ph.D. degree in software engineering from Nanjing University, China. His research interests are in software engineering, particularly in trustworthy AI, automated software testing and analysis, AIOps, software log analytics, DevOps, as well as empirical and evidence-based software engineering.
