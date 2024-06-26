@@ -67,17 +67,17 @@ education:
 work:
   - position: Postdoctoral Researcher
     company_name: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
-    # company_url: https://www.nanda-lab.ca
-    # company_logo: custom/uottawa
+    company_url: https://www.nanda-lab.ca
+    company_logo: custom/uottawa
     # location: Ottawa, Ontario, Canada
     date_start: 2023-10-10
     date_end: ''
     summary: |
       - Work on the topic of Trustworthy AI.
   - position: Backend Development Engineer Intern
-    company: Meituan, Basic Development Platform, System Monitoring Team
-    # company_url: https://about.meituan.com
-    # company_logo: custom/meituan
+    company_name: Meituan, Basic Development Platform, System Monitoring Team
+    company_url: https://about.meituan.com
+    company_logo: custom/meituan
     # location: Shanghai, China
     date_start: 2022-07-11
     date_end: 2023-06-05
@@ -87,9 +87,9 @@ work:
       - Acquired knowledge in machine learning, deep learning, and explainable artificial intelligence.
       - Technical Skills: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.), Linux tools, Git.
   - position: Backend Development Engineer Intern
-    company: Meituan, Basic Development Platform, System Monitoring Team
-    # company_url: https://about.meituan.com
-    # company_logo: 'custom/meituan'
+    company_name: Meituan, Basic Development Platform, System Monitoring Team
+    company_url: https://about.meituan.com
+    company_logo: custom/meituan
     # location: Shanghai, China
     date_start: 2021-07-05
     date_end: 2021-12-10
@@ -98,9 +98,9 @@ work:
       - Built anomaly root cause analysis capabilities from scratch for the team at the company.
       - Technical Skills: Java, TypeScript, HTML/CSS, Linux tools, Git.
   - position: Backend Development Engineer Intern
-    company: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
-    # company_url: https://transwarp.cn/en
-    # company_logo: 'custom/transwarp'
+    company_name: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
+    company_url: https://transwarp.cn/en
+    company_logo: custom/transwarp
     # location: Shanghai, China
     date_start: 2018-01-11
     date_end: 2019-07-12
@@ -110,9 +110,9 @@ work:
       - Acquired knowledge of big data technologies, including distributed architecture and database principles.
       - Technical Skills: Scala, Java, TypeScript, JavaScript, HTML/CSS, Linux tools, Git.
   - position: DevOps Engineer Intern
-    company: Shanghai Kaian Technology Co., Ltd.
-    # company_url: https://www.madailicai.com
-    # company_logo: custom/madailicai
+    company_name: Shanghai Kaian Technology Co., Ltd.
+    company_url: https://www.madailicai.com
+    company_logo: custom/madailicai
     # location: Shanghai, China
     date_start: 2017-06-01
     date_end: 2017-09-01
