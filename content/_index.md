@@ -47,9 +47,8 @@ sections:
       sort_by: 'Date'
       sort_ascending: false
     design:
-      # Choose a listing view
-      view: showcase
-      flip_alt_rows: true
+      # Choose a layout view
+      view: date-title-summary
   - block: collection
     id: publications
     content:
