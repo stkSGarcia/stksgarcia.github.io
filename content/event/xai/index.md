@@ -2,14 +2,14 @@
 title: 模型可解释性
 
 event: Meituan internal sharing session
-event_url: ""
+event_url: ''
 
 location: Meituan
 address:
   street: 221 Huangxing Road, Yangpu District
   city: Shanghai
   region: Shanghai
-  postcode: "200082"
+  postcode: '200082'
   country: China
 
 summary: 简单介绍模型的可解释性。
@@ -17,8 +17,8 @@ abstract: 简单介绍模型的可解释性。
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2022-09-16T16:00:00+08:00
-date_end: 2022-09-16T17:00:00+08:00
+date: '2022-09-16T16:00:00+08:00'
+date_end: '2022-09-16T17:00:00+08:00'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -26,6 +26,7 @@ all_day: false
 
 authors:
   - Shenghui Gu
+
 tags:
   - Explainable AI
 
@@ -41,10 +42,10 @@ featured: false
 #     icon_pack: fab
 #     name: Follow
 #     url: https://twitter.com/
-url_code: ""
-url_pdf: ""
+url_code: ''
+url_pdf: ''
 url_slides: explainable_ai.key
-url_video: ""
+url_video: ''
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

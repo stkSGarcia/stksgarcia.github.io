@@ -2,14 +2,14 @@
 title: 软件著作权申请介绍
 
 event: Lab internal sharing session
-event_url: ""
+event_url: ''
 
 location: Software Institute, Nanjing University
 address:
   street: 50 Hankou Road, Gulou District
   city: Nanjing
   region: Jiangsu
-  postcode: "210093"
+  postcode: '210093'
   country: China
 
 summary: 简单介绍如何申请软件著作权。
@@ -17,8 +17,8 @@ abstract: 简单介绍如何申请软件著作权。
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2020-03-25T10:00:00+08:00
-date_end: 2020-03-25T11:00:00+08:00
+date: '2020-03-25T10:00:00+08:00'
+date_end: '2020-03-25T11:00:00+08:00'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -26,6 +26,7 @@ all_day: false
 
 authors:
   - Shenghui Gu
+
 tags:
   - Copyright
 
@@ -41,10 +42,10 @@ featured: false
 #     icon_pack: fab
 #     name: Follow
 #     url: https://twitter.com/
-url_code: ""
-url_pdf: ""
+url_code: ''
+url_pdf: ''
 url_slides: software_copyright.pptx
-url_video: ""
+url_video: ''
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

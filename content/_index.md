@@ -3,124 +3,75 @@
 title: ""
 type: landing
 
+design:
+  # Default section spacing
+  spacing: "6rem"
+
 sections:
-  - block: about.biography
-    id: about
+  - block: resume-biography-3
     content:
-      title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: Shenghui-Gu
+      text: ""
+      # Show a call-to-action button under your biography? (optional)
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          # Add your image background to `assets/media/`.
+          filename: stacked-peaks.svg
+          filters:
+            brightness: 1.0
+          size: cover
+          position: center
+          parallax: false
   - block: collection
     id: posts
     content:
       title: Recent Posts
+      subtitle: ''
+      text: 'Check out my recent blog posts below!'
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
       filters:
-        folders: [post]
+        folders:
+          - post
+        exclude_featured: false
       # Choose how many pages you would like to offset by
+      # Useful if you wish to show the first item in the Featured widget
       offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+      # Field to sort by, such as Date or Title
+      sort_by: 'Date'
+      sort_ascending: false
     design:
-      # Choose a layout view
-      view: compact
-      columns: "2"
+      # Choose a listing view
+      view: card
   - block: collection
     id: publications
     content:
       title: Recent Publications
+      text: ""
       filters:
-        folders: [publication]
+        folders:
+          - publication
+        exclude_featured: false
     design:
       view: citation
-      columns: "2"
   - block: collection
     id: talks
     content:
       title: Recent & Upcoming Talks
       filters:
-        folders: [event]
+        folders:
+          - event
     design:
-      view: card
-      columns: "2"
-  - block: experience
-    content:
-      title: Experience
-      # Date format for experience
-      #   Refer to https://wowchemy.com/docs/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: Postdoctoral Researcher
-          company: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
-          company_url: https://www.nanda-lab.ca
-          company_logo: uottawa
-          location: Ottawa, Ontario, Canada
-          date_start: 2022-10-10
-          date_end: ""
-          description: |2-
-            * Work on the topic of Trustworthy AI.
-        - title: Backend Development Engineer Intern
-          company: Meituan, Basic Development Platform, System Monitoring Team
-          company_url: https://about.meituan.com
-          company_logo: meituan
-          location: Shanghai, China
-          date_start: 2022-07-11
-          date_end: 2023-06-05
-          description: |2-
-            * Led a three-person team to develop a log data valuation system utilizing deep learning and explainable artificial intelligence technologies.
-            * Validated the prototype on open-source datasets, providing the foundation for the team to save costs on log data storage and analysis.
-            * Acquired knowledge in machine learning, deep learning, and explainable artificial intelligence.
-            * Technical Skills: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.), Linux tools, Git.
-        - title: Backend Development Engineer Intern
-          company: Meituan, Basic Development Platform, System Monitoring Team
-          company_url: https://about.meituan.com
-          company_logo: meituan
-          location: Shanghai, China
-          date_start: 2021-07-05
-          date_end: 2021-12-10
-          description: |2-
-            * Led a three-person team to develop an anomaly root cause analysis system utilizing multiple monitoring data sources and deployed the system in a production environment.
-            * Built anomaly root cause analysis capabilities from scratch for the team at the company.
-            * Technical Skills: Java, TypeScript, HTML/CSS, Linux tools, Git.
-        - title: Backend Development Engineer Intern
-          company: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
-          company_url: https://transwarp.cn/en
-          company_logo: transwarp
-          location: Shanghai, China
-          date_start: 2018-01-11
-          date_end: 2019-07-12
-          description: |2-
-            * Developed an AIOps platform including log analysis, JStack analysis, and operational knowledge base.
-            * Provided support for adding, deleting, and modifying columns in database tables for a distributed columnar database.
-            * Acquired knowledge of big data technologies, including distributed architecture and database principles.
-            * Technical Skills: Scala, Java, TypeScript, JavaScript, HTML/CSS, Linux tools, Git.
-        - title: DevOps Engineer Intern
-          company: Shanghai Kaian Technology Co., Ltd.
-          company_url: https://www.madailicai.com
-          company_logo: madailicai
-          location: Shanghai, China
-          date_start: 2017-06-01
-          date_end: 2017-09-01
-          description: |2-
-            * Maintained a continuous integration platform.
-            * Acquired knowledge in DevOps, continuous integration/deployment.
-    design:
-      columns: "2"
-  - block: skills
-    content:
-      title: Skills
-      text: ""
-      # Choose a user to display skills from (a folder name within `content/authors/`)
-      username: Shenghui-Gu
-    design:
-      columns: "1"
+      view: article-grid
+      columns: 1
   - block: tag_cloud
     content:
       title: Popular Topics
