@@ -65,71 +65,60 @@ education:
     date_end: 2017-06-30
 
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: https://www.nanda-lab.ca
-    company_logo: custom/uottawa
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - position: Postdoctoral Researcher
     company_name: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
-    company_url: https://www.nanda-lab.ca
-    # company_logo: 'custom/uottawa'
+    # company_url: https://www.nanda-lab.ca
+    # company_logo: custom/uottawa
     # location: Ottawa, Ontario, Canada
     date_start: 2023-10-10
     date_end: ''
     summary: |
       - Work on the topic of Trustworthy AI.
-#   - position: Backend Development Engineer Intern
-#     company: 'Meituan, Basic Development Platform, System Monitoring Team'
-#     company_url: 'https://about.meituan.com'
-#     # company_logo: 'custom/meituan'
-#     # location: Shanghai, China
-#     date_start: 2022-07-11
-#     date_end: 2023-06-05
-#     description: |
-#       - Led a three-person team to develop a log data valuation system utilizing deep learning and explainable artificial intelligence technologies.
-#       - Validated the prototype on open-source datasets, providing the foundation for the team to save costs on log data storage and analysis.
-#       - Acquired knowledge in machine learning, deep learning, and explainable artificial intelligence.
-#       - Technical Skills: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.), Linux tools, Git.
-#   - position: Backend Development Engineer Intern
-#     company: 'Meituan, Basic Development Platform, System Monitoring Team'
-#     company_url: 'https://about.meituan.com'
-#     # company_logo: 'custom/meituan'
-#     # location: Shanghai, China
-#     date_start: 2021-07-05
-#     date_end: 2021-12-10
-#     description: |
-#       - Led a three-person team to develop an anomaly root cause analysis system utilizing multiple monitoring data sources and deployed the system in a production environment.
-#       - Built anomaly root cause analysis capabilities from scratch for the team at the company.
-#       - Technical Skills: Java, TypeScript, HTML/CSS, Linux tools, Git.
-#   - position: Backend Development Engineer Intern
-#     company: 'Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department'
-#     company_url: 'https://transwarp.cn/en'
-#     # company_logo: 'custom/transwarp'
-#     # location: Shanghai, China
-#     date_start: 2018-01-11
-#     date_end: 2019-07-12
-#     description: |
-#       - Developed an AIOps platform including log analysis, JStack analysis, and operational knowledge base.
-#       - Provided support for adding, deleting, and modifying columns in database tables for a distributed columnar database.
-#       - Acquired knowledge of big data technologies, including distributed architecture and database principles.
-#       - Technical Skills: Scala, Java, TypeScript, JavaScript, HTML/CSS, Linux tools, Git.
-#   - position: DevOps Engineer Intern
-#     company: 'Shanghai Kaian Technology Co., Ltd.'
-#     company_url: 'https://www.madailicai.com'
-#     # company_logo: 'custom/madailicai'
-#     # location: Shanghai, China
-#     date_start: 2017-06-01
-#     date_end: 2017-09-01
-#     description: |
-#       - Maintained a continuous integration platform.
-#       - Acquired knowledge in DevOps, continuous integration/deployment.
+  - position: Backend Development Engineer Intern
+    company: Meituan, Basic Development Platform, System Monitoring Team
+    # company_url: https://about.meituan.com
+    # company_logo: custom/meituan
+    # location: Shanghai, China
+    date_start: 2022-07-11
+    date_end: 2023-06-05
+    description: |
+      - Led a three-person team to develop a log data valuation system utilizing deep learning and explainable artificial intelligence technologies.
+      - Validated the prototype on open-source datasets, providing the foundation for the team to save costs on log data storage and analysis.
+      - Acquired knowledge in machine learning, deep learning, and explainable artificial intelligence.
+      - Technical Skills: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.), Linux tools, Git.
+  - position: Backend Development Engineer Intern
+    company: Meituan, Basic Development Platform, System Monitoring Team
+    # company_url: https://about.meituan.com
+    # company_logo: 'custom/meituan'
+    # location: Shanghai, China
+    date_start: 2021-07-05
+    date_end: 2021-12-10
+    description: |
+      - Led a three-person team to develop an anomaly root cause analysis system utilizing multiple monitoring data sources and deployed the system in a production environment.
+      - Built anomaly root cause analysis capabilities from scratch for the team at the company.
+      - Technical Skills: Java, TypeScript, HTML/CSS, Linux tools, Git.
+  - position: Backend Development Engineer Intern
+    company: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
+    # company_url: https://transwarp.cn/en
+    # company_logo: 'custom/transwarp'
+    # location: Shanghai, China
+    date_start: 2018-01-11
+    date_end: 2019-07-12
+    description: |
+      - Developed an AIOps platform including log analysis, JStack analysis, and operational knowledge base.
+      - Provided support for adding, deleting, and modifying columns in database tables for a distributed columnar database.
+      - Acquired knowledge of big data technologies, including distributed architecture and database principles.
+      - Technical Skills: Scala, Java, TypeScript, JavaScript, HTML/CSS, Linux tools, Git.
+  - position: DevOps Engineer Intern
+    company: Shanghai Kaian Technology Co., Ltd.
+    # company_url: https://www.madailicai.com
+    # company_logo: custom/madailicai
+    # location: Shanghai, China
+    date_start: 2017-06-01
+    date_end: 2017-09-01
+    description: |
+      - Maintained a continuous integration platform.
+      - Acquired knowledge in DevOps, continuous integration/deployment.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
