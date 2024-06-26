@@ -73,7 +73,7 @@ work:
     date_start: 2023-10-10
     date_end: ''
     summary: |
-      - Work on the topic of Trustworthy AI.
+      - Work on the topic of trustworthy AI and the verification of autonomous driving systems.
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
