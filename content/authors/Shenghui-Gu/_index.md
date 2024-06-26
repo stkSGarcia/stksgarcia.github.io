@@ -127,37 +127,37 @@ skills:
     items:
       - name: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.)
         percent: 90
-        icon: python
-      - name: Java (Scala)
+        icon: devicon/python
+      - name: Java
         percent: 90
-        icon: java
-      - name: JavaScript (TypeScript)
+        icon: devicon/java
+      - name: Scala
+        percent: 80
+        icon: devicon/scala
+      - name: TypeScript
+        percent: 80
+        icon: devicon/typescript
+      - name: JavaScript
         percent: 70
-        icon: javascript
-        icon_pack: fab
+        icon: devicon/javascript
       - name: HTML/CSS
         percent: 70
-        icon: html5
+        icon: devicon/html5
       - name: SQL
         percent: 40
-        icon: database
-        icon_pack: fas
+        icon: devicon/azuresqldatabase
       - name: Go
         percent: 20
-        icon: golang
-        icon_pack: fab
+        icon: devicon/go
       - name: Linux
         percent: 90
-        icon: linux
-        icon_pack: fab
+        icon: devicon/linux
       - name: Shell (Bash/Zsh)
         percent: 90
-        icon: terminal
-        icon_pack: fas
+        icon: devicon/bash
       - name: Git
         percent: 90
-        icon: git-alt
-        icon_pack: fab
+        icon: devicon/git
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -165,19 +165,15 @@ skills:
       - name: Cats
         percent: 100
         icon: cat
-        icon_pack: fas
       - name: Fitness
         percent: 100
-        icon: dumbbell
-        icon_pack: fas
+        icon: fas/dumbbell
       - name: Games
         percent: 90
-        icon: gamepad
-        icon_pack: fas
+        icon: fas/gamepad
       - name: Reading
         percent: 80
-        icon: book
-        icon_pack: fas
+        icon: fas/book
 ---
 
 ## About Me
