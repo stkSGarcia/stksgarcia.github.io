@@ -168,12 +168,12 @@ skills:
       - name: Fitness
         percent: 100
         icon: custom/dumbbell
-      - name: Games
-        percent: 90
-        icon: custom/gamepad
       - name: Reading
-        percent: 80
+        percent: 90
         icon: custom/book
+      - name: Games
+        percent: 80
+        icon: custom/gamepad
 ---
 
 ## About Me
