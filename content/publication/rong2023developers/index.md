@@ -13,7 +13,7 @@ authors:
 
 # Author notes (optional)
 author_notes:
-  -
+  - ''
   - Corresponding author
 
 date: '2023-05-14T00:00:00Z'
