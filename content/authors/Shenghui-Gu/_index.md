@@ -68,7 +68,7 @@ work:
   - position: Postdoctoral Researcher
     company_name: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
     company_url: https://www.nanda-lab.ca
-    company_logo: uottawa
+    company_logo: custom/uottawa
     # location: Ottawa, Ontario, Canada
     date_start: 2023-10-10
     date_end: ''
@@ -77,7 +77,7 @@ work:
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
-    company_logo: meituan
+    company_logo: custom/meituan
     # location: Shanghai, China
     date_start: 2022-07-11
     date_end: 2023-06-05
@@ -89,7 +89,7 @@ work:
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
-    company_logo: meituan
+    company_logo: custom/meituan
     # location: Shanghai, China
     date_start: 2021-07-05
     date_end: 2021-12-10
@@ -100,7 +100,7 @@ work:
   - position: Backend Development Engineer Intern
     company_name: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
     company_url: https://transwarp.cn/en
-    company_logo: transwarp
+    company_logo: custom/transwarp
     # location: Shanghai, China
     date_start: 2018-01-11
     date_end: 2019-07-12
@@ -112,7 +112,7 @@ work:
   - position: DevOps Engineer Intern
     company_name: Shanghai Kaian Technology Co., Ltd.
     company_url: https://www.madailicai.com
-    company_logo: madailicai
+    company_logo: custom/madailicai
     # location: Shanghai, China
     date_start: 2017-06-01
     date_end: 2017-09-01
