@@ -50,8 +50,8 @@ hugoblox:
 
 # Custom links
 links:
-  - type: pdf
-    url: ""
+  # - type: pdf
+  #   url: ""
   # - type: code
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset

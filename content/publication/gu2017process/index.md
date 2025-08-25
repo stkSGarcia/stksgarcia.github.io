@@ -44,14 +44,14 @@ tags:
 featured: true
 
 # Standard identifiers for auto-linking
-hugoblox:
-  ids:
-    doi: ""
+# hugoblox:
+#   ids:
+#     doi: ""
 
 # Custom links
 links:
-  - type: pdf
-    url: ""
+  # - type: pdf
+  #   url: ""
   # - type: code
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset
