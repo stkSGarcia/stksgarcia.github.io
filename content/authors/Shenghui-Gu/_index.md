@@ -9,6 +9,9 @@ title: Shenghui (Samuel) Gu
 first_name: Shenghui
 last_name: Gu
 
+# Pronouns (optional)
+pronouns: he/him/his
+
 # Status emoji
 status:
   icon: ☕️
@@ -43,8 +46,8 @@ profiles:
     url: https://www.linkedin.com/in/shenghui-gu-0478b6273/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=PycJsvkAAAAJ
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0001-6414-815X
 
 interests:
   - Trustworthy AI
@@ -69,7 +72,6 @@ work:
     company_name: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
     company_url: https://www.nanda-lab.ca
     company_logo: custom/uottawa
-    location: Ottawa, Ontario, Canada
     date_start: 2023-10-10
     date_end: ''
     summary: |
@@ -82,7 +84,6 @@ work:
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
     company_logo: custom/meituan
-    location: Shanghai, China
     date_start: 2022-07-11
     date_end: 2023-06-05
     summary: |
@@ -94,7 +95,6 @@ work:
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
     company_logo: custom/meituan
-    location: Shanghai, China
     date_start: 2021-07-05
     date_end: 2021-12-10
     summary: |
@@ -105,7 +105,6 @@ work:
     company_name: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
     company_url: https://transwarp.cn/en
     company_logo: custom/transwarp
-    location: Shanghai, China
     date_start: 2018-01-11
     date_end: 2019-07-12
     summary: |
@@ -117,7 +116,6 @@ work:
     company_name: Shanghai Kaian Technology Co., Ltd.
     company_url: https://www.madailicai.com
     company_logo: custom/madailicai
-    location: Shanghai, China
     date_start: 2017-06-01
     date_end: 2017-09-01
     summary: |
@@ -178,6 +176,27 @@ skills:
       - name: Games
         percent: 80
         icon: custom/gamepad
+
+# languages:
+#   - name: English
+#     percent: 100
+#   - name: Chinese
+#     percent: 75
+#   - name: Portuguese
+#     percent: 25
+
+# Awards.
+#   Add/remove as many awards below as you like.
+#   Only `title`, `awarder`, and `date` are required.
+#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+# awards:
+#   - title: Neural Networks and Deep Learning
+#     url: https://www.coursera.org/learn/neural-networks-deep-learning
+#     date: '2023-11-25'
+#     awarder: Coursera
+#     icon: coursera
+#     summary: |
+#       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
 ---
 
 ## About Me

@@ -17,7 +17,6 @@ authors:
 #   - 'Equal contribution'
 
 date: '2018-11-26T00:00:00Z'
-doi: '10.1109/aswec.2018.00031'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -46,19 +45,25 @@ tags:
 # Display this page in the Featured widget?
 featured: true
 
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+# Standard identifiers for auto-linking
+hugoblox:
+  ids:
+    doi: 10.1109/aswec.2018.00031
 
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: rong2018logging_presentation.pptx
-url_source: ''
-url_video: ''
+# Custom links
+links:
+  - type: pdf
+    url: ""
+  # - type: code
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: dataset
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  - type: slides
+    url: rong2018logging_presentation.pptx
+  # - type: source
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: video
+  #   url: https://youtube.com
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

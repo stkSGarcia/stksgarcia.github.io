@@ -1,6 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ""
+date: 2022-10-24
 type: landing
 
 design:
@@ -19,6 +20,10 @@ sections:
       #   url: uploads/resume.pdf
     design:
       css_class: dark
+      # Avatar customization
+      avatar:
+        size: medium  # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        shape: circle # Options: circle (default), square, rounded
       background:
         color: black
         image:
@@ -29,26 +34,49 @@ sections:
           size: cover
           position: center
           parallax: false
+  # - block: markdown
+  #   content:
+  #     title: '📚 My Research'
+  #     subtitle: ''
+  #     text: |-
+  #       Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+
+  #       I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+
+  #       Please reach out to collaborate 😃
+  #   design:
+  #     columns: '1'
   - block: collection
     id: posts
     content:
       title: Recent Posts
+      # subtitle: ''
+      # text: ''
+      # # Page type to display. E.g. post, talk, publication...
+      # page_type: post
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
       filters:
         folders:
           - post
+        # author: ""
+        # category: ""
+        # tag: ""
         exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        # publication_type: ""
       # Choose how many pages you would like to offset by
-      # Useful if you wish to show the first item in the Featured widget
       offset: 0
-      # Field to sort by, such as Date or Title
-      sort_by: 'Date'
-      sort_ascending: false
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
     design:
       # Choose a layout view
       view: date-title-summary
+      # Reduce spacing
+      # spacing:
+      #   padding: [0, 0, 0, 0]
   - block: collection
     id: publications
     content:

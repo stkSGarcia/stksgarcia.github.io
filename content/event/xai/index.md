@@ -34,18 +34,16 @@ tags:
 featured: false
 
 # image:
-#   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)"
+#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
 #   focal_point: Right
 
-# links:
-#   - icon: twitter
-#     icon_pack: fab
-#     name: Follow
-#     url: https://twitter.com/
-url_code: ''
-url_pdf: ''
-url_slides: explainable_ai.key
-url_video: ''
+links:
+  # - type: code
+  #   url: https://github.com
+  - type: slides
+    url: explainable_ai.key
+  # - type: video
+  #   url: https://youtube.com
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
