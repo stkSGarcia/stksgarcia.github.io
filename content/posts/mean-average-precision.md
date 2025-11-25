@@ -1,6 +1,8 @@
 ---
 title: Mean Average Precision (MAP)
+summary: A reference to the introduction of MAP.
 date: 2023-06-10T12:39:13.875Z
+lastmod: 2023-06-10T12:39:13.875Z
 authors:
   - Shenghui Gu
 tags:

@@ -1,17 +1,16 @@
 ---
 title: Scala 学习资料
-authors:
-  - Shenghui Gu
+summary: 记录一些 Scala 的学习资料。
 date: 2018-04-15T18:13:00+08:00
 lastmod: 2021-08-26T23:43:28+08:00
+authors:
+  - Shenghui Gu
 tags:
   - Scala
 ---
 
 记录一些 Scala 的学习资料，感谢 @hongjiang_wang 的整理。
 [原帖地址](http://hongjiang.info/scala/)
-
-<!-- more -->
 
 ## Akka
 

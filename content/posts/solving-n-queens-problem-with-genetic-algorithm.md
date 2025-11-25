@@ -1,9 +1,10 @@
 ---
 title: 用遗传算法求解 N 皇后问题
-authors:
-  - Shenghui Gu
+summary: 本文介绍了如何使用遗传算法求解 N 皇后问题。
 date: 2018-03-11T00:07:00+08:00
 lastmod: 2021-08-24T23:12:33+08:00
+authors:
+  - Shenghui Gu
 tags:
   - Genetic Algorithm
 ---
@@ -14,8 +15,6 @@ tags:
 为了达到此目的，任两个皇后都不能处于同一条横行、纵行或斜线上。
 
 八皇后问题可以推广为更一般的 N 皇后摆放问题：这时棋盘的大小变为 `N×N` 。
-
-<!-- more -->
 
 ## 遗传算法
 

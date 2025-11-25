@@ -1,17 +1,16 @@
 ---
 title: Java 8 Stream 语法
-authors:
-  - Shenghui Gu
+summary: 记录了 Java 8 Stream 特性的参考资料。
 date: 2018-07-14T17:53:00+08:00
 lastmod: 2021-08-24T23:12:34+08:00
+authors:
+  - Shenghui Gu
 tags:
   - Java
 ---
 
 Java 8 的一个重要新特性就是 Stream。
 Stream 是用函数式编程方式在集合类上进行复杂操作的工具，其集成了 Java 8 中的众多新特性之一的聚合操作，开发者可以更容易地使用 Lambda 表达式，并且更方便地实现对集合的查找、遍历、过滤以及常见计算等。
-
-<!-- more -->
 
 学习资料
 

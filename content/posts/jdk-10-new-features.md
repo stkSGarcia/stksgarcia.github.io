@@ -1,17 +1,16 @@
 ---
 title: JDK 10 新特性
-authors:
-  - Shenghui Gu
+summary: 介绍了 JDK 10 的一些比较重要的新特性。
 date: 2018-03-24T19:27:00+08:00
 lastmod: 2021-08-24T23:12:34+08:00
+authors:
+  - Shenghui Gu
 tags:
   - Java
 ---
 
 前几天 JDK 10 正式发布了，距离上一次 JDK 9 发布才没几周时间，但是 JDK 10 还是更新了许多新特性。
 下面介绍一下几个比较重要的新特性。
-
-<!-- more -->
 
 ## 局部变量类型推断
 

@@ -1,9 +1,26 @@
 ---
 title: "[Java] Splitting a comma-separated string but ignoring commas in quotes"
-authors:
-  - Shenghui Gu
+summary: |
+  Sometimes we need to parse strings like this:
+
+  ```text
+  "1234567890","James",man,"New York, NY, USA"
+  ```
+
+  And the output we need is as follows:
+
+  ```text
+  "1234567890"
+  "James"
+  man
+  "New York, NY, USA"
+  ```
+
+  We can try the following code.
 date: 2018-03-24T21:04:00+08:00
 lastmod: 2021-08-24T23:12:34+08:00
+authors:
+  - Shenghui Gu
 tags:
   - RegEx
   - Java
@@ -23,8 +40,6 @@ And the output we need is as follows:
 man
 "New York, NY, USA"
 ```
-
-<!-- more -->
 
 We can try the following code:
 

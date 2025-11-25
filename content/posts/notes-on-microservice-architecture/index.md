@@ -1,9 +1,10 @@
 ---
-title: 《Chris Richardson谈微服务软件架构设计》笔记
-authors:
-  - Shenghui Gu
+title: 《Chris Richardson谈微服务软件架构设计》读书笔记
+summary: 读完《Chris Richardson 谈微服务软件架构设计》后在此对一些重要观点进行记录。
 date: 2016-12-10T16:47:00+08:00
 lastmod: 2021-08-24T23:12:32+08:00
+authors:
+  - Shenghui Gu
 tags:
   - Microservices
   - Architecture
@@ -11,8 +12,6 @@ tags:
 ---
 
 读完《Chris Richardson 谈微服务软件架构设计》后在此对一些重要观点进行记录。
-
-<!-- more -->
 
 ## 微服务架构的优势与不足
 

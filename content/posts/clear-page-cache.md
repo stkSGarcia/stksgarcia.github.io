@@ -1,9 +1,15 @@
 ---
 title: Linux 下清空 Page cache
-authors:
-  - Shenghui Gu
+summary: |
+  使用下面这条命令：
+
+  ```sh
+  sync; echo 1 > /proc/sys/vm/drop_caches
+  ```
 date: 2018-11-08T00:09:00+08:00
 lastmod: 2021-08-24T23:12:35+08:00
+authors:
+  - Shenghui Gu
 tags:
   - Page Cache
   - Linux
@@ -14,8 +20,6 @@ tags:
 ```sh
 sync; echo 1 > /proc/sys/vm/drop_caches
 ```
-
-<!-- more -->
 
 **sync 命令:**
 

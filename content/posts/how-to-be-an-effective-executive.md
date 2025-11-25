@@ -1,17 +1,16 @@
 ---
 title: 如何成为卓有成效的管理者？
-authors:
-  - Shenghui Gu
+summary: 读完《卓有成效的管理者》后在此对一些重要观点进行记录。
 date: 2020-03-08T18:39:00+08:00
 lastmod: 2021-08-24T23:12:36+08:00
+authors:
+  - Shenghui Gu
 tags:
   - Management
   - Reading
 ---
 
 读完《卓有成效的管理者》后在此对一些重要观点进行记录。
-
-<!-- more -->
 
 ## 掌握自己的时间
 
