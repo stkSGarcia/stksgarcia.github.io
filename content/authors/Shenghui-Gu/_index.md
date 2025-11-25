@@ -160,22 +160,22 @@ skills:
       - name: Git
         percent: 95
         icon: devicon/git
-  # - name: Hobbies
-  #   color: '#eeac02'
-  #   color_border: '#f0bf23'
-  #   items:
-  #     - name: Cats
-  #       percent: 100
-  #       icon: cat
-  #     - name: Fitness
-  #       percent: 100
-  #       icon: custom/dumbbell
-  #     - name: Reading
-  #       percent: 90
-  #       icon: custom/book
-  #     - name: Games
-  #       percent: 80
-  #       icon: custom/gamepad
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Cats
+        percent: 100
+        icon: cat
+      - name: Fitness
+        percent: 100
+        icon: custom/dumbbell
+      - name: Reading
+        percent: 90
+        icon: custom/book
+      - name: Games
+        percent: 80
+        icon: custom/gamepad
 
 # languages:
 #   - name: Chinese
