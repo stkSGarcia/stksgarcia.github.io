@@ -42,6 +42,26 @@ sections:
   #   design:
   #     columns: '1'
   - block: collection
+    id: publications
+    content:
+      title: Recent Publications
+      text: ''
+      filters:
+        folders:
+          - publications
+        exclude_featured: false
+    design:
+      view: citation
+  - block: collection
+    id: talks
+    content:
+      title: Recent & Upcoming Talks
+      filters:
+        folders:
+          - events
+    design:
+      view: card
+  - block: collection
     id: posts
     content:
       title: Recent Posts
@@ -72,24 +92,4 @@ sections:
       # Reduce spacing
       # spacing:
       #   padding: [0, 0, 0, 0]
-  - block: collection
-    id: publications
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
 ---
