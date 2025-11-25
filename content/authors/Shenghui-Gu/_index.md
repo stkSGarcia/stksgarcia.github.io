@@ -58,12 +58,12 @@ interests:
 education:
   - area: Ph.D. in Software Engineering
     institution: Nanjing University
-    icon: ""
+    icon: custom/nju
     date_start: 2017-09-01
     date_end: 2023-06-30
   - area: B.Eng. in Software Engineering
     institution: Nanjing University
-    icon: ""
+    icon: custom/nju
     date_start: 2013-09-01
     date_end: 2017-06-30
 
