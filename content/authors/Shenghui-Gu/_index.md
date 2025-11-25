@@ -3,7 +3,7 @@
 title: Shenghui (Samuel) Gu
 
 # Name pronunciation (optional)
-# name_pronunciation: Chien Shiung Wu
+name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Shenghui
@@ -38,8 +38,6 @@ profiles:
     label: E-mail Me
   # - icon: brands/x
   #   url: https://twitter.com/GetResearchDev
-  # - icon: brands/instagram
-  #   url: https://www.instagram.com/
   - icon: brands/github
     url: https://github.com/stkSGarcia
   - icon: brands/linkedin
@@ -60,10 +58,12 @@ interests:
 education:
   - area: Ph.D. in Software Engineering
     institution: Nanjing University
+    icon: ""
     date_start: 2017-09-01
     date_end: 2023-06-30
   - area: B.Eng. in Software Engineering
     institution: Nanjing University
+    icon: ""
     date_start: 2013-09-01
     date_end: 2017-06-30
 
@@ -71,7 +71,7 @@ work:
   - position: Postdoctoral Researcher
     company_name: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
     company_url: https://www.nanda-lab.ca
-    company_logo: custom/uottawa
+    icon: custom/uottawa
     date_start: 2023-10-10
     date_end: ''
     summary: |
@@ -83,7 +83,7 @@ work:
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
-    company_logo: custom/meituan
+    icon: custom/meituan
     date_start: 2022-07-11
     date_end: 2023-06-05
     summary: |
@@ -94,7 +94,7 @@ work:
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
-    company_logo: custom/meituan
+    icon: custom/meituan
     date_start: 2021-07-05
     date_end: 2021-12-10
     summary: |
@@ -104,7 +104,7 @@ work:
   - position: Backend Development Engineer Intern
     company_name: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
     company_url: https://transwarp.cn/en
-    company_logo: custom/transwarp
+    icon: custom/transwarp
     date_start: 2018-01-11
     date_end: 2019-07-12
     summary: |
@@ -115,7 +115,7 @@ work:
   - position: DevOps Engineer Intern
     company_name: Shanghai Kaian Technology Co., Ltd.
     company_url: https://www.madailicai.com
-    company_logo: custom/madailicai
+    icon: custom/madailicai
     date_start: 2017-06-01
     date_end: 2017-09-01
     summary: |
@@ -128,77 +128,89 @@ skills:
   - name: Technical Skills
     items:
       - name: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.)
-        percent: 90
+        percent: 95
         icon: devicon/python
-      - name: Java
-        percent: 90
-        icon: devicon/java
-      - name: Scala
-        percent: 80
-        icon: devicon/scala
       - name: TypeScript
-        percent: 80
+        percent: 90
         icon: devicon/typescript
       - name: JavaScript
-        percent: 70
+        percent: 80
         icon: devicon/javascript
       - name: HTML/CSS
         percent: 70
         icon: devicon/html5
+      - name: Java
+        percent: 80
+        icon: devicon/java
+      - name: Scala
+        percent: 70
+        icon: devicon/scala
       - name: SQL
-        percent: 40
+        percent: 50
         icon: devicon/azuresqldatabase
-      - name: Go
-        percent: 20
-        icon: devicon/go
+      # - name: Go
+      #   percent: 20
+      #   icon: devicon/go
       - name: Linux
-        percent: 90
+        percent: 95
         icon: devicon/linux
       - name: Shell (Bash/Zsh)
         percent: 90
         icon: devicon/bash
       - name: Git
-        percent: 90
+        percent: 95
         icon: devicon/git
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Cats
-        percent: 100
-        icon: cat
-      - name: Fitness
-        percent: 100
-        icon: custom/dumbbell
-      - name: Reading
-        percent: 90
-        icon: custom/book
-      - name: Games
-        percent: 80
-        icon: custom/gamepad
+  # - name: Hobbies
+  #   color: '#eeac02'
+  #   color_border: '#f0bf23'
+  #   items:
+  #     - name: Cats
+  #       percent: 100
+  #       icon: cat
+  #     - name: Fitness
+  #       percent: 100
+  #       icon: custom/dumbbell
+  #     - name: Reading
+  #       percent: 90
+  #       icon: custom/book
+  #     - name: Games
+  #       percent: 80
+  #       icon: custom/gamepad
 
 # languages:
-#   - name: English
-#     percent: 100
 #   - name: Chinese
-#     percent: 75
-#   - name: Portuguese
-#     percent: 25
+#     percent: 100
+#   - name: English
+#     percent: 80
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 # awards:
-#   - title: Neural Networks and Deep Learning
-#     url: https://www.coursera.org/learn/neural-networks-deep-learning
-#     date: '2023-11-25'
-#     awarder: Coursera
-#     icon: coursera
+#   - title: Best Paper Award
+#     url: https://neurips.cc/
+#     date: '2022-12-01'
+#     awarder: NeurIPS
+#     icon: hero/trophy
 #     summary: |
-#       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+#       Awarded for groundbreaking work on efficient training of large models.
+#   - title: AI Innovation Grant
+#     url: https://www.nsf.gov/
+#     date: '2021-06-15'
+#     awarder: National Science Foundation
+#     icon: hero/currency-dollar
+#     summary: |
+#       $500,000 grant for research in ethical AI development.
+#   - title: Outstanding PhD Thesis
+#     url: https://www.stanford.edu/
+#     date: '2019-06-30'
+#     awarder: Stanford University
+#     icon: hero/academic-cap
+#     summary: |
+#       Recognized for contributions to scaling laws in deep learning.
 ---
 
 ## About Me
 
-Shenghui (Samuel) Gu is a postdoctoral fellow at the School of Electrical Engineering and Computer Science (EECS), University of Ottawa, Ontario, Canada. He received the Ph.D. degree in software engineering from Nanjing University, China. His research interests are in software engineering, particularly in trustworthy AI, automated software testing and analysis, AIOps, software log analytics, DevOps, as well as empirical and evidence-based software engineering.
+Shenghui (Samuel) Gu is a postdoctoral researcher at the School of Electrical Engineering and Computer Science (EECS), University of Ottawa, Ontario, Canada. He received the Ph.D. degree in software engineering from Nanjing University, China. His research interests are in software engineering, particularly in trustworthy AI, automated software testing and analysis, AIOps, software log analytics, DevOps, as well as empirical and evidence-based software engineering.
