@@ -48,10 +48,10 @@ profiles:
     url: https://orcid.org/0000-0001-6414-815X
 
 interests:
-  - Trustworthy AI
   - Automated software testing and analysis
-  - AIOps
   - Artificial Intelligence
+  - Trustworthy AI
+  - AIOps
   - Software Log Analytics
   - DevOps
 
@@ -75,11 +75,12 @@ work:
     date_start: 2023-10-10
     date_end: ''
     summary: |
-      - Investigated and proposed advanced search-based algorithms for automated test case generation in autonomous systems.
-      - Integrated metamorphic and differential testing techniques for testing autonomous systems.
-      - Designed an interpretability framework for analyzing generated test cases and autonomous system behavior.
-      - Implemented methods compatible with an industry-grade simulator and a high-performing autonomous driving system.
-      - Coordinated collaborations with industry partners, faculty, and doctoral researchers.
+      - Developed advanced search-based algorithms to automatically generate high-value test cases for autonomous systems.
+      - Integrated metamorphic and differential testing techniques to evaluate system robustness and behavioral consistency.
+      - Designed and implemented an LLM-driven system to enhance automated test case generation for complex driving scenarios.
+      - Built an interpretability framework to analyze generated test cases and explain autonomous system behaviors.
+      - Engineered testing methods compatible with an industry-grade simulator and a high-performing autonomous driving stack.
+      - Collaborated closely with industry partners, faculty, and doctoral researchers to align research outcomes with deployment needs.
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
@@ -87,10 +88,9 @@ work:
     date_start: 2022-07-11
     date_end: 2023-06-05
     summary: |
-      - Led a team to develop a log data valuation system utilizing deep learning and explainable artificial intelligence technologies.
-      - Validated the prototype on open-source datasets, providing the foundation for the team to save costs on log data storage and analysis.
-      - Acquired knowledge in machine learning, deep learning, and explainable artificial intelligence.
-      - Technical Skills: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.), Linux tools, Git.
+      - Led a team in developing a log-data valuation system leveraging deep learning and explainable AI to quantify the diagnostic value of log messages.
+      - Built a functional prototype and validated it on open-source datasets, demonstrating its potential to reduce log storage and analysis overhead.
+      - Applied machine learning, deep learning, and explainable AI techniques across data processing, model design, implementation, and evaluation workflows.
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
@@ -98,9 +98,8 @@ work:
     date_start: 2021-07-05
     date_end: 2021-12-10
     summary: |
-      - Led a team to develop an anomaly root cause analysis system utilizing multiple monitoring data sources and deployed the system in a production environment.
-      - Built anomaly root cause analysis capabilities from scratch for the team at the company.
-      - Technical Skills: Java, TypeScript, HTML/CSS, Linux tools, Git.
+      - Directed the development of a multi-data-source anomaly root cause analysis system and successfully deployed the solution in a production environment.
+      - Established the team's root cause analysis capabilities from the ground up, including system architecture, algorithm design, and operational workflows.
   - position: Backend Development Engineer Intern
     company_name: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
     company_url: https://transwarp.cn/en
@@ -108,10 +107,9 @@ work:
     date_start: 2018-01-11
     date_end: 2019-07-12
     summary: |
-      - Developed an AIOps platform including log analysis, JStack analysis, and operational knowledge base.
-      - Provided support for adding, deleting, and modifying columns in database tables for a distributed columnar database.
-      - Acquired knowledge of big data technologies, including distributed architecture and database principles.
-      - Technical Skills: Scala, Java, TypeScript, JavaScript, HTML/CSS, Linux tools, Git.
+      - Developed key components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
+      - Implemented schema evolution features (add/delete/modify columns) for a distributed columnar database system.
+      - Worked with distributed systems and big-data infrastructure, including large-scale architecture and database internals.
   - position: DevOps Engineer Intern
     company_name: Shanghai Kaian Technology Co., Ltd.
     company_url: https://www.madailicai.com
@@ -119,26 +117,20 @@ work:
     date_start: 2017-06-01
     date_end: 2017-09-01
     summary: |
-      - Maintained a continuous integration platform.
-      - Acquired knowledge in DevOps, continuous integration/deployment.
+      - Maintained and improved a continuous integration platform supporting automated builds, testing, and deployment pipelines.
+      - Worked with DevOps practices, including CI/CD automation and environment configuration.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python (PyTorch, NumPy, Pandas, Matplotlib, etc.)
+      - name: Python (PyTorch, NumPy, Pandas, Matplotlib, FastAPI, etc.)
         percent: 95
         icon: devicon/python
-      - name: TypeScript
+      - name: React (TypeScript, JavaScript, HTML/CSS)
         percent: 90
-        icon: devicon/typescript
-      - name: JavaScript
-        percent: 80
-        icon: devicon/javascript
-      - name: HTML/CSS
-        percent: 70
-        icon: devicon/html5
+        icon: devicon/react
       - name: Java
         percent: 80
         icon: devicon/java
@@ -148,18 +140,21 @@ skills:
       - name: SQL
         percent: 50
         icon: devicon/azuresqldatabase
-      # - name: Go
-      #   percent: 20
-      #   icon: devicon/go
       - name: Linux
         percent: 95
-        icon: devicon/linux
-      - name: Shell (Bash/Zsh)
-        percent: 90
-        icon: devicon/bash
+        icon: brands/linux
+      - name: Vim
+        percent: 95
+        icon: brands/vim
       - name: Git
         percent: 95
         icon: devicon/git
+      - name: Shell
+        percent: 90
+        icon: devicon/bash
+      - name: Docker
+        percent: 70
+        icon: brands/docker
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
