@@ -4,7 +4,7 @@ title: 'DevOpsEnvy: An Education Support System for DevOps'
 event: Conference on Software Engineering Education and Training (CSEE&T '17)
 event_url: 'https://conferences.computer.org/cseet/2017/'
 
-location: Savannah, Georgia, USA
+location: Virtual
 address:
   street: ''
   city: Savannah

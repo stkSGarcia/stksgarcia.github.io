@@ -4,9 +4,9 @@ title: How Do Developers' Profiles and Experiences Influence their Logging Pract
 event: International Conference on Software Engineering (ICSE '23)
 event_url: 'https://conf.researchr.org/program/icse-2023/program-icse-2023/'
 
-location: Melbourne, Australia
+location: 1 Convention Centre Place
 address:
-  street: 1 Convention Centre Place, South Wharf 3006
+  street: South Wharf 3006
   city: Melbourne
   region: Melbourne
   postcode: ''

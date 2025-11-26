@@ -208,4 +208,7 @@ skills:
 
 ## About Me
 
-Shenghui (Samuel) Gu is a postdoctoral researcher at the School of Electrical Engineering and Computer Science (EECS), University of Ottawa, Ontario, Canada. He received the Ph.D. degree in software engineering from Nanjing University, China. His research interests are in software engineering, particularly in trustworthy AI, automated software testing and analysis, AIOps, software log analytics, DevOps, as well as empirical and evidence-based software engineering.
+I am a Postdoctoral Researcher in the School of Electrical Engineering and Computer Science (EECS) at the University of Ottawa, ON, Canada.
+I received my Ph.D. in Software Engineering from Nanjing University, China.
+My research spans software engineering and trustworthy AI, with a particular emphasis on automated software testing and analysis, AIOps, software log analytics, DevOps, and empirical software engineering.
+My current research aims to develop rigorous methods and tools that enhance the reliability, safety, and interpretability of AI-enabled software systems, especially in safety-critical domains such as autonomous systems.
