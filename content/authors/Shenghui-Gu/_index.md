@@ -142,10 +142,10 @@ skills:
         icon: devicon/azuresqldatabase
       - name: Linux
         percent: 95
-        icon: brands/linux
+        icon: devicon/linux
       - name: Vim
         percent: 95
-        icon: brands/vim
+        icon: devicon/vim
       - name: Git
         percent: 95
         icon: devicon/git
@@ -154,7 +154,7 @@ skills:
         icon: devicon/bash
       - name: Docker
         percent: 70
-        icon: brands/docker
+        icon: devicon/docker
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
