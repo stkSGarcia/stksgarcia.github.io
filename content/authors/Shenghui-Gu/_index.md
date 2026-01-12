@@ -51,9 +51,11 @@ interests:
   - Automated software testing and analysis
   - Artificial Intelligence
   - Trustworthy AI
+  - LLMs
   - AIOps
   - Software Log Analytics
   - DevOps
+  - Empirical Software Engineering
 
 education:
   - area: Ph.D. in Software Engineering
@@ -75,12 +77,12 @@ work:
     date_start: 2023-10-10
     date_end: ''
     summary: |
-      - Developed advanced search-based algorithms to automatically generate high-value test cases for autonomous systems.
-      - Integrated metamorphic and differential testing techniques to evaluate system robustness and behavioral consistency.
-      - Designed and implemented an LLM-driven system to enhance automated test case generation for complex driving scenarios.
-      - Built an interpretability framework to analyze generated test cases and explain autonomous system behaviors.
-      - Engineered testing methods compatible with an industry-grade simulator and a high-performing autonomous driving stack.
-      - Collaborated closely with industry partners, faculty, and doctoral researchers to align research outcomes with deployment needs.
+      - Designed and implemented search-based test generation algorithms to automatically produce high-value test cases for autonomous driving systems, improving scenario coverage and fault detection.
+      - Integrated metamorphic and differential testing techniques to systematically evaluate system robustness and behavioral consistency under diverse driving conditions.
+      - Developed an LLM-driven test generation framework to create complex, realistic driving scenarios, reducing manual test design effort.
+      - Built an interpretability and analysis framework to explain generated test cases and autonomous system behaviors, supporting debugging and validation workflows.
+      - Engineered testing methods compatible with industry-grade simulators and production-level autonomous driving stacks.
+      - Collaborated with industry partners, faculty, and PhD researchers to align research outputs with real-world deployment and evaluation needs.
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
@@ -88,9 +90,9 @@ work:
     date_start: 2022-07-11
     date_end: 2023-06-05
     summary: |
-      - Led a team in developing a log-data valuation system leveraging deep learning and explainable AI to quantify the diagnostic value of log messages.
-      - Built a functional prototype and validated it on open-source datasets, demonstrating its potential to reduce log storage and analysis overhead.
-      - Applied machine learning, deep learning, and explainable AI techniques across data processing, model design, implementation, and evaluation workflows.
+      - Led a small team to design and implement a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages.
+      - Built an end-to-end functional prototype and validated it on open-source datasets, demonstrating potential reductions in log storage and analysis overhead.
+      - Applied machine learning, deep learning, and explainable AI across the full development lifecycle: data processing, model design, implementation, and evaluation.
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
     company_url: https://about.meituan.com
@@ -98,8 +100,9 @@ work:
     date_start: 2021-07-05
     date_end: 2021-12-10
     summary: |
-      - Directed the development of a multi-data-source anomaly root cause analysis system and successfully deployed the solution in a production environment.
-      - Established the team's root cause analysis capabilities from the ground up, including system architecture, algorithm design, and operational workflows.
+      - Directed the design and development of a multi-data-source anomaly root cause analysis system that integrates time-series analysis of metrics, logs, and events, and was successfully deployed in a production environment.
+      - Established the team's root cause analysis capabilities from scratch, including system architecture, algorithm selection, and time-series based modeling techniques for anomaly detection and causal inference.
+      - Collaborated with stakeholders to ensure system reliability, scalability, and integration with existing monitoring and observability pipelines.
   - position: Backend Development Engineer Intern
     company_name: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
     company_url: https://transwarp.cn/en
@@ -107,9 +110,9 @@ work:
     date_start: 2018-01-11
     date_end: 2019-07-12
     summary: |
-      - Developed key components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
-      - Implemented schema evolution features (add/delete/modify columns) for a distributed columnar database system.
-      - Worked with distributed systems and big-data infrastructure, including large-scale architecture and database internals.
+      - Developed core components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
+      - Implemented schema evolution capabilities (add/delete/modify columns) for a distributed columnar database system.
+      - Worked with distributed systems and big-data infrastructure, contributing to large-scale system architecture and database internals.
   - position: DevOps Engineer Intern
     company_name: Shanghai Kaian Technology Co., Ltd.
     company_url: https://www.madailicai.com
@@ -117,8 +120,9 @@ work:
     date_start: 2017-06-01
     date_end: 2017-09-01
     summary: |
-      - Maintained and improved a continuous integration platform supporting automated builds, testing, and deployment pipelines.
-      - Worked with DevOps practices, including CI/CD automation and environment configuration.
+      - Maintained and enhanced a CI/CD platform supporting automated builds, testing, and deployment pipelines.
+      - Improved developer productivity and release reliability through CI/CD automation and environment configuration.
+      - Reduced manual intervention in build and deployment workflows by introducing repeatable, automated pipelines.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -208,7 +212,7 @@ skills:
 
 ## About Me
 
-I am a Postdoctoral Researcher in the School of Electrical Engineering and Computer Science (EECS) at the University of Ottawa, ON, Canada.
-I received my Ph.D. in Software Engineering from Nanjing University, China.
-My research spans software engineering and trustworthy AI, with a particular emphasis on automated software testing and analysis, AIOps, software log analytics, DevOps, and empirical software engineering.
-My current research aims to develop rigorous methods and tools that enhance the reliability, safety, and interpretability of AI-enabled software systems, especially in safety-critical domains such as autonomous systems.
+Postdoctoral Researcher in the School of Electrical Engineering and Computer Science (EECS) at the University of Ottawa, with a Ph.D. in Software Engineering from Nanjing University.
+Research spans software engineering and trustworthy AI, with a particular emphasis on automated software testing and analysis, AI-driven testing frameworks, LLMs, AIOps, software log analytics, DevOps, and empirical software engineering.
+Current work focuses on developing rigorous, interpretable, and scalable methods that leverage LLMs and advanced testing techniques to improve the reliability, safety, and behavioral understanding of AI-enabled software systems.
+Research interests lie at the intersection of software engineering, AI safety, and safety-critical autonomous systems, with an emphasis on practical validation and real-world applicability.
