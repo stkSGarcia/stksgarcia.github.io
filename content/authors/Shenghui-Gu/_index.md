@@ -91,7 +91,7 @@ work:
     date_end: 2023-06-05
     summary: |
       - Led a small team to design and implement a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages.
-      - Built an end-to-end functional prototype and validated it on open-source datasets, demonstrating potential reductions in log storage and analysis overhead.
+      - Built an end-to-end functional prototype and validated it on large-scale open-source log datasets containing millions of log entries, demonstrating potential reductions in log storage and analysis overhead.
       - Applied machine learning, deep learning, and explainable AI across the full development lifecycle: data processing, model design, implementation, and evaluation.
   - position: Backend Development Engineer Intern
     company_name: Meituan, Basic Development Platform, System Monitoring Team
@@ -100,8 +100,8 @@ work:
     date_start: 2021-07-05
     date_end: 2021-12-10
     summary: |
-      - Directed the design and development of a multi-data-source anomaly root cause analysis system that integrates time-series analysis of metrics, logs, and events, and was successfully deployed in a production environment.
-      - Established the team's root cause analysis capabilities from scratch, including system architecture, algorithm selection, and time-series based modeling techniques for anomaly detection and causal inference.
+      - Directed the design and development of a multi-data-source anomaly root cause analysis system that integrates time series analysis of metrics, logs, and events from multiple production services, and was successfully deployed in a production environment.
+      - Established the team's root cause analysis capabilities from scratch, including system architecture, algorithm selection, and time series analysis techniques for anomaly detection and causal inference.
       - Collaborated with stakeholders to ensure system reliability, scalability, and integration with existing monitoring and observability pipelines.
   - position: Backend Development Engineer Intern
     company_name: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
@@ -111,7 +111,7 @@ work:
     date_end: 2019-07-12
     summary: |
       - Developed core components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
-      - Implemented schema evolution capabilities (add/delete/modify columns) for a distributed columnar database system.
+      - Implemented schema evolution capabilities (add/delete/modify columns) for a distributed columnar database system supporting large-scale data processing.
       - Worked with distributed systems and big-data infrastructure, contributing to large-scale system architecture and database internals.
   - position: DevOps Engineer Intern
     company_name: Shanghai Kaian Technology Co., Ltd.
