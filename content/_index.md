@@ -59,7 +59,7 @@ sections:
           - publications
         exclude_featured: false
     design:
-      view: citation
+      view: showcase
   - block: collection
     id: talks
     content:
@@ -76,11 +76,13 @@ sections:
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
-      page_type: blog
+      # page_type: blog
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
       filters:
+        folders:
+          - posts
         author: ''
         category: ''
         tag: ''

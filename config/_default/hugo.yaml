@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: 'Shenghui Gu'
+title: Shenghui (Samuel) Gu
 # Website URL
 baseURL: 'https://stksgarcia.github.io'
 
@@ -26,22 +26,6 @@ cascade:
       path: /slides/**
       kind: page
     outputs: [HTML, present]
-  - _target:
-      path: /posts/**
-      kind: page
-    pager: true
-    editable: true
-    hide_date: false
-    show_date_updated: true
-    reading_time: true
-    commentable: true
-    show_related: true
-    share: true
-    # Just use Breadcrumb for navigation on blog post pages?
-    show_breadcrumb: false
-    header:
-      navbar:
-        enable: true
 
 ############################
 ## ADVANCED
