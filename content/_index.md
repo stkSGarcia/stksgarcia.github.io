@@ -57,9 +57,10 @@ sections:
       filters:
         folders:
           - publications
-        exclude_featured: false
+        featured_only: true
     design:
       view: showcase
+      columns: 2
   - block: collection
     id: talks
     content:
@@ -96,7 +97,7 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: date-title-summary
+      view: compact
       # Reduce spacing
       # spacing:
       #   padding: [0, 0, 0, 0]
