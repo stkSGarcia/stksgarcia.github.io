@@ -59,7 +59,7 @@ sections:
           - publications
         featured_only: true
     design:
-      view: showcase
+      view: article-grid
       columns: 2
   - block: collection
     id: talks
@@ -97,7 +97,7 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: compact
+      view: date-title-summary
       # Reduce spacing
       # spacing:
       #   padding: [0, 0, 0, 0]
