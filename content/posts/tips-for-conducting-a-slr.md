@@ -4,7 +4,7 @@ summary: A good systematic review might achieve most or all of the following.
 date: 2017-08-07T14:33:00+08:00
 lastmod: 2021-08-24T23:12:32+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - SLR
   - Research

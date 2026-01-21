@@ -2,11 +2,11 @@
 title: How Is Logging Practice Implemented in Open Source Software Projects? A Preliminary Exploration
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Guoping Rong
-  - Shenghui Gu
+  - me
   - He Zhang
   - Dong Shao
   - WanggenLiu
@@ -55,13 +55,13 @@ links:
   # - type: pdf
   #   url: ""
   # - type: code
-  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  #   url: https://github.com/HugoBlox/kit
   # - type: dataset
-  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  #   url: https://github.com/HugoBlox/kit
   - type: slides
     url: rong2018logging_presentation.pptx
   # - type: source
-  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  #   url: https://github.com/HugoBlox/kit
   # - type: video
   #   url: https://youtube.com
 

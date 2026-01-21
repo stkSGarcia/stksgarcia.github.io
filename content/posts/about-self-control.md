@@ -4,7 +4,7 @@ summary: 读完《自控力》后在此对一些重要观点进行记录。
 date: 2018-11-22T01:43:00+08:00
 lastmod: 2021-08-24T23:12:35+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Self-control
   - Reading

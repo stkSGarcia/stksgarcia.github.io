@@ -2,13 +2,13 @@
 title: Storage Design of Tracing-logs for Application Performance Management System
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Yong You
   - Hao Wang
   - Tian Ren
-  - Shenghui Gu
+  - me
   - Jialin Sun
 
 # Author notes (optional)
@@ -27,7 +27,7 @@ date: "2021-05-01T00:00:00Z"
 publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
-publication: '_Journal of Software_, 32(5)'
+publication: _Journal of Software_, 32(5)
 publication_short: ''
 
 abstract: >-
@@ -54,13 +54,13 @@ hugoblox:
 #   - type: pdf
 #     url: ""
 #   - type: code
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: dataset
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: slides
 #     url: https://www.slideshare.net/
 #   - type: source
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: video
 #     url: https://youtube.com
 

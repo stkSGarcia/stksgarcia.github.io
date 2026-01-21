@@ -4,7 +4,7 @@ summary: 通过 Java API 实现 Kafka topic 下所有 partition 的 offset 重�
 date: 2018-03-06T22:07:00+08:00
 lastmod: 2021-08-24T23:12:33+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Kafka
   - Java

@@ -4,7 +4,7 @@ summary: 本文探讨了 JVM 指令重排对双重校验锁单例模式的影响
 date: 2018-10-28T18:27:00+08:00
 lastmod: 2021-08-24T23:12:35+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Java
 ---

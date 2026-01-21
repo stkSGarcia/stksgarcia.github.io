@@ -9,7 +9,7 @@ summary: |
 date: 2018-04-30T20:09:00+08:00
 lastmod: 2021-08-24T23:12:34+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Git
 ---

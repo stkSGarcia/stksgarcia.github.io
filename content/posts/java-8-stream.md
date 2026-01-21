@@ -4,7 +4,7 @@ summary: 记录了 Java 8 Stream 特性的参考资料。
 date: 2018-07-14T17:53:00+08:00
 lastmod: 2021-08-24T23:12:34+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Java
 ---

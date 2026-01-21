@@ -1,10 +1,10 @@
 ---
 title: Windows 下使用 Powershell 批量重命名文件
 summary: 通过 Powershell 实现批量正则重命名文件。
-authors:
-  - Shenghui Gu
 date: 2018-03-18T18:47:00+08:00
 lastmod: 2021-08-24T23:12:33+08:00
+authors:
+  - me
 tags:
   - Powershell
   - Windows

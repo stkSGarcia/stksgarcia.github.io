@@ -2,10 +2,10 @@
 title: A Process Capability Support Model for DevOps and Its Implementation
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Shenghui Gu
+  - me
   - He Zhang
   - Dong Shao
 
@@ -46,20 +46,20 @@ featured: true
 # Standard identifiers for auto-linking
 # hugoblox:
 #   ids:
-#     doi: ""
+#     doi: 10.5555/123456
 
 # Custom links
 links:
   # - type: pdf
   #   url: ""
   # - type: code
-  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  #   url: https://github.com/HugoBlox/kit
   # - type: dataset
-  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  #   url: https://github.com/HugoBlox/kit
   - type: slides
     url: gu2017process_presentation.pptx
   # - type: source
-  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  #   url: https://github.com/HugoBlox/kit
   # - type: video
   #   url: https://youtube.com
 

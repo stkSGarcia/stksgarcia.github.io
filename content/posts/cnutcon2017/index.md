@@ -7,7 +7,7 @@ summary: |
 date: 2017-09-17T12:39:00+08:00
 lastmod: 2021-08-24T23:12:32+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - AIOps
   - DevOps

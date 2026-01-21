@@ -4,7 +4,7 @@ summary: A general guide to choosing an open source license.
 date: 2017-09-27T13:45:00+08:00
 lastmod: 2021-08-24T23:12:33+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - License
   - Copyright
@@ -13,7 +13,7 @@ tags:
 
 This is a simple description of popular free software license made by [Paul Miller](http://paulmillr.com/).
 
-![](featured.png)
+![](license.png)
 
 Choosing an open source license can be really confusing.
 Fortunately, GitHub has created [ChooseALicense.com](https://choosealicense.com/) to help us make that decision.

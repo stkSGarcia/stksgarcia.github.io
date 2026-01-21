@@ -9,7 +9,7 @@ summary: |
 date: 2018-03-02T00:20:00+08:00
 lastmod: 2021-08-24T23:12:33+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Blog
 ---

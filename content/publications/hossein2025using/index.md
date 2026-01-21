@@ -2,11 +2,11 @@
 title: 'Using Cooperative Co-evolutionary Search to Generate Metamorphic Test Cases for Autonomous Driving Systems'
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Hossein Yousefizadeh
-  - Shenghui Gu
+  - me
   - Lionel C. Briand
   - Ali Nasr
 
@@ -26,8 +26,8 @@ date: '2025-05-15T00:00:00Z'
 publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
-publication: '_IEEE Transactions on Software Engineering_, 51(6)'
-publication_short: ''
+publication: _IEEE Transactions on Software Engineering_, 51(6)
+publication_short: _TSE_
 
 abstract: >-
   Autonomous Driving Systems (ADSs) rely on Deep Neural Networks, allowing vehicles to navigate complex, open environments. However, the unpredictability of these scenarios highlights the need for rigorous system-level testing to ensure safety, a task usually performed with a simulator in the loop. Though one important goal of such testing is to detect safety violations, there are many undesirable system behaviors, that may not immediately lead to violations, that testing should also be focusing on, thus detecting more subtle problems and enabling a finer-grained analysis. This paper introduces Cooperative Co-evolutionary MEtamorphic test Generator for Autonomous systems (CoCoMEGA), a novel automated testing framework aimed at advancing system-level safety assessments of ADSs. CoCoMEGA combines Metamorphic Testing (MT) with a search-based approach utilizing Cooperative Co-Evolutionary Algorithms (CCEA) to efficiently generate a diverse set of test cases. CoCoMEGA emphasizes the identification of test scenarios that present undesirable system behavior, that may eventually lead to safety violations, captured by Metamorphic Relations (MRs). When evaluated within the CARLA simulation environment on the Interfuser ADS, CoCoMEGA consistently outperforms baseline methods, demonstrating enhanced effectiveness and efficiency in generating severe, diverse MR violations and achieving broader exploration of the test space. Further expert assessments of these violations confirmed that most represent real safety risks, which validates their practical relevance. These results underscore CoCoMEGA as a promising, more scalable solution to the inherent challenges in ADS testing with a simulator in the loop. Future research directions may include extending the approach to additional simulation platforms, applying it to other complex systems, and exploring methods for further improving testing efficiency such as surrogate modeling.
@@ -54,13 +54,13 @@ hugoblox:
 #   - type: pdf
 #     url: ""
 #   - type: code
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: dataset
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: slides
 #     url: https://www.slideshare.net/
 #   - type: source
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: video
 #     url: https://youtube.com
 

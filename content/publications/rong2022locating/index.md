@@ -2,12 +2,12 @@
 title: 'Locating Anomaly Clues for Atypical Anomalous Services: An Industrial Exploration'
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Guoping Rong
   - Hao Wang
-  - Shenghui Gu
+  - me
   - Yangchen Xu
   - Jialin Sun
   - Dong Shao
@@ -30,7 +30,7 @@ publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
 publication: _IEEE Transactions on Dependable and Secure Computing_
-publication_short: ''
+publication_short: _TDSC_
 
 abstract: >-
   Continuity and steadiness are vital for services with massive users, which requires the anomalies of services should be detected and resolved in a timely manner. Our previous work proposed a tool, namely _ImpAPTr (Impact Analysis based on Pruning Tree)_, to identify the combination of multiple dimensional attributes as the clues leading to the root cause of service anomalies. However, _ImpAPTr_ applies a threshold driven strategy, i.e. it needs to be triggered by a ≥ 0.05% drop of the success rate of the service calls (abbr. _SRSC_), which may face problems in an atypical yet pervasive situation in field application. For example, the combination of trivial anomalies (i.e. each causes a drop less than 0.05% to _SRSC_) can lead to a far more than 0.05% drop on _SRSC_. Besides, a suitable threshold is usually hard to be determined, etc. To address these problems, we propose a new method, namely _ImpAPTr+_ in this paper to free the constraint of the 0.05% threshold. The basic idea is to involve time dimension and identify clues across multiple time intervals of data. We performed evaluation on three typical methods (i.e. _ImpAPTr+_, _R-Adtributor_ and _Squeeze_) with both production environment dataset and simulation dataset. The former dataset is directly retrieved from the service monitoring data in _Meituan_, one of the largest on-line service providers worldwide. The latter dataset is fabricated also using the monitoring data from the same company. The results indicate: (1) _ImpAPTr+_ outperforms previous approaches to a large degree in terms of accuracy. (2) Both _ImpAPTr+_ and _R-Adtributor_ are able to find proper clues within seconds. (3) _ImpAPTr+_ tends to find proper clues with shorter time intervals (i.e. less data), which implies that the method is more suitable for near real-time monitoring scenarios.
@@ -56,13 +56,13 @@ hugoblox:
 #   - type: pdf
 #     url: ""
 #   - type: code
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: dataset
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: slides
 #     url: https://www.slideshare.net/
 #   - type: source
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: video
 #     url: https://youtube.com
 

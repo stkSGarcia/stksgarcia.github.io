@@ -4,7 +4,7 @@ summary: 本文介绍了如何使用遗传算法求解 N 皇后问题。
 date: 2018-03-11T00:07:00+08:00
 lastmod: 2021-08-24T23:12:33+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Genetic Algorithm
 ---

@@ -4,7 +4,7 @@ summary: 读完《卓有成效的管理者》后在此对一些重要观点进�
 date: 2020-03-08T18:39:00+08:00
 lastmod: 2021-08-24T23:12:36+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Management
   - Reading

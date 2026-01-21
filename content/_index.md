@@ -1,6 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
+summary: ''
 date: 2022-10-24
 type: landing
 
@@ -12,7 +13,7 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: Shenghui-Gu
+      username: me
       text: ''
       # Show a call-to-action button under your biography? (optional)
       # button:
@@ -23,8 +24,15 @@ sections:
         education: ''
         interests: ''
     design:
-      # Apply a gradient background
-      css_class: hbx-bg-gradient
+      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
+      background:
+        gradient_mesh:
+          enable: true
+
+      # Name heading sizing to accommodate long or short names
+      name:
+        size: md # Options: xs, sm, md, lg (default), xl
+
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
@@ -65,23 +73,21 @@ sections:
     id: posts
     content:
       title: Recent Posts
-      # subtitle: ''
-      # text: ''
-      # # Page type to display. E.g. post, talk, publication...
-      # page_type: blog
+      subtitle: ''
+      text: ''
+      # Page type to display. E.g. post, talk, publication...
+      page_type: blog
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
       filters:
-        folders:
-          - posts
-        # author: ''
-        # category: ''
-        # tag: ''
+        author: ''
+        category: ''
+        tag: ''
         exclude_featured: false
         exclude_future: false
         exclude_past: false
-        # publication_type: ''
+        publication_type: ''
       # Choose how many pages you would like to offset by
       offset: 0
       # Page order: descending (desc) or ascending (asc) date.

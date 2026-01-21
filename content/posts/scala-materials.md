@@ -4,7 +4,7 @@ summary: 记录一些 Scala 的学习资料。
 date: 2018-04-15T18:13:00+08:00
 lastmod: 2021-08-26T23:43:28+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Scala
 ---

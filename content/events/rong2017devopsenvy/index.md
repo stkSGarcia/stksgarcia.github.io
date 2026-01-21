@@ -1,7 +1,8 @@
 ---
 title: 'DevOpsEnvy: An Education Support System for DevOps'
+date: '2017-11-07T00:00:00Z'
 
-event: Conference on Software Engineering Education and Training (CSEE&T '17)
+event_name: Conference on Software Engineering Education and Training (CSEE&T '17)
 event_url: 'https://conferences.computer.org/cseet/2017/'
 
 location: Virtual
@@ -17,16 +18,12 @@ abstract: >-
   As an emerging approach to support fast delivery of software features with reliable quality, DevOps attracts more and more practitioners and shows the potential to become one of the mainstream approach for software development and operation. Many universities begin to offer DevOps related courses to the students majored in software engineering and computer science. However, as a critical part of a DevOps course, the project practicing using DevOps might cast big challenges for teachers, compared to traditional project practicing. For example, the more frequent than ever delivery in DevOps practicing will inevitably increase the workload vastly for teachers to conduct effective evaluation. In this paper, we introduce a web based system (_DevOpsEnvy_) to support the management and monitoring of student teams practicing DevOps. By integrating several popular open source tools, this system provides students with features such as group management, project status monitoring and student performance data analysis, etc. Meanwhile, _DevOpsEnvy_ system also provides teachers with sufficient evidence to perform evaluation. Our preliminary trial in Nanjing University revealed several advantages of _DevOpsEnvy_ system.
 
 # Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
-date: '2017-11-07T00:00:00Z'
-date_end: '2017-11-09T00:00:00Z'
-all_day: false
-
-# Schedule page publish date (NOT talk date).
-# publishDate: "2017-01-01T00:00:00Z"
+event_start: '2017-11-07T00:00:00Z'
+event_end: '2017-11-09T00:00:00Z'
+event_all_day: false
 
 authors:
-  - Shenghui Gu
+  - me
 
 tags:
   - DevOps
@@ -34,33 +31,26 @@ tags:
   - Project Management
   - Software Engineering
 
-# Is this a featured talk? (true/false)
-featured: false
+featured: true
 
 # image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+#   caption: 'Presentation freedom with Markdown'
 #   focal_point: Right
 
 links:
-  # - type: code
-  #   url: https://github.com
-  - type: slides
+  # - icon: brands/github
+  #   name: Star on GitHub
+  #   url: https://github.com/HugoBlox/kit
+  # - icon: brands/youtube
+  #   name: Video Tutorial
+  #   url: https://www.youtube.com/
+  - icon: book-open
+    name: Slides
     url: rong2017devopsenvy_presentation.pptx
-  # - type: video
-  #   url: https://youtube.com
 
-# Markdown Slides (optional).
-#   Associate this talk with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
+# Link to your Markdown slides
+# slides: "example"
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
 projects: []
 ---
 

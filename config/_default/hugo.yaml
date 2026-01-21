@@ -3,19 +3,31 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Website name
-title: Shenghui Gu
+# Website name (set in params.yaml under hugoblox.branding.name)
+title: 'Shenghui Gu'
 # Website URL
 baseURL: 'https://stksgarcia.github.io'
+
+############################
+## LANGUAGE
+############################
+
+defaultContentLanguage: en
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: false
+removePathAccents: true
 
 ############################
 ## PAGE OPTIONS
 ############################
 
 cascade:
-  # Blog post options
   - _target:
-      path: /post/**
+      path: /slides/**
+      kind: page
+    outputs: [HTML, present]
+  - _target:
+      path: /posts/**
       kind: page
     pager: true
     editable: true
@@ -32,15 +44,6 @@ cascade:
         enable: true
 
 ############################
-## LANGUAGE
-############################
-
-defaultContentLanguage: en
-hasCJKLanguage: true
-defaultContentLanguageInSubdir: false
-removePathAccents: true
-
-############################
 ## ADVANCED
 ############################
 
@@ -53,12 +56,7 @@ pagination:
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-permalinks:
-  authors: '/author/:slug/'
-  event: '/talk/:slug/'
-  post: '/post/:slug/'
-  publication: '/publication/:slug/'
+ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 disableAliases: true
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]

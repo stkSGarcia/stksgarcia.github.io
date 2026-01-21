@@ -2,12 +2,12 @@
 title: 一种日志记录方法、计算机设备及存储介质
 
 # Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Guoping Rong (荣国平)
   - Guocheng Huang (黄国成)
-  - Shenghui Gu
+  - me
 
 # Author notes (optional)
 # author_notes:
@@ -38,7 +38,7 @@ tags:
   - Logging Practice
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Standard identifiers for auto-linking
 # hugoblox:
@@ -50,13 +50,13 @@ featured: true
 #   - type: pdf
 #     url: ""
 #   - type: code
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: dataset
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: slides
 #     url: https://www.slideshare.net/
 #   - type: source
-#     url: https://github.com/HugoBlox/hugo-blox-builder
+#     url: https://github.com/HugoBlox/kit
 #   - type: video
 #     url: https://youtube.com
 

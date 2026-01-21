@@ -4,7 +4,7 @@ summary: 有时候我们需要通过 Gradle 将依赖打包进 Jar 包中，下�
 date: 2018-03-03T19:04:00+08:00
 lastmod: 2021-08-24T23:12:33+08:00
 authors:
-  - Shenghui Gu
+  - me
 tags:
   - Gradle
 ---
