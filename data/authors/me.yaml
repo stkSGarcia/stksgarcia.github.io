@@ -76,7 +76,7 @@ experience:
       - Designed and implemented search-based test generation algorithms to automatically produce high-value test cases for autonomous driving systems, improving scenario coverage and fault detection.
       - Integrated metamorphic and differential testing techniques to systematically evaluate system robustness and behavioral consistency under diverse driving conditions.
       - Developed an LLM-driven test generation framework to create complex, realistic driving scenarios, reducing manual test design effort.
-      - Built an interpretability and analysis framework to explain generated test cases and autonomous system behaviors, supporting debugging and validation workflows.
+      - Built an interpretability and analysis framework using explainable AI to explain generated test cases and autonomous system behaviors, supporting debugging and validation workflows.
       - Engineered testing methods compatible with industry-grade simulators and production-level autonomous driving stacks.
       - Collaborated with industry partners, faculty, and PhD researchers to align research outputs with real-world deployment and evaluation needs.
     # button:
@@ -90,9 +90,9 @@ experience:
     start: 2022-07-11
     end: 2023-06-05
     summary: |
-      - Led a small team to design and implement a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages.
+      - Led the design and implementation of a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages for system anomaly analysis.
       - Built an end-to-end functional prototype and validated it on large-scale open-source log datasets containing millions of log entries, demonstrating potential reductions in log storage and analysis overhead.
-      - Applied machine learning, deep learning, and explainable AI across the full development lifecycle: data processing, model design, implementation, and evaluation.
+      - Applied ML, DL, and explainable AI across the full development lifecycle: data processing, model design, implementation, and evaluation.
   - role: Backend Development Engineer Intern
     org: Meituan, Basic Development Platform, System Monitoring Team
     url: https://about.meituan.com
