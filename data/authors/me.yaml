@@ -91,7 +91,7 @@ experience:
     end: 2023-06-05
     summary: |
       - Led the design and implementation of a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages for system anomaly analysis.
-      - Built an end-to-end functional prototype and validated it on large-scale open-source log datasets containing millions of log entries, demonstrating potential reductions in log storage and analysis overhead.
+      - Built an end-to-end ML prototype and validated it on large-scale open-source log datasets containing millions of log entries, demonstrating potential reductions in log storage and analysis overhead.
       - Applied ML, DL, and explainable AI across the full development lifecycle: data processing, model design, implementation, and evaluation.
   - role: Backend Development Engineer Intern
     org: Meituan, Basic Development Platform, System Monitoring Team
