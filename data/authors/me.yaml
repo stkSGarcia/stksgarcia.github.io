@@ -68,51 +68,48 @@ education:
 
 experience:
   - role: Postdoctoral Researcher
-    org: Nanda Laboratory, School of Electrical Engineering and Computer Science, University of Ottawa
+    org: University of Ottawa | School of Electrical Engineering and Computer Science | Nanda Laboratory
     url: https://www.nanda-lab.ca
     icon: custom/uottawa
     start: 2023-10-10
     summary: |
-      - Designed and implemented search-based test generation algorithms to automatically produce high-value test cases for autonomous driving systems, improving scenario coverage and fault detection.
-      - Integrated metamorphic and differential testing techniques to systematically evaluate system robustness and behavioral consistency under diverse driving conditions.
-      - Developed an LLM-driven test generation framework to create complex, realistic driving scenarios, reducing manual test design effort.
-      - Built an interpretability and analysis framework using explainable AI to explain generated test cases and autonomous system behaviors, supporting debugging and validation workflows.
-      - Engineered testing methods compatible with industry-grade simulators and production-level autonomous driving stacks.
-      - Collaborated with industry partners, faculty, and PhD researchers to align research outputs with real-world deployment and evaluation needs.
+      - **Autonomous System Testing:** Designed and implemented search-based test generation algorithms to automatically produce high-value test cases, improving scenario coverage and fault detection rates for autonomous driving systems.
+      - **LLM-Driven Test Generation:** Architected an LLM-driven framework to automatically generate complex, realistic driving scenarios from textual descriptions, significantly reducing manual test design effort.
+      - **Explainable AI:** Built an interpretability and analysis framework to explain generated test cases and autonomous system behaviors, facilitating debugging workflows for black-box autonomous systems.
+      - **Sim-to-Real Implementation:** Engineered testing pipelines compatible with industry-grade simulators and production-level autonomous driving stacks, collaborating with industry partners to ensure research aligns with deployment needs.
     # button:
     #   text: View portfolio
     #   url: /
     #   icon: hero/arrow-down-tray
-  - role: Backend Development Engineer Intern
-    org: Meituan, Basic Development Platform, System Monitoring Team
+  - role: R&D Engineer Intern
+    org: Meituan | System Monitoring Team
     url: https://about.meituan.com
     icon: custom/meituan
     start: 2022-07-11
     end: 2023-06-05
     summary: |
-      - Led the design and implementation of a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages for system anomaly analysis.
-      - Built an end-to-end ML prototype and validated it on large-scale open-source log datasets containing millions of log entries, demonstrating potential reductions in log storage and analysis overhead.
-      - Applied ML, DL, and explainable AI across the full development lifecycle: data processing, model design, implementation, and evaluation.
-  - role: Backend Development Engineer Intern
-    org: Meituan, Basic Development Platform, System Monitoring Team
+      - **Log Valuation System:** Spearheaded the implementation of a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages for system anomaly analysis.
+      - **Large-Scale Validation:** Built an end-to-end ML prototype validated on millions of log entries (internal production data and open-source benchmarks), demonstrating potential for reducing storage costs and analysis overhead without compromising observability.
+      - **Full-Stack ML:** Managed the full lifecycle from data processing and model design to implementation and evaluation.
+  - role: R&D Engineer Intern
+    org: Meituan | System Monitoring Team
     url: https://about.meituan.com
     icon: custom/meituan
     start: 2021-07-05
     end: 2021-12-10
     summary: |
-      - Directed the design and development of a multi-data-source anomaly root cause analysis system that integrates time series analysis of metrics, logs, and events from multiple production services, and was successfully deployed in a production environment.
-      - Established the team's root cause analysis capabilities from scratch, including system architecture, algorithm selection, and time series analysis techniques for anomaly detection and causal inference.
-      - Collaborated with stakeholders to ensure system reliability, scalability, and integration with existing monitoring and observability pipelines.
-  - role: Backend Development Engineer Intern
-    org: Transwarp Information Technology (Shanghai) Co., Ltd., Infrastructure Department
+      - **RCA Algorithm Deployment:** Spearheaded the development of a multi-source anomaly RCA system that integrates time series analysis of metrics, logs, and traces from multiple production services, successfully deploying it to a production environment.
+      - **AIOps Capability Building:** Established the team's RCA capabilities from scratch, including system architecture, algorithm selection, and time series analysis techniques for anomaly detection and causal inference.
+      - **System Reliability:** Collaborated with SREs to ensure system reliability, scalability, and integration with existing monitoring and observability pipelines.
+  - role: Software Engineer Intern
+    org: Transwarp Information Technology (Shanghai) Co., Ltd. | Infrastructure Department
     url: https://transwarp.cn/en
     icon: custom/transwarp
     start: 2018-01-11
     end: 2019-07-12
     summary: |
-      - Developed core components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
-      - Implemented schema evolution capabilities (add/delete/modify columns) for a distributed columnar database system supporting large-scale data processing.
-      - Worked with distributed systems and big-data infrastructure, contributing to large-scale system architecture and database internals.
+      - **AIOps Platform Dev:** Developed core components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
+      - **Database Internals:** Implemented schema evolution features (DDL support) for a distributed columnar database, contributing to large-scale data processing capabilities.
   - role: DevOps Engineer Intern
     org: Shanghai Kaian Technology Co., Ltd.
     url: https://www.madailicai.com
@@ -120,9 +117,7 @@ experience:
     start: 2017-06-01
     end: 2017-09-01
     summary: |
-      - Maintained and enhanced a CI/CD platform supporting automated builds, testing, and deployment pipelines.
-      - Improved developer productivity and release reliability through CI/CD automation and environment configuration.
-      - Reduced manual intervention in build and deployment workflows by introducing repeatable, automated pipelines.
+      - **CI/CD Automation:** Maintained and enhanced automated build/test/deploy pipelines, improving developer productivity and release reliability.
 
 skills:
   - name: Technical Skills
