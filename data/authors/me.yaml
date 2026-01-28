@@ -68,7 +68,7 @@ education:
 
 experience:
   - role: Postdoctoral Researcher
-    org: University of Ottawa | School of Electrical Engineering and Computer Science | Nanda Laboratory
+    org: University of Ottawa | EECS | Nanda Laboratory
     url: https://www.nanda-lab.ca
     icon: custom/uottawa
     start: 2023-10-10
@@ -102,7 +102,7 @@ experience:
       - **AIOps Capability Building:** Established the team's RCA capabilities from scratch, including system architecture, algorithm selection, and time series analysis techniques for anomaly detection and causal inference.
       - **System Reliability:** Collaborated with SREs to ensure system reliability, scalability, and integration with existing monitoring and observability pipelines.
   - role: Software Engineer Intern
-    org: Transwarp Information Technology (Shanghai) Co., Ltd. | Infrastructure Department
+    org: Transwarp Technology Co., Ltd. | Infrastructure Department
     url: https://transwarp.cn/en
     icon: custom/transwarp
     start: 2018-01-11
