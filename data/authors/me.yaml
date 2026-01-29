@@ -14,10 +14,9 @@ status:
   icon: "☕️"
 role: Postdoctoral Researcher
 bio: |
-  Postdoctoral Researcher in the School of Electrical Engineering and Computer Science (EECS) at the University of Ottawa, with a Ph.D. in Software Engineering from Nanjing University.
-  Research spans software engineering and trustworthy AI, with a particular emphasis on automated software testing and analysis, AI-driven testing frameworks, LLMs, AIOps, software log analytics, DevOps, and empirical software engineering.
-  Current work focuses on developing rigorous, interpretable, and scalable methods that leverage LLMs and advanced testing techniques to improve the reliability, safety, and behavioral understanding of AI-enabled software systems.
-  Research interests lie at the intersection of software engineering, AI safety, and safety-critical autonomous systems, with an emphasis on practical validation and real-world applicability.
+  Postdoctoral Researcher at the University of Ottawa specializing in Trustworthy AI and Software Engineering, holding a Ph.D. from Nanjing University.
+  Research lies at the intersection of AI Safety and System Reliability, with deep expertise spanning LLM-driven testing, search-based software engineering for autonomous systems, and AIOps for distributed architectures.
+  Dedicated to developing rigorous, interpretable, and scalable methodologies that leverage generative AI to solve complex validation challenges in safety-critical and large-scale industrial systems.
 
 affiliations:
   - name: Nanda Laboratory | EECS | University of Ottawa
@@ -75,8 +74,8 @@ experience:
     summary: |
       - **Autonomous System Testing:** Designed and implemented search-based test generation algorithms to automatically produce high-value test cases, improving scenario coverage and fault detection rates for autonomous driving systems.
       - **LLM-Driven Test Generation:** Architected an LLM-driven framework to automatically generate complex, realistic driving scenarios from textual descriptions, significantly reducing manual test design effort.
-      - **Explainable AI:** Built an interpretability and analysis framework to explain generated test cases and autonomous system behaviors, facilitating debugging workflows for black-box autonomous systems.
-      - **Sim-to-Real Implementation:** Engineered testing pipelines compatible with industry-grade simulators and production-level autonomous driving stacks, collaborating with industry partners to ensure research aligns with deployment needs.
+      - **Explainable AI:** Built an interpretability framework to explain generated test cases and autonomous system behaviors, facilitating debugging workflows for black-box autonomous systems.
+      - **Industrial-Grade Implementation:** Engineered testing pipelines compatible with industry-grade simulators and production-level autonomous driving stacks, collaborating with industry partners to ensure research aligns with deployment needs.
     # button:
     #   text: View portfolio
     #   url: /
