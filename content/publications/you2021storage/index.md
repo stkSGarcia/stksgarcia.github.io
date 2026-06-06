@@ -26,9 +26,29 @@ date: "2021-05-01T00:00:00Z"
 # Enter a publication type from the CSL standard.
 publication_types: ['article-journal']
 
-# Publication name and optional abbreviated publication name.
-publication: _Journal of Software_, 32(5)
-publication_short: ''
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "Journal of Software"
+  volume: 32
+  issue: 5
+
+peer_reviewed: true
+# open_access: true
+# license: CC-BY-4.0
+
+# Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
+# Note: a Test of Time award years after publication uses an explicit `date` that differs from the page date.
+# awards:
+#   - name: "Test of Time Award"
+#     level: winner
+#     date: "2025"
+#     note: "Awarded for sustained impact 10 years after publication."
+#   - name: "Editor's Choice"
+#     level: featured
+
+# funding:
+#   - funder: "National Science Foundation"
+#     grant: "NSF-1234567"
 
 abstract: >-
   With the software system becoming more and more complex and distributed, it is more and more important to provide monitoring services with complete functions for the system. APM (application performance management) system analyzes the running state of software by collecting various indicator data of software system, such as CPU, memory utilization, the consuming time of garbage collection, QPS. In addition, the APM system can also generate various types of logs during the operation of the software. Generally speaking, it can provide three types of monitoring data: statistic metrics, tracing data, and discrete event records. The data can help the maintenance personnel of the system or service understand the running state, so as to ensure the stable operation of the system or service. Based on the open-source APM monitoring system (i.e., CAT system), this study proposes a storage design scheme for tracing data. It improves the storage efficiency by memory block which is designed for batch writing logs, and query efficiency by the structure of the two-level index. Through analyzing the real on-line running data, the proposed scheme has sound performance in both write performance and query performance.

@@ -25,9 +25,29 @@ date: '2017-12-04T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['paper-conference']
 
-# Publication name and optional abbreviated publication name.
-publication: In _Asia-Pacific Software Engineering Conference_
-publication_short: In _APSEC_
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "Asia-Pacific Software Engineering Conference"
+  short_name: "APSEC"
+
+peer_reviewed: true
+# open_access: true
+# license: CC-BY-4.0
+
+# Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
+# awards:
+#   - name: "Best Paper Award"
+#     level: winner
+#     note: "Top 5 of 8000 submissions"
+#   - name: "Oral Presentation"
+#     level: selected
+
+# Funders and grants. Required by many funders for compliance reporting.
+# funding:
+#   - funder: "National Science Foundation"
+#     grant: "NSF-2401234"
+#   - funder: "European Research Council"
+#     grant: "ERC-StG-101234"
 
 abstract: >-
   _Background:_ Logging practice is a critical activity in software development, which aims to offer significant information to understand the runtime behavior of software systems and support better software maintenance. There have been many relevant studies dedicated to logging practice in software engineering recently, yet it lacks a systematic understanding to the adoption state of logging practice in industry and research progress in academia. _Objective:_ This study aims to synthesize relevant studies on the logging practice and portray a big picture of logging practice in software engineering so as to understand current adoption status and identify research opportunities. _Method:_ We carried out a systematic review on the relevant studies on logging practice in software engineering. _Results:_ Our study identified 41 primary studies relevant to logging practice. Typical findings are: (1) Logging practice attracts broad interests among researchers in many concrete research areas. (2) Logging practice occurred in many development types, among which the development of fault tolerance systems is the most adopted type. (3) Many challenges exist in current logging practice in software engineering, e.g., tradeoff between logging overhead and analysis cost, where and what to log, balance between enough logging and system performance, etc. _Conclusion:_ Results show that logging practice plays a vital role in various applications for diverse purposes. However, there are many challenges and problems to be solved. Therefore, various novel techniques are necessary to guide developers conducting logging practice and improve the performance and efficiency of logging practice.
@@ -41,7 +61,7 @@ tags:
   - Software Engineering
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Standard identifiers for auto-linking
 hugoblox:

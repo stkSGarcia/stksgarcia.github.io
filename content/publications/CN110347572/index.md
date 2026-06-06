@@ -25,9 +25,17 @@ date: '2020-08-11T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['patent']
 
-# Publication name and optional abbreviated publication name.
-publication: 中华人民共和国国家知识产权局
-publication_short: ''
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "中华人民共和国国家知识产权局"
+
+peer_reviewed: false
+open_access: true
+# license: CC-BY-4.0
+
+# funding:
+#   - funder: "Wellcome Trust"
+#     grant: "WT-219123/Z/19/Z"
 
 abstract: >-
   本发明实施例公开了一种性能日志输出方法、装置、系统、设备及介质。其中，性能日志输出方法，包括：根据目标程序中的性能敏感区域，构建执行模型，其中，所述执行模型用于表示所述目标程序中的性能敏感区域的执行信息；根据所述执行模型，在所述目标程序中插入性能日志记录语句；通过执行插入了所述性能日志记录语句的目标程序，输出所述目标程序的性能日志。本发明实施例的技术方案，可缩小性能诊断范围，提高性能诊断有效性。

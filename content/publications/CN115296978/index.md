@@ -26,9 +26,17 @@ date: '2022-11-04T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['patent']
 
-# Publication name and optional abbreviated publication name.
-publication: 中华人民共和国国家知识产权局
-publication_short: ''
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "中华人民共和国国家知识产权局"
+
+peer_reviewed: false
+open_access: true
+# license: CC-BY-4.0
+
+# funding:
+#   - funder: "Wellcome Trust"
+#     grant: "WT-219123/Z/19/Z"
 
 abstract: >-
   本申请公开了一种根因定位方法、装置、设备，属于计算机技术领域。方法包括：获取第一服务的服务数据和至少一个第二服务的服务数据；根据第一服务的服务数据和至少一个第二服务的服务数据，构建传播拓扑图；确定传播拓扑图中的各个节点对应的访问次数，访问次数用于指示节点被访问的次数；根据各个节点对应的访问次数，确定目标根因，目标根因用于指示部署有任一服务的主机的任一指标存在异常，任一服务为第一服务和至少一个第二服务中的任一个服务。该方法使得根因定位的精细度更高，准确性更高。

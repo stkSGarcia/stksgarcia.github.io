@@ -27,9 +27,29 @@ date: '2019-10-28T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['paper-conference']
 
-# Publication name and optional abbreviated publication name.
-publication: In _Asia-Pacific Symposium on Internetware_
-publication_short: In _Internetware_
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "Asia-Pacific Symposium on Internetware"
+  short_name: "Internetware"
+
+peer_reviewed: true
+# open_access: true
+# license: CC-BY-4.0
+
+# Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
+# awards:
+#   - name: "Best Paper Award"
+#     level: winner
+#     note: "Top 5 of 8000 submissions"
+#   - name: "Oral Presentation"
+#     level: selected
+
+# Funders and grants. Required by many funders for compliance reporting.
+# funding:
+#   - funder: "National Science Foundation"
+#     grant: "NSF-2401234"
+#   - funder: "European Research Council"
+#     grant: "ERC-StG-101234"
 
 abstract: >-
   Logs are the execution results of logging statements in software systems after being triggered by various events, which is able to capture the dynamic behavior of software systems during runtime and provide important information for software analysis, e.g., issue tracking, performance monitoring, etc. Obviously, to meet this purpose, the quality of the logs is critical, which requires appropriately placement of logging statements. Existing research on this topic reveals that _where to log?_ and _what to log?_ are two most concerns when conducting logging practice in software development, which mainly relies on developers' personal skills, expertise and preference, rendering several problems impacting the quality of the logs inevitably. One of the reasons leading to this phenomenon might be that several recognized best practices (strategies as well) are easily neglected by software developers. Especially in those software projects with relatively large number of participants. To address this issue, we designed and implemented a plug-in tool (i.e., _JLLAR_) based on the Intellij IDEA, which applied machine learning technology to identify and create a set of rules reflecting commonly recognized logging practices. Based on this rule set, _JLLAR_ can be used to scan existing source code to identify issues regarding the placement of logging statements. Moreover, _JLLAR_ also provides automatic code completion and semi code completion (i.e., to provide recommendations) regarding logging practice to support software developers during coding.
@@ -43,7 +63,7 @@ tags:
   - Tool
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Standard identifiers for auto-linking
 hugoblox:

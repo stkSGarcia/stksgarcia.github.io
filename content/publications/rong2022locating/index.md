@@ -28,9 +28,29 @@ date: '2022-06-01T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['article-journal']
 
-# Publication name and optional abbreviated publication name.
-publication: _IEEE Transactions on Dependable and Secure Computing_
-publication_short: _TDSC_
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "IEEE Transactions on Dependable and Secure Computing"
+  volume: 20
+  issue: 4
+
+peer_reviewed: true
+# open_access: true
+# license: CC-BY-4.0
+
+# Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
+# Note: a Test of Time award years after publication uses an explicit `date` that differs from the page date.
+# awards:
+#   - name: "Test of Time Award"
+#     level: winner
+#     date: "2025"
+#     note: "Awarded for sustained impact 10 years after publication."
+#   - name: "Editor's Choice"
+#     level: featured
+
+# funding:
+#   - funder: "National Science Foundation"
+#     grant: "NSF-1234567"
 
 abstract: >-
   Continuity and steadiness are vital for services with massive users, which requires the anomalies of services should be detected and resolved in a timely manner. Our previous work proposed a tool, namely _ImpAPTr (Impact Analysis based on Pruning Tree)_, to identify the combination of multiple dimensional attributes as the clues leading to the root cause of service anomalies. However, _ImpAPTr_ applies a threshold driven strategy, i.e. it needs to be triggered by a ≥ 0.05% drop of the success rate of the service calls (abbr. _SRSC_), which may face problems in an atypical yet pervasive situation in field application. For example, the combination of trivial anomalies (i.e. each causes a drop less than 0.05% to _SRSC_) can lead to a far more than 0.05% drop on _SRSC_. Besides, a suitable threshold is usually hard to be determined, etc. To address these problems, we propose a new method, namely _ImpAPTr+_ in this paper to free the constraint of the 0.05% threshold. The basic idea is to involve time dimension and identify clues across multiple time intervals of data. We performed evaluation on three typical methods (i.e. _ImpAPTr+_, _R-Adtributor_ and _Squeeze_) with both production environment dataset and simulation dataset. The former dataset is directly retrieved from the service monitoring data in _Meituan_, one of the largest on-line service providers worldwide. The latter dataset is fabricated also using the monitoring data from the same company. The results indicate: (1) _ImpAPTr+_ outperforms previous approaches to a large degree in terms of accuracy. (2) Both _ImpAPTr+_ and _R-Adtributor_ are able to find proper clues within seconds. (3) _ImpAPTr+_ tends to find proper clues with shorter time intervals (i.e. less data), which implies that the method is more suitable for near real-time monitoring scenarios.

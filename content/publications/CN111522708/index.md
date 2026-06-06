@@ -24,9 +24,17 @@ date: '2021-08-24T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['patent']
 
-# Publication name and optional abbreviated publication name.
-publication: 中华人民共和国国家知识产权局
-publication_short: ''
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "中华人民共和国国家知识产权局"
+
+peer_reviewed: false
+open_access: true
+# license: CC-BY-4.0
+
+# funding:
+#   - funder: "Wellcome Trust"
+#     grant: "WT-219123/Z/19/Z"
 
 abstract: >-
   本发明实施例公开了一种日志记录方法、计算机设备及存储介质，其中，所述方法包括：获取目标代码块；从所述目标代码块中提取目标代码块特征；将所述目标代码块特征输入至预先训练好的日志决策模型中，根据所述日志决策模型的输出结果判断是否需要在所述目标代码块中插入日志记录语句；若是，则在所述目标代码块中插入日志记录语句。本发明实施例的技术方案能够可以合理、有效地进行日志记录，不仅能够减少琐碎无效的日志对系统资源的消耗，而且当系统异常时有助于软件开发人员通过合理有效的日志快速找到真正的问题。

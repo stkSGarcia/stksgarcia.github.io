@@ -24,9 +24,29 @@ date: '2017-11-03T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['paper-conference']
 
-# Publication name and optional abbreviated publication name.
-publication: In _National Software Application Conference_
-publication_short: In _NASAC_
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "National Software Application Conference"
+  short_name: "NASAC"
+
+peer_reviewed: true
+# open_access: true
+# license: CC-BY-4.0
+
+# Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
+# awards:
+#   - name: "Best Paper Award"
+#     level: winner
+#     note: "Top 5 of 8000 submissions"
+#   - name: "Oral Presentation"
+#     level: selected
+
+# Funders and grants. Required by many funders for compliance reporting.
+# funding:
+#   - funder: "National Science Foundation"
+#     grant: "NSF-2401234"
+#   - funder: "European Research Council"
+#     grant: "ERC-StG-101234"
 
 abstract: >-
   As an emerging approach to support fast delivery of software features with reliable quality, DevOps attracts more and more practitioners and shows the potential to become one of the mainstream approach for software development and operation. Many universities begin to offer DevOps related courses to the students majored in software engineering and computer science. However, as a critical part of a DevOps course, the project practicing using DevOps might cast big challenges for teachers, compared to traditional project practicing. It becomes teaching obstacles to offer practicing environment, process management and evaluation approaches. This paper introduces a model--_DOPCSM_ to support the management and evaluation of student teams practicing DevOps. By integrating several popular open source tools, teachers could implement the model into a support system, which provides students with features such as group management, project management and student performance data analysis, etc. Meanwhile, the support system also provides teachers with sufficient evidence to perform evaluation. Our preliminary trial in Nanjing University revealed several advantages of the _DOPCSM_ model.
@@ -41,7 +61,7 @@ tags:
   - Software Engineering
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Standard identifiers for auto-linking
 # hugoblox:

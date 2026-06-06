@@ -26,9 +26,29 @@ date: '2022-09-28T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['paper-conference']
 
-# Publication name and optional abbreviated publication name.
-publication: In _International Conference on Software Maintenance and Evolution_
-publication_short: In _ICSME_
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "International Conference on Software Maintenance and Evolution"
+  short_name: "ICSME"
+
+peer_reviewed: true
+# open_access: true
+# license: CC-BY-4.0
+
+# Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
+# awards:
+#   - name: "Best Paper Award"
+#     level: winner
+#     note: "Top 5 of 8000 submissions"
+#   - name: "Oral Presentation"
+#     level: selected
+
+# Funders and grants. Required by many funders for compliance reporting.
+# funding:
+#   - funder: "National Science Foundation"
+#     grant: "NSF-2401234"
+#   - funder: "European Research Council"
+#     grant: "ERC-StG-101234"
 
 abstract: >-
   _Background:_ Logs provide crucial information to understand the dynamic behavior of software systems in modern software development and maintenance. Usually, logs are produced by log statements which will be triggered and executed under certain conditions. However, current studies paid very limited attention to developers' _Intentions and Concerns (I&C)_ on logging practice, leading uncertainty that whether the developers' _I&C_ are properly reflected by log statements and questionable capability to capture the expected information of system behaviors in logs. _Objective:_ This study aims to reveal the status of developers' _I&C_ on logging practice and more importantly, how the _I&C_ are properly reflected in software source code in real-world software development. _Method:_ We collected evidence from two sources of a series of interviews and source code analysis which are conducted in a big-data company, followed by consolidation and analysis of the evidence. _Results:_ Major gaps and inconsistencies have been identified between the developers' _I&C_ and real log statements in source code. Many code snippets contained no log statements that the interviewees claimed to have inserted. _Conclusion:_ Developers' original _I&C_ towards logging practice are usually poorly realized, which inevitably impacted the motivation and purpose to conduct this practice.

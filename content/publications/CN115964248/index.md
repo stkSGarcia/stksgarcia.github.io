@@ -27,9 +27,17 @@ date: '2023-04-14T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['patent']
 
-# Publication name and optional abbreviated publication name.
-publication: 中华人民共和国国家知识产权局
-publication_short: ''
+# Publication metadata — structured fields used by citation styles and BibTeX export.
+publication:
+  name: "中华人民共和国国家知识产权局"
+
+peer_reviewed: false
+open_access: true
+# license: CC-BY-4.0
+
+# funding:
+#   - funder: "Wellcome Trust"
+#     grant: "WT-219123/Z/19/Z"
 
 abstract: >-
   本发明涉及系统日志评价方法，所述方法包括以下步骤：步骤1：获取系统日志数据，步骤2：提取系统日志数据模板，将非结构化的系统日志数据转化为结构化的系统日志，步骤3：利用基于神经网络的异常检测算法训练异常检测模型，步骤4：对异常检测模型进行解释，输出系统日志价值。该技术方案通过提高日志信息量，减少冗余日志等方式，提升日志数据的质量，从而达到提升数据价值的同时减少数据收集量的效果，进一步提升异常检测算法的效果与效率。
