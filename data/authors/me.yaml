@@ -71,11 +71,12 @@ experience:
     url: https://www.nanda-lab.ca
     icon: custom/uottawa
     start: 2023-10-10
-    summary: |
-      - **Autonomous System Testing:** Designed and implemented search-based test generation algorithms to automatically produce high-value test cases, improving scenario coverage and fault detection rates for autonomous driving systems.
-      - **LLM-Driven Test Generation:** Architected an LLM-driven framework to automatically generate complex, realistic driving scenarios from textual descriptions, significantly reducing manual test design effort.
-      - **Explainable AI:** Built an interpretability framework to explain generated test cases and autonomous system behaviors, facilitating debugging workflows for black-box autonomous systems.
-      - **Industrial-Grade Implementation:** Engineered testing pipelines compatible with industry-grade simulators and production-level autonomous driving stacks, collaborating with industry partners to ensure research aligns with deployment needs.
+    end: 2026-03-24
+    # summary: |
+    #   - **Autonomous System Testing:** Designed and implemented search-based test generation algorithms to automatically produce high-value test cases, improving scenario coverage and fault detection rates for autonomous driving systems.
+    #   - **LLM-Driven Test Generation:** Architected an LLM-driven framework to automatically generate complex, realistic driving scenarios from textual descriptions, significantly reducing manual test design effort.
+    #   - **Explainable AI:** Built an interpretability framework to explain generated test cases and autonomous system behaviors, facilitating debugging workflows for black-box autonomous systems.
+    #   - **Industrial-Grade Implementation:** Engineered testing pipelines compatible with industry-grade simulators and production-level autonomous driving stacks, collaborating with industry partners to ensure research aligns with deployment needs.
     # button:
     #   text: View portfolio
     #   url: /
@@ -86,37 +87,37 @@ experience:
     icon: custom/meituan
     start: 2022-07-11
     end: 2023-06-05
-    summary: |
-      - **Log Valuation System:** Spearheaded the implementation of a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages for system anomaly analysis.
-      - **Large-Scale Validation:** Built an end-to-end ML prototype validated on millions of log entries (internal production data and open-source benchmarks), demonstrating potential for reducing storage costs and analysis overhead without compromising observability.
-      - **Full-Stack ML:** Managed the full lifecycle from data processing and model design to implementation and evaluation.
+    # summary: |
+    #   - **Log Valuation System:** Spearheaded the implementation of a log data valuation system using deep learning and explainable AI to quantify the diagnostic value of log messages for system anomaly analysis.
+    #   - **Large-Scale Validation:** Built an end-to-end ML prototype validated on millions of log entries (internal production data and open-source benchmarks), demonstrating potential for reducing storage costs and analysis overhead without compromising observability.
+    #   - **Full-Stack ML:** Managed the full lifecycle from data processing and model design to implementation and evaluation.
   - role: R&D Engineer Intern
     org: Meituan | System Monitoring Team
     url: https://about.meituan.com
     icon: custom/meituan
     start: 2021-07-05
     end: 2021-12-10
-    summary: |
-      - **RCA Algorithm Deployment:** Spearheaded the development of a multi-source anomaly RCA system that integrates time series analysis of metrics, logs, and traces from multiple production services, successfully deploying it to a production environment.
-      - **AIOps Capability Building:** Established the team's RCA capabilities from scratch, including system architecture, algorithm selection, and time series analysis techniques for anomaly detection and causal inference.
-      - **System Reliability:** Collaborated with SREs to ensure system reliability, scalability, and integration with existing monitoring and observability pipelines.
+    # summary: |
+    #   - **RCA Algorithm Deployment:** Spearheaded the development of a multi-source anomaly RCA system that integrates time series analysis of metrics, logs, and traces from multiple production services, successfully deploying it to a production environment.
+    #   - **AIOps Capability Building:** Established the team's RCA capabilities from scratch, including system architecture, algorithm selection, and time series analysis techniques for anomaly detection and causal inference.
+    #   - **System Reliability:** Collaborated with SREs to ensure system reliability, scalability, and integration with existing monitoring and observability pipelines.
   - role: Software Engineer Intern
     org: Transwarp Technology Co., Ltd. | Infrastructure Department
     url: https://transwarp.cn/en
     icon: custom/transwarp
     start: 2018-01-11
     end: 2019-07-12
-    summary: |
-      - **AIOps Platform Dev:** Developed core components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
-      - **Database Internals:** Implemented schema evolution features (DDL support) for a distributed columnar database, contributing to large-scale data processing capabilities.
+    # summary: |
+    #   - **AIOps Platform Dev:** Developed core components of an AIOps platform, including log analysis modules, JStack analysis tools, and an operational knowledge base.
+    #   - **Database Internals:** Implemented schema evolution features (DDL support) for a distributed columnar database, contributing to large-scale data processing capabilities.
   - role: DevOps Engineer Intern
     org: Shanghai Kaian Technology Co., Ltd.
     url: https://www.madailicai.com
     icon: custom/madailicai
     start: 2017-06-01
     end: 2017-09-01
-    summary: |
-      - **CI/CD Automation:** Maintained and enhanced automated build/test/deploy pipelines, improving developer productivity and release reliability.
+    # summary: |
+    #   - **CI/CD Automation:** Maintained and enhanced automated build/test/deploy pipelines, improving developer productivity and release reliability.
 
 skills:
   - name: Technical Skills
