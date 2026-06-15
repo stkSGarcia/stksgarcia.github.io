@@ -178,6 +178,9 @@ languages:
     label: Fluent
 
 awards:
+  - title: Reviewer
+    awarder: ACM Transactions on Software Engineering and Methodology (TOSEM)
+    date: "2026-06-12"
   - title: Program Committee
     awarder: 41st IEEE/ACM International Conference on Automated Software Engineering (ASE)
     date: "2026-01-16"
