@@ -181,14 +181,18 @@ awards:
   - title: Reviewer
     awarder: ACM Transactions on Software Engineering and Methodology (TOSEM)
     date: "2026-06-12"
-  - title: Program Committee
+    url: https://www.webofscience.com/wos/author/record/OAI-9001-2025
+  - title: Program Committee | Research Track
     awarder: 41st IEEE/ACM International Conference on Automated Software Engineering (ASE)
     date: "2026-01-16"
+    url: https://conf.researchr.org/committee/ase-2026/ase-2026-research-track-programm-committee
     # summary: Awarded for groundbreaking work on efficient training of large models.
     # icon: hero/trophy
   - title: Reviewer
     awarder: IEEE Transactions on Software Engineering (TSE)
     date: "2026-01-06"
+    url: https://www.webofscience.com/wos/author/record/OAI-9001-2025
   - title: Reviewer
     awarder: IEEE Transactions on Software Engineering (TSE)
     date: "2025-07-20"
+    url: https://www.webofscience.com/wos/author/record/OAI-9001-2025
