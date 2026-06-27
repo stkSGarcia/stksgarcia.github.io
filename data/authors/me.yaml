@@ -12,11 +12,11 @@ postnominals:
   - PhD
 status:
   icon: "☕️"
-role: Postdoctoral Researcher
+role: Researcher in Trustworthy AI and Software Engineering
 bio: |
-  Postdoctoral Researcher at the University of Ottawa specializing in Trustworthy AI and Software Engineering, holding a Ph.D. from Nanjing University.
-  Research lies at the intersection of AI Safety and System Reliability, with deep expertise spanning LLM-driven testing, search-based software engineering for autonomous systems, and AIOps for distributed architectures.
-  Dedicated to developing rigorous, interpretable, and scalable methodologies that leverage generative AI to solve complex validation challenges in safety-critical and large-scale industrial systems.
+  I build methods for testing, validating, and improving trustworthy AI-enabled software systems.
+  My research lies at the intersection of Software Engineering, AI Safety, and System Reliability, spanning LLM-driven testing, search-based software engineering for autonomous systems, and AIOps for distributed architectures.
+  A central theme of my work is to make generative AI useful, interpretable, and dependable for solving complex validation problems in safety-critical and large-scale industrial systems.
 
 affiliations:
   - name: Nanda Laboratory | EECS | University of Ottawa
