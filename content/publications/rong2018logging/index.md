@@ -9,7 +9,7 @@ authors:
   - me
   - He Zhang
   - Dong Shao
-  - WanggenLiu
+  - Wanggen Liu
 
 # Author notes (optional)
 # author_notes:

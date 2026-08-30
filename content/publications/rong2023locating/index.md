@@ -18,7 +18,7 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2022-06-01T00:00:00Z'
+date: '2023-07-01T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -69,7 +69,7 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    doi: 10.1109/TDSC.2022.3181143
+    doi: 10.1109/tdsc.2022.3181143
 
 # Custom links
 # links:

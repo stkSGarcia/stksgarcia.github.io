@@ -1,5 +1,5 @@
 ---
-title: 'Using Cooperative Co-evolutionary Search to Generate Metamorphic Test Cases for Autonomous Driving Systems'
+title: 'Using Cooperative Co-Evolutionary Search to Generate Metamorphic Test Cases for Autonomous Driving Systems'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
@@ -67,7 +67,7 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    doi: 10.1109/TSE.2025.3570897
+    doi: 10.1109/tse.2025.3570897
 
 # Custom links
 # links:

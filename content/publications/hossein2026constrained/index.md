@@ -1,5 +1,5 @@
 ---
-title: 'Constrained Co-evolutionary Metamorphic Differential Testing for Autonomous Systems with an Interpretability Approach'
+title: 'Constrained Co-evolutionary Differential Metamorphic Testing for Autonomous Systems with an Interpretability Approach'
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
@@ -15,7 +15,7 @@ author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 
-date: '2026-05-16T00:00:00Z'
+date: '2026-06-18T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -58,7 +58,7 @@ abstract: >-
 tags:
   - Autonomous Driving
   - Metamorphic Testing
-  - Differential Testing,
+  - Differential Testing
   - Cooperative Co-evolutionary Algorithm
   - Search-based Testing
 
