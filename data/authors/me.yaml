@@ -66,6 +66,12 @@ education:
     end: 2017-06-30
 
 experience:
+  - role: Researcher
+    org: Huawei Technologies Co., Ltd. | Intelligent Complex Systems Engineering Laboratory | Turing Research Center
+    url: https://www.huawei.com
+    icon: custom/huawei
+    start: 2026-04-06
+    end: ''
   - role: Postdoctoral Researcher
     org: University of Ottawa | EECS | Nanda Laboratory
     url: https://www.nanda-lab.ca
